@@ -10,8 +10,30 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { property: 'og:title', content: 'Colark Inc'},
+        { property: 'og:url', content: 'colark.com' },
+        { property: 'og:image', content: '' },
+        { property: 'og:site_name', content: 'colark.com' },
+        { property: 'og:description', content: 'Learn about Colark'},
+        { property: 'og:email', content: 'ellie@colark.com' },
+        // (below published time value is a timestamp)
+        { property: 'article:published_time', content: '' },
+        { property: 'article:author', content: '' },
+        //facebook analytics
+        { property: 'fb:page_id', content: '' },
+        { property: 'fb:admins', content: '' },
+        //twitter card
+        { name: 'twitter:title', content: 'Colark Inc' },
+        { name: 'twitter:description', content: 'Learn about Colark' },
+        { name: 'twitter:image', content: '' },
+        { name: 'twitter:image:alt', content: '' },
+        { name: 'twitter:card', content: 'colark.com' },
+        //google+
+        { itemprop: 'name', content: 'Colark Inc' },
+        { itemprop: 'description', content: 'Learn about Colark' },
+        { itemprop: 'image', content: '' },
+        //pinterest
+        { name: 'pinterest-rich-pin', content: 'false' }
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
