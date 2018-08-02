@@ -1,8 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import 'bootstrap/dist/css/bootstrap.min.css';
+// UPDATE: The import statement above works fine during development. But the Bootstrap CSS will not be imported when you build your static site - gatsby build
+// You can copy the minified CSS to into the ./src/layouts folder and change the import accordingly:
+// import './bootstrap.min.css';
 
-import Header from '../components/header'
+import ReactNavbar from '../components/header'
 import './index.css'
 
 const Layout = ({ children, data }) => (
@@ -36,7 +40,7 @@ const Layout = ({ children, data }) => (
         { name: 'pinterest-rich-pin', content: 'false' }
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    <ReactNavbar siteTitle={data.site.siteMetadata.title} />
     <div
       style={{
         margin: '0 auto',
