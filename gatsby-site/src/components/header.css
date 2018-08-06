@@ -1,0 +1,23 @@
+.navbar-light .navbar-nav .nav-link {
+    color: #3E64AC;
+}
+
+.navbar-light .navbar-brand {
+    color: #3E64AC;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 30px;
+}
+
+.navbar {
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: .5px;
+    border-bottom: 2px solid #3E64AC;
+}
+
+.bg-light {
+    background-color: white !important;
+}
+
+.dropdown-item {
+    color: #3E64AC;
+}
