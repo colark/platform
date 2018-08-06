@@ -1,3 +1,7 @@
+:root {
+    --navheight: 40px;
+}
+
 .navbar-light .navbar-nav .nav-link {
     color: #3E64AC;
 }
@@ -6,6 +10,10 @@
     color: #3E64AC;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 30px;
+}
+
+li.nav-item {
+    margin-bottom: 0px;
 }
 
 .navbar {
