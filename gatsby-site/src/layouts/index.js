@@ -6,7 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // You can copy the minified CSS to into the ./src/layouts folder and change the import accordingly:
 // import './bootstrap.min.css';
 
-import ReactNavbar from '../components/Navbar'
+import ReactNavbar from '../components/Navbar';
+import Example from '../components/View';
 import './index.css'
 
 const Layout = ({ children, data }) => (
@@ -41,6 +42,7 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <ReactNavbar siteTitle={data.site.siteMetadata.title} />
+    <Example/>
     <div
       style={{
         margin: '0 auto',
