@@ -51,7 +51,7 @@ export default class ReactNavbar extends React.Component {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    Unstack
+                    <NavLink href="/" id="dropdown">Unstack</NavLink>
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>

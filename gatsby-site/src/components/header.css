@@ -3,13 +3,14 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #3E64AC;
+    color: #436295;
 }
 
 .navbar-light .navbar-brand {
-    color: #3E64AC;
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 30px;
+    color: #436295;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
 }
 
 li.nav-item {
@@ -17,15 +18,19 @@ li.nav-item {
 }
 
 .navbar {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: .5px;
-    border-bottom: 2px solid #3E64AC;
+    border-bottom: 2px solid #436295;
+    font-size: 16px;
+    background-color: #FFFFFF !important;
 }
 
 .bg-light {
-    background-color: white !important;
+    background-color: #FFFFFF !important;
 }
 
 .dropdown-item {
-    color: #3E64AC;
+    color: #436295;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
 }
