@@ -1,14 +1,17 @@
 :root {
     --navheight: 40px;
+    --colarkfontcolor: #436295;
+    --colarkfont: 'Roboto', sans-serif;
+    --background: #FFFFFF;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #436295;
+    color: var(--colarkfontcolor);
 }
 
 .navbar-light .navbar-brand {
-    color: #436295;
-    font-family: 'Roboto', sans-serif;
+    color: var(--colarkfontcolor);
+    font-family: var(--colarkfont);
     font-weight: 700;
     font-size: 24px;
 }
@@ -18,19 +21,20 @@ li.nav-item {
 }
 
 .navbar {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--colarkfont);
     letter-spacing: .5px;
-    border-bottom: 2px solid #436295;
+    border-bottom: 2px solid var(--colarkfontcolor);
     font-size: 16px;
-    background-color: #FFFFFF !important;
+    background-color: var(--background) !important;
 }
 
 .bg-light {
-    background-color: #FFFFFF !important;
+    background-color: var(--background);
 }
 
 .dropdown-item {
-    color: #436295;
+    color: var(--colarkfontcolor);
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--colarkfont)
 }
+
