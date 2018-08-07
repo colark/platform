@@ -12,7 +12,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
-import "./header.css";
+import "./navbar.css";
 
 export default class ReactNavbar extends React.Component {
   constructor(props) {

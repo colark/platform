@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // You can copy the minified CSS to into the ./src/layouts folder and change the import accordingly:
 // import './bootstrap.min.css';
 
-import ReactNavbar from '../components/header'
+import ReactNavbar from '../components/Navbar'
 import './index.css'
 
 const Layout = ({ children, data }) => (
