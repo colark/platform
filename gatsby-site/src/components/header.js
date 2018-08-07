@@ -12,6 +12,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
+import "./header.css";
 
 export default class ReactNavbar extends React.Component {
   constructor(props) {
@@ -31,12 +32,15 @@ export default class ReactNavbar extends React.Component {
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">Colark</NavbarBrand>
+          <NavbarBrand href="/">COLARK</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
                 <NavLink href="/components/">About</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/components/">Team</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/colark/platform">Blog</NavLink>
@@ -47,14 +51,11 @@ export default class ReactNavbar extends React.Component {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
+                    <NavLink href="/" id="dropdown">Unstack</NavLink>
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    Option 3
+                    <NavLink href="https://8heroes.com/" id="dropdown">8 Heroes</NavLink>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>

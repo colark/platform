@@ -1,0 +1,40 @@
+:root {
+    --navheight: 40px;
+    --colarkfontcolor: #436295;
+    --colarkfont: 'Roboto', sans-serif;
+    --background: #FFFFFF;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--colarkfontcolor);
+}
+
+.navbar-light .navbar-brand {
+    color: var(--colarkfontcolor);
+    font-family: var(--colarkfont);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+li.nav-item {
+    margin-bottom: 0px;
+}
+
+.navbar {
+    font-family: var(--colarkfont);
+    letter-spacing: .5px;
+    border-bottom: 2px solid var(--colarkfontcolor);
+    font-size: 16px;
+    background-color: var(--background) !important;
+}
+
+.bg-light {
+    background-color: var(--background);
+}
+
+.dropdown-item {
+    color: var(--colarkfontcolor);
+    font-size: 16px;
+    font-family: var(--colarkfont)
+}
+
