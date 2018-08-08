@@ -20,7 +20,7 @@ h1.display-3 {
     display: flex;
     justify-content: center;
     margin: 0px;
-    font-size: vw !important;
+    font-size: 7vw !important;
 }
 
 p.lead {
