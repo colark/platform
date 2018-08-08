@@ -39,3 +39,12 @@ p {
     font-size: 2vw !important;
 
 }
+
+.btncolor {
+    background-color: var(--colarkfontcolor);
+    font-size: 1.5vw !important;
+}
+
+.btntext {
+    color: #FFFFFF;
+}

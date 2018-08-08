@@ -11,10 +11,9 @@ const IndexPage = () => (
         <hr className="my-2" />
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
         <p className="lead">
-          <Button color="primary">Learn More</Button>
+          <Button className="btncolor"><Link to="/page-2/" className="btntext">Learn More</Link></Button>
         </p>
       </Jumbotron>
-    <Link to="/page-2/">Go to page 2</Link>
   </div>
 )
 
