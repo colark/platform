@@ -1,5 +1,36 @@
-img {
-  width: 100px;
+.team-member {
+  background-color: white;
+  border: 1px solid #eee;
   height: 100px;
+  width: 300px;
+  padding: 10px;
+}
+.team-member__info, .team-member__photo-div {
+}
+
+.team-member__info {
+  display: inline-block;
+  text-align: left;
+  padding: 0;
+}
+
+.team-member__name, .team-member__title, .team-member__email, .team-member__linkedin {
+  margin: 5px 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.team-member__name {
+  font-weight: 600;
+}
+
+.team-member__email, .team-member__linkedin {
+}
+
+img.team-member__photo {
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
+  float: left;
 }

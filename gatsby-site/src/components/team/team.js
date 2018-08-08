@@ -1,36 +1,50 @@
 import React from 'react'
 import TeamMember from '../team-member/team-member'
-// import alinaphoto from '../../../static/alina-photo.png'
-// import lianphoto from '../../../static/lian-photo.png'
+import styles from "./team.css"
+
 
 function Team(props) {
   const teamMembers = [{
       name: "Ellie Day",
       position: "Software Engineer",
-      photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/June_odd-eyed-cat.jpg/737px-June_odd-eyed-cat.jpg",
-      email: "mailto:ellie@colark.com",
-      linkedin: "https://www.linkedin.com/in/alina-lodahl/"
+      photo: "./ellie-photo.png",
+      email: "ellie@colark.com",
+      linkedin: "https://www.linkedin.com/in/ellie-day-a7761394/"
+    },
+    {
+      name: "Olga Kuri",
+      position: "Visual Designer/Illustrator",
+      photo: "./olga-photo.png",
+      email: "alina@colark.com",
+      linkedin: "https://www.linkedin.com/in/kuriolga/"
     },
     {
       name: "Alina Lodahl",
       position: "Software Engineer",
-      photo: "../../../static/alina-photo.png",
-      email: "mailto:alina@colark.com",
+      photo: "./alina-photo.png",
+      email: "alina@colark.com",
       linkedin: "https://www.linkedin.com/in/alina-lodahl/"
     },
     {
       name: "Lian Thompson",
       position: "Software Engineer",
-      photo: "../../../static/lian-photo.png",
-      email: "mailto:lian@colark.com",
-      linkedin: "https://www.linkedin.com/in/alina-lodahl/"
+      photo: "./lian-photo.png",
+      email: "lian@colark.com",
+      linkedin: "https://www.linkedin.com/in/lianthompson/"
     }
   ];
-  let team = teamMembers.map( member => <TeamMember props={member}/>);
+  let team = teamMembers.map((member, index) => {
+    return(
+    <li key={ index }>
+      <TeamMember data={ member } />
+    </li>);
+  });
   return(
-    <div>
+    <div className="team">
       <h2>Colark Team</h2>
-      { team }
+      <ul>
+        { team }
+      </ul>
     </div>
   );
 }

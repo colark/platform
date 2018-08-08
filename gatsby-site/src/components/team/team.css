@@ -1,0 +1,9 @@
+.team {
+  width: 100%;
+}
+
+
+li {
+  list-style: none;
+  display: inline-block;
+}
