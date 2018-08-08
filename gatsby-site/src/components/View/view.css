@@ -2,7 +2,7 @@
     --navheight: 40px;
     --colarkfontcolor: #436295;
     --colarkfont: 'Roboto', sans-serif;
-    --background: #FFFFFF;
+    --background: rgba(67, 98, 149, 0.1);
 }
 
 div.jumbotron {
@@ -20,7 +20,7 @@ h1.display-3 {
     display: flex;
     justify-content: center;
     margin: 0px;
-    font-size: 10vw !important;
+    font-size: vw !important;
 }
 
 p.lead {
