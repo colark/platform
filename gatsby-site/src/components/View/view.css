@@ -13,25 +13,27 @@ div.jumbotron {
     font-family: var(--colarkfont);
     color: var(--colarkfontcolor);
     margin: 0px;
-    font-size: 3vw !important;
+    font-size: 2vw !important;
 }
 
 h1.display-3 {
     display: flex;
     justify-content: center;
     margin: 0px;
-    font-size: 7vw !important;
+    font-size: 5vw !important;
+    font-weight: 700;
 }
 
 p.lead {
     display: flex;
     justify-content: center;
-    font-size: 3vw !important;
+    font-size: 2vw !important;
+    font-weight: 700;
 }
 
 p {
     display: flex;
     justify-content: center;
-    font-size: 3vw !important;
+    font-size: 2vw !important;
 
 }

@@ -13,7 +13,7 @@
     color: var(--colarkfontcolor);
     font-family: var(--colarkfont);
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 li.nav-item {
@@ -24,7 +24,7 @@ li.nav-item {
     font-family: var(--colarkfont);
     letter-spacing: .5px;
     border-bottom: .2vw solid var(--colarkfontcolor);
-    font-size: 2vw;
+    font-size: 1.5vw;
     background-color: var(--background) !important;
 }
 
@@ -34,7 +34,7 @@ li.nav-item {
 
 .dropdown-item {
     color: var(--colarkfontcolor);
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-family: var(--colarkfont)
 }
 
