@@ -6,14 +6,14 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: var(--colarkfontcolor);
+    color: var(--colarkfontcolor); 
 }
 
 .navbar-light .navbar-brand {
     color: var(--colarkfontcolor);
     font-family: var(--colarkfont);
     font-weight: 700;
-    font-size: 24px;
+    font-size: 3vw;
 }
 
 li.nav-item {
@@ -23,8 +23,8 @@ li.nav-item {
 .navbar {
     font-family: var(--colarkfont);
     letter-spacing: .5px;
-    border-bottom: 2px solid var(--colarkfontcolor);
-    font-size: 16px;
+    border-bottom: .2vw solid var(--colarkfontcolor);
+    font-size: 2vw;
     background-color: var(--background) !important;
 }
 
@@ -34,7 +34,10 @@ li.nav-item {
 
 .dropdown-item {
     color: var(--colarkfontcolor);
-    font-size: 16px;
+    font-size: 2vw;
     font-family: var(--colarkfont)
 }
 
+span.navbar-toggler-icon {
+    font-size: 2vw;
+}

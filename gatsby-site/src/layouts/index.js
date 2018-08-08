@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import './bootstrap.min.css';
 
 import ReactNavbar from '../components/Navbar';
-import Example from '../components/View';
+import View from '../components/View';
 import './index.css'
 
 const Layout = ({ children, data }) => (
@@ -42,7 +42,7 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <ReactNavbar siteTitle={data.site.siteMetadata.title} />
-    <Example/>
+    <View/>
     <div
       style={{
         margin: '0 auto',

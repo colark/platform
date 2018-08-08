@@ -1,0 +1,37 @@
+:root {
+    --navheight: 40px;
+    --colarkfontcolor: #436295;
+    --colarkfont: 'Roboto', sans-serif;
+    --background: #FFFFFF;
+}
+
+div.jumbotron {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--background);
+    font-family: var(--colarkfont);
+    color: var(--colarkfontcolor);
+    margin: 0px;
+    font-size: 3vw !important;
+}
+
+h1.display-3 {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    font-size: 10vw !important;
+}
+
+p.lead {
+    display: flex;
+    justify-content: center;
+    font-size: 3vw !important;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    font-size: 3vw !important;
+
+}
