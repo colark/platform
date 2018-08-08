@@ -42,7 +42,6 @@ li.nav-item {
     color: var(--colarkfontcolor);
     font-size: 1.5vw;
     font-family: var(--colarkfont);
-    position: fixed;
 }
 
 span.navbar-toggler-icon {
