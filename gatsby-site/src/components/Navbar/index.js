@@ -30,7 +30,7 @@ export default class ReactNavbar extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="sticky-nav">
         <Navbar color="light" light expand="md">
           <NavbarBrand href="/">COLARK</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
