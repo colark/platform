@@ -1,6 +1,5 @@
 import React from 'react';
 import { Jumbotron, Button } from 'reactstrap';
-import './view.css';
 
 const View = (props) => {
   return (
