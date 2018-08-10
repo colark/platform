@@ -58,4 +58,11 @@ p {
 #container {
     display: flex;
     justify-content: space-evenly;
+    font-size: 1.5vw;
+}
+
+h3 {
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
 }
