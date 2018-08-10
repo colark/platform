@@ -26,22 +26,25 @@ div.jumbotron {
 
 h1.display-3 {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin: 0px;
+    padding-left: 8.5vw;
     font-size: 5vw !important;
     font-weight: 700;
 }
 
 p.lead {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    padding-top: 1vw;
+    padding-left: 8.5vw;
     font-size: 2vw !important;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 p {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     font-size: 2vw !important;
 
 }
@@ -64,6 +67,6 @@ p {
 h3 {
     font-size: 3vw;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin-top: 6vw;
 }
