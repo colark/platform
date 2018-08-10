@@ -5,6 +5,12 @@
     --background: rgba(67, 98, 149, 0.1);
 }
 
+.projects {
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 div.jumbotron {
     display: flex;
@@ -47,4 +53,9 @@ p {
 
 .btntext {
     color: #FFFFFF;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
 }

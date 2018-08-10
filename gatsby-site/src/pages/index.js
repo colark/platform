@@ -10,9 +10,16 @@ const IndexPage = () => (
         <p className="lead">We start, buy, and invest in wonderful internet businesses.</p>
         <hr className="my-2" />
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <p className="lead">
-          <Button className="btncolor"><Link to="/page-2/" className="btntext">Learn More</Link></Button>
-        </p>
+        <div id="container">
+        <div>
+          <h3>Phase Zero</h3>
+          <p>Brings products and companies to market</p>
+        </div>
+        <div>
+          <h3>Unstack</h3>
+          <p>The technology behind Phase Zero</p>
+        </div>
+        </div>
       </Jumbotron>
   </div>
 )
