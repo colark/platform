@@ -58,15 +58,19 @@ p {
     color: #FFFFFF;
 }
 
-#container {
+.container {
     display: flex;
     justify-content: space-evenly;
     font-size: 1.5vw;
 }
 
 h3 {
-    font-size: 3vw;
+    font-size: 2vw;
     display: flex;
     justify-content: left;
     margin-top: 6vw;
+}
+
+#description {
+    font-size: 1.5vw !important;
 }
