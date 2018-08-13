@@ -1,6 +1,6 @@
 :root {
     --navheight: 40px;
-    --colarkfontcolor: #0111FC;
+    --colarkfontcolor: #000000;
     --colarkfont: 'Roboto', sans-serif;
     --background: #FFFFFF;
 }
@@ -18,7 +18,7 @@
     color: var(--colarkfontcolor);
     font-family: var(--colarkfont);
     font-weight: 700;
-    font-size: 2vw;
+    font-size: 24px;
 }
 
 li.nav-item {
@@ -27,9 +27,9 @@ li.nav-item {
 
 .navbar {
     font-family: var(--colarkfont);
-    letter-spacing: .5px;
-    border-bottom: .2vw solid var(--colarkfontcolor);
-    font-size: 1.5vw;
+    letter-spacing: 15%;
+    border-bottom: 2px solid #C4C4C4;
+    font-size: 24px;
     background-color: var(--background) !important;
     position: sticky !important;
 }
@@ -45,5 +45,5 @@ li.nav-item {
 }
 
 span.navbar-toggler-icon {
-    font-size: 2vw;
+    font-size: 24px;
 }

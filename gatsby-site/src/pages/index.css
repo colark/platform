@@ -2,7 +2,7 @@
     --navheight: 40px;
     --colarkfontcolor: #0111FC;
     --colarkfont: 'Roboto', sans-serif;
-    --background: rgba(67, 98, 149, 0.1);
+    --background: #FFFFFF;
 }
 
 .projects {
@@ -28,18 +28,20 @@ h1.display-3 {
     display: flex;
     justify-content: left;
     margin: 0px;
-    padding-left: 8.5vw;
-    font-size: 5vw !important;
+    padding-left: 80px;
+    font-size: 48px !important;
     font-weight: 700;
+    letter-spacing: 15% !important;
 }
 
 p.lead {
     display: flex;
     justify-content: left;
-    padding-top: 1vw;
-    padding-left: 8.5vw;
-    font-size: 2vw !important;
+    padding-top: 2px;
+    padding-left: 80px;
+    font-size: 20px !important;
     font-weight: 400;
+    color: #C4C4C4;
 }
 
 p {
