@@ -1,7 +1,7 @@
 :root {
     --navheight: 40px;
     --colarkfontcolor: #0111FC;
-    --colarkfont: 'Roboto', sans-serif;
+    --colarkfont: 'Mukta Malar', sans-serif;
     --background: #FFFFFF;
 }
 
@@ -20,18 +20,19 @@ div.jumbotron {
     font-family: var(--colarkfont);
     color: var(--colarkfontcolor);
     margin: 0px;
-    font-size: 2vw !important;
+    font-size: 75vh !important;
 }
 
 
 h1.display-3 {
+    font-family: var(--colarkfont);
     display: flex;
     justify-content: left;
     margin: 0px;
     padding-left: 80px;
     font-size: 48px !important;
     font-weight: 700;
-    letter-spacing: 15% !important;
+    letter-spacing: 15px !important;
 }
 
 p.lead {

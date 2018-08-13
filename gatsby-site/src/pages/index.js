@@ -6,7 +6,7 @@ import './index.css';
 const IndexPage = () => (
   <div>
       <Jumbotron>
-        <h1 className="display-3">Hi, we're Colark.</h1>
+        <h1 className="display-3">Building better software, together.</h1>
         <p className="lead">We start, buy, and invest in wonderful internet businesses.</p>
         <div className="container">
         <div>
