@@ -37,28 +37,23 @@ export default class ReactNavbar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
+                <NavLink href="/components/">Features</NavLink>
+              </NavItem>
+              <NavItem>
                 <NavLink href="/components/">About</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/components/">Partners</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/components/">Blog</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/components/">Team</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/colark/platform">Blog</NavLink>
+                <button>Sign in</button>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Projects
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    <NavLink href="/" id="dropdown">Unstack</NavLink>
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    <NavLink href="https://8heroes.com/" id="dropdown">8 Heroes</NavLink>
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
             </Nav>
           </Collapse>
         </Navbar>
