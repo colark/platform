@@ -9,7 +9,7 @@ const IndexPage = () => (
         <h1 className="display-3">Building</h1>
         <h1 className="display-3">better software,</h1>
         <h1 className="display-3">together.</h1>
-        <p className="lead">We start, buy, and invest in wonderful internet businesses.</p>
+        <p className="lead">Teams that consistently perform at the highest levels are able to come together and be unified across the organization - staff, players, coaches, management, and ownership. When everyone is on the same page, trust develops and teams can grow and succeed together.</p>
         <div className="container">
         <div>
           <h3>Phase Zero</h3>

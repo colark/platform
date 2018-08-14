@@ -39,11 +39,12 @@ h1.display-3 {
 p.lead {
     display: flex;
     justify-content: left;
-    padding-top: 2px;
+    padding-top: 40px;
     padding-left: 80px;
     font-size: 20px !important;
     font-weight: 400;
     color: #C4C4C4;
+    width: 60%;
 }
 
 p {

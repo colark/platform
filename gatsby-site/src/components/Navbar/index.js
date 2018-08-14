@@ -33,8 +33,8 @@ export default class ReactNavbar extends React.Component {
     return (
       <div className="sticky-nav">
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">COLARK</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
+        <NavbarBrand href="/">COLARK</NavbarBrand>
+        <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
