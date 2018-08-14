@@ -33,6 +33,7 @@ h1.display-3 {
     font-size: 48px !important;
     font-weight: 700;
     letter-spacing: 15px !important;
+    width: 60%;
 }
 
 p.lead {
