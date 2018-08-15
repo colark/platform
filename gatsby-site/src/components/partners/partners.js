@@ -38,7 +38,7 @@ function Partners(props) {
   });
 
   return(
-    <div className="partners">
+    <div className="partners" id="partners">
       <h2>Partners</h2>
         <ul>
           { partners }

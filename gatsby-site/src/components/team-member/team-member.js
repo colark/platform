@@ -5,10 +5,14 @@ import Mailto from 'react-mailto';
 import styles from "./team-member.css"
 
 export default function TeamMember(props) {
-  console.log("props: ", props);
   return(
     <div className="team-member">
       <div className={props.data.className}>
+          <div className="tooltiptext">
+            <span className="tooltiptext--name">{props.data.name}</span>
+            <br/>
+            <span className="tooltiptext--title">{props.data.position}</span>
+          </div>
         <img
           src={props.data.photo ? props.data.photo : "https://res.cloudinary.com/colark/image/upload/v1534352217/Ellipse.svg"}
           alt={props.data.name}

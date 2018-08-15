@@ -3,7 +3,7 @@
   display: inline-block;
 }
 
-img.team-member__photo {
+img.team-member__photo, .tooltip {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -11,6 +11,7 @@ img.team-member__photo {
 
 .team-member__photo-div {
   position: relative;
+  z-index: 1;
 }
 
 .alina-photo {
@@ -39,10 +40,73 @@ img.team-member__photo {
 }
 
 .someone-photo {
-  top: 220px;
+  top: 240px;
   right: 330px;
 }
 
 .team-member__name, .team-member__title, .team-member__email, .team-member__linkedin {
   display: none;
+}
+
+.tooltip {
+  display: inline-block;
+  z-index: 2;
+}
+
+.tooltiptext {
+    display: none;
+    width: 120px;
+    max-height: 300px;
+    background-color: #0111FC;
+    border: 1px solid #0111FC;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 3;
+    top: 105px;
+    left: -10px;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+    font: 20px "Roboto", sans-serif;
+    font-weight: 100;
+}
+
+.tooltiptext--name {
+  font-weight: 400;
+}
+
+.tooltiptext--title {
+  font-size: 18px;
+  color: #E3E5FC;
+}
+
+.tooltiptext::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #0111FC transparent;
+}
+
+div.alina-photo:hover .tooltiptext,
+div.alina-photo:active .tooltiptext,
+div.alina-photo .tooltiptext:hover,
+div.lian-photo:hover .tooltiptext,
+div.lian-photo:active .tooltiptext,
+div.lian-photo .tooltiptext:hover,
+div.ellie-photo:hover .tooltiptext,
+div.ellie-photo:active .tooltiptext,
+div.ellie-photo .tooltiptext:hover,
+div.olga-photo:hover .tooltiptext,
+div.olga-photo:active .tooltiptext,
+div.olga-photo .tooltiptext:hover,
+div.claire-photo:hover .tooltiptext,
+div.claire-photo:active .tooltiptext,
+div.claire-photo .tooltiptext:hover {
+    display: inline-block;
 }
