@@ -74,5 +74,7 @@ button {
 
 .navbar.navbar-expand-md.navbar-light.bg-light {
     background: rgba(0,0,0,0) !important;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
