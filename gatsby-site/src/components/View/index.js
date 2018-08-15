@@ -7,7 +7,7 @@ import ReactNavbar from '../Navbar/index.js';
 
 const View = (props) => {
   return (
-    <div>
+    <div id="page-container">
       <Illustration />
       <ReactNavbar />
       <Jumbotron>

@@ -8,7 +8,7 @@
 .sticky-nav {
     top: 0;
     padding-left: 100px;
-    
+    width: 100% !important;
     border-bottom: 1px solid #C4C4C4;
 
   }
@@ -76,5 +76,6 @@ button {
     background: rgba(0,0,0,0) !important;
     padding-bottom: 0px;
     padding-top: 0px;
+    width: 900px !important;
 }
 

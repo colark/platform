@@ -6,6 +6,11 @@
     --leftmargin: 80px;
 }
 
+#div.container {
+    width: 1039px !important;
+    overflow: hidden;
+}
+
 .projects {
     border: 2px solid green;
     display: flex;
