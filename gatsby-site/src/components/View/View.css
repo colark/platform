@@ -26,18 +26,18 @@ div.jumbotron {
 
 h1.display-3 {
     font-family: var(--colarkfont) !important;
-    display: flex;
-    justify-content: left;
+    float: left;
     margin: 0px;
     padding-left: var(--leftmargin);
     font-size: 48px !important;
     font-weight: 700;
     letter-spacing: 15px !important;
-    width: 60%;
+    width: 65%;
 }
 
 #title {
     margin-top: 80px;
+    
 }
 
 p.lead {
@@ -48,14 +48,7 @@ p.lead {
     font-size: 20px !important;
     font-weight: 400;
     color: #C4C4C4;
-    width: 50%;
-}
-
-p {
-    display: flex;
-    justify-content: left;
-    font-size: 2vw !important;
-
+    width: 60%;
 }
 
 .btncolor {
@@ -80,6 +73,24 @@ h3 {
     margin-top: 6vw;
 }
 
-#description {
-    font-size: 1.5vw !important;
+
+
+@media only screen and (max-width: 700px) {
+    p.lead {
+        width: 100%;
+    }
+
+    h1.display-3 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    p.lead {
+        width: 100%;
+    }
+
+    h1.display-3 {
+        width: 100%;
+    }
 }
