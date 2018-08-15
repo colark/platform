@@ -13,7 +13,7 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 import "./navbar.css";
-
+// import Logo from "./colarklogo.js";
 
 export default class ReactNavbar extends React.Component {
   constructor(props) {

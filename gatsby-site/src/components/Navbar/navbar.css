@@ -10,6 +10,13 @@
     top: 0;
   }
 
+
+li.nav-item {
+    display: flex;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
 .navbar-light .navbar-nav .nav-link {
     color: var(--colarkfontcolor); 
 }
@@ -22,6 +29,8 @@
 }
 
 .navbar {
+    display: flex !important;
+    justify-content: space-evenly !important;
     font-family: var(--colarkfont);
     letter-spacing: 15%;
     border-bottom: 2px solid #C4C4C4;
@@ -48,6 +57,5 @@ button {
     background-color: #FF6969;
     color: #FFFFFF;
     border-radius: 5px;
-    margin-top: 6px !important;
 }
 
