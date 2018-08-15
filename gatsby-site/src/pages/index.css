@@ -3,6 +3,7 @@
     --colarkfontcolor: #0111FC;
     --colarkfont: 'Mukta Malar', sans-serif;
     --background: #FFFFFF;
+    --leftmargin: 80px;
 }
 
 .projects {
@@ -20,7 +21,6 @@ div.jumbotron {
     font-family: var(--colarkfont);
     color: var(--colarkfontcolor);
     margin: 0px;
-    font-size: 75vh !important;
 }
 
 
@@ -29,7 +29,7 @@ h1.display-3 {
     display: flex;
     justify-content: left;
     margin: 0px;
-    padding-left: 80px;
+    padding-left: var(--leftmargin);
     font-size: 48px !important;
     font-weight: 700;
     letter-spacing: 15px !important;
@@ -40,7 +40,7 @@ p.lead {
     display: flex;
     justify-content: left;
     padding-top: 40px;
-    padding-left: 80px;
+    padding-left: var(--leftmargin);
     font-size: 20px !important;
     font-weight: 400;
     color: #C4C4C4;
