@@ -1,50 +1,75 @@
 import React from 'react'
 import TeamMember from '../team-member/team-member'
 import styles from "./team.css"
-
+const alina = "https://res.cloudinary.com/colark/image/upload/v1534305485/alina-photo.png"
+const ellie = "https://res.cloudinary.com/colark/image/upload/v1534305486/ellie-photo.png"
+const lian = "https://res.cloudinary.com/colark/image/upload/v1534305485/lian-photo.png"
+const olga = "https://res.cloudinary.com/colark/image/upload/v1534305498/olga-photo.png"
 
 function Team(props) {
   const teamMembers = [{
       name: "Ellie Day",
+      className: "ellie-photo team-member__photo-div",
       position: "Software Engineer",
-      photo: "./ellie-photo.png",
+      photo: ellie,
       email: "ellie@colark.com",
       linkedin: "https://www.linkedin.com/in/ellie-day-a7761394/"
     },
     {
       name: "Olga Kuri",
+      className: "olga-photo team-member__photo-div",
       position: "Visual Designer/Illustrator",
-      photo: "./olga-photo.png",
-      email: "alina@colark.com",
+      photo: olga,
+      email: "olga@colark.com",
       linkedin: "https://www.linkedin.com/in/kuriolga/"
     },
     {
       name: "Alina Lodahl",
+      className: "alina-photo team-member__photo-div",
       position: "Software Engineer",
-      photo: "./alina-photo.png",
+      photo: alina,
       email: "alina@colark.com",
       linkedin: "https://www.linkedin.com/in/alina-lodahl/"
     },
     {
       name: "Lian Thompson",
+      className: "lian-photo team-member__photo-div",
       position: "Software Engineer",
-      photo: "./lian-photo.png",
+      photo: lian,
       email: "lian@colark.com",
       linkedin: "https://www.linkedin.com/in/lianthompson/"
+    },
+    {
+      name: "Claire",
+      className: "claire-photo team-member__photo-div",
+      position: "Product Manager",
+      photo: "",
+      email: "claire@colark.com",
+      linkedin: ""
+    },
+    {
+      name: "Someone",
+      className: "someone-photo team-member__photo-div",
+      position: "Software Engineer",
+      photo: "",
+      email: "someone@colark.com",
+      linkedin: ""
     }
   ];
   let team = teamMembers.map((member, index) => {
     return(
-    <li key={ index }>
+    <div className="team-member-div" key={ index }>
       <TeamMember data={ member } />
-    </li>);
+    </div>);
   });
   return(
-    <div className="team">
-      <h2>Colark Team</h2>
-      <ul>
-        { team }
-      </ul>
+    <div>
+      <div className="team">
+      <h2>Meet our team</h2>
+        <div className="team-path">
+            { team }
+        </div>
+      </div>
     </div>
   );
 }

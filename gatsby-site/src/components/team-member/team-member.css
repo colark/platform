@@ -1,36 +1,48 @@
 .team-member {
-  background-color: white;
-  border: 1px solid #eee;
-  height: 100px;
-  width: 300px;
-  padding: 10px;
-}
-.team-member__info, .team-member__photo-div {
-}
-
-.team-member__info {
+  position: relative;
   display: inline-block;
-  text-align: left;
-  padding: 0;
-}
-
-.team-member__name, .team-member__title, .team-member__email, .team-member__linkedin {
-  margin: 5px 10px;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 200;
-}
-
-.team-member__name {
-  font-weight: 600;
-}
-
-.team-member__email, .team-member__linkedin {
 }
 
 img.team-member__photo {
-  width: 75px;
-  height: 75px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  float: left;
+}
+
+.team-member__photo-div {
+  position: relative;
+}
+
+.alina-photo {
+  top: 200px;
+  left: 200px;
+}
+
+.ellie-photo {
+  top: 40px;
+  left: 240px;
+}
+
+.lian-photo {
+  bottom: 20px;
+  left: 150px;
+}
+
+.olga-photo {
+  top: 150px;
+  left: 520px;
+}
+
+.claire-photo {
+  top: 20px;
+  left: 300px;
+}
+
+.someone-photo {
+  top: 220px;
+  right: 330px;
+}
+
+.team-member__name, .team-member__title, .team-member__email, .team-member__linkedin {
+  display: none;
 }

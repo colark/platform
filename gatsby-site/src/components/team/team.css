@@ -1,9 +1,38 @@
 .team {
-  width: 100%;
+  position: absolute;
+  left: -9999px;
+  right: -9999px;
+  width: 1600px;
+  margin: 0 auto;
+  height: 600px;
 }
 
+h2 {
+  color: blue;
+  font-size: 24px;
+  font-family: "Mukta-Malar", "Roboto", sans-serif;
+  height: 50px;
+  margin: 15px auto;
+  width: 900px;
+  padding-left: 50px;
+}
 
-li {
-  list-style: none;
+.team-member-div {
   display: inline-block;
+  position: relative;
+}
+
+.team-path-div {
+  margin: 0 auto;
+  width: 1400px;
+  height: 100%;
+}
+
+.team-path {
+  margin: 0 auto;
+  width: 1000px;
+  height: 100%;
+  background-image: url("https://res.cloudinary.com/colark/image/upload/v1534305667/Meet_our_team_Scam.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }

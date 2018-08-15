@@ -8,8 +8,12 @@ export default function TeamMember(props) {
   console.log("props: ", props);
   return(
     <div className="team-member">
-      <div className="team-member__photo-div">
-        <img src={props.data.photo} alt={props.data.name} className="team-member__photo" />
+      <div className={props.data.className}>
+        <img
+          src={props.data.photo ? props.data.photo : "https://res.cloudinary.com/colark/image/upload/v1534352217/Ellipse.svg"}
+          alt={props.data.name}
+          className="team-member__photo"
+        />
       </div>
       <div className="team-member__info">
         <h3 className="team-member__name">{props.data.name}</h3>
