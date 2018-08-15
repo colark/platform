@@ -8,6 +8,9 @@
 .sticky-nav {
     position: sticky;
     top: 0;
+    padding-left: 100px;
+    border-bottom: 1px solid #C4C4C4;
+
   }
 
 .nav-link {
@@ -37,7 +40,6 @@ li.nav-item {
     justify-content: space-between !important;
     font-family: var(--colarkfont);
     letter-spacing: 15%;
-    border-bottom: 2px solid #C4C4C4;
     font-size: 24px;
     background-color: var(--background) !important;
     position: sticky !important;

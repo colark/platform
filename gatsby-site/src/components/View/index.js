@@ -3,11 +3,13 @@ import { Jumbotron, Button } from 'reactstrap';
 import Link from 'gatsby-link'
 import './View.css';
 import Illustration from './Background/Illustration.js';
+import ReactNavbar from '../Navbar/index.js';
 
 const View = (props) => {
   return (
     <div>
       <Illustration />
+      <ReactNavbar />
       <Jumbotron>
         <div id="title">
           <h1 className="display-3">Building <br></br> better software, together.</h1>
