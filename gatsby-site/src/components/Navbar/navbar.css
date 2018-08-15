@@ -61,5 +61,13 @@ button {
     background-color: #FF6969;
     color: #FFFFFF;
     border-radius: 5px;
+    font-size: 24px !important;
+    height: var(--navheight);
+    padding-bottom: 5px !important;
+
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-bottom: 0px;
 }
 

@@ -2,7 +2,7 @@
     --navheight: 40px;
     --colarkfontcolor: #0111FC;
     --colarkfont: 'Mukta Malar', sans-serif;
-    --background: #FFFFFF;
+    --background: rgba(255,255,255,0);
     --leftmargin: 80px;
 }
 
@@ -25,7 +25,7 @@ div.jumbotron {
 
 
 h1.display-3 {
-    font-family: var(--colarkfont);
+    font-family: var(--colarkfont) !important;
     display: flex;
     justify-content: left;
     margin: 0px;
@@ -34,6 +34,10 @@ h1.display-3 {
     font-weight: 700;
     letter-spacing: 15px !important;
     width: 60%;
+}
+
+#title {
+    margin-top: 80px;
 }
 
 p.lead {
