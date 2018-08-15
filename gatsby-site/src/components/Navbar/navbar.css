@@ -6,9 +6,9 @@
 }
 
 .sticky-nav {
-    position: sticky;
     top: 0;
     padding-left: 100px;
+    
     border-bottom: 1px solid #C4C4C4;
 
   }
@@ -41,7 +41,6 @@ li.nav-item {
     font-family: var(--colarkfont);
     letter-spacing: 15%;
     font-size: 24px;
-    background-color: var(--background) !important;
     position: sticky !important;
 }
 
@@ -71,5 +70,9 @@ button {
 
 .navbar-expand-md .navbar-nav .nav-link {
     padding-bottom: 0px;
+}
+
+.navbar.navbar-expand-md.navbar-light.bg-light {
+    background: rgba(0,0,0,0) !important;
 }
 
