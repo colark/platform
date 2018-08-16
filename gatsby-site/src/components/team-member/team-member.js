@@ -8,11 +8,11 @@ export default function TeamMember(props) {
   return(
     <div className="team-member">
       <div className={props.data.className}>
-          <div className="tooltiptext">
-            <span className="tooltiptext--name">{props.data.name}</span>
-            <br/>
-            <span className="tooltiptext--title">{props.data.position}</span>
-          </div>
+        <div className="tooltiptext">
+          <span className="tooltiptext--name">{props.data.name}</span>
+          <br/>
+          <span className="tooltiptext--title">{props.data.position}</span>
+        </div>
         <img
           src={props.data.photo ? props.data.photo : "https://res.cloudinary.com/colark/image/upload/v1534352217/Ellipse.svg"}
           alt={props.data.name}
