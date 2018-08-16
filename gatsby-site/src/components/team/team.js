@@ -5,6 +5,7 @@ const alina = "https://res.cloudinary.com/colark/image/upload/v1534305485/alina-
 const ellie = "https://res.cloudinary.com/colark/image/upload/v1534305486/ellie-photo.png"
 const lian = "https://res.cloudinary.com/colark/image/upload/v1534305485/lian-photo.png"
 const olga = "https://res.cloudinary.com/colark/image/upload/v1534305498/olga-photo.png"
+const claire = "https://res.cloudinary.com/colark/image/upload/v1534456735/Colark%20Marketing%20Site/claire-photo.jpg";
 
 function Team(props) {
   const teamMembers = [{
@@ -18,7 +19,7 @@ function Team(props) {
     {
       name: "Olga Kuri",
       className: "olga-photo team-member__photo-div",
-      position: "Visual Designer/Illustrator",
+      position: "Visual Designer/ Illustrator",
       photo: olga,
       email: "olga@colark.com",
       linkedin: "https://www.linkedin.com/in/kuriolga/"
@@ -40,12 +41,12 @@ function Team(props) {
       linkedin: "https://www.linkedin.com/in/lianthompson/"
     },
     {
-      name: "Claire",
+      name: "Claire Gallant",
       className: "claire-photo team-member__photo-div",
       position: "Product Manager",
-      photo: "",
+      photo: claire,
       email: "claire@colark.com",
-      linkedin: ""
+      linkedin: "https://www.linkedin.com/in/claire-gallant-4494b683/"
     },
     {
       name: "Someone",

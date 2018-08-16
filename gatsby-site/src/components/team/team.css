@@ -1,3 +1,7 @@
+:root {
+  --colarkblue: #0111FC;
+}
+
 .team {
   position: absolute;
   left: -9999px;
@@ -10,7 +14,7 @@
 
 h2 {
   display: block;
-  color: #0111FC;
+  color: var(--colarkblue);
   font-size: 24px;
   font-family: "Mukta-Malar", "Roboto", sans-serif;
   height: 50px;
