@@ -10,6 +10,6 @@
 }
 
 .image {
-    box-shadow: 5px 10px 18px #797676;
+    box-shadow: 5px 10px 18px rgba(18, 17, 17, .5);
     border-radius: 10px;
 }
