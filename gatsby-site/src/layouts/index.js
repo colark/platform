@@ -11,7 +11,7 @@ import View from '../components/View';
 import './index.css'
 
 const Layout = ({ children, data }) => (
-  <div className="testing">
+  <div>
     <Helmet
       title={data.site.siteMetadata.title}
       link={[
@@ -45,7 +45,6 @@ const Layout = ({ children, data }) => (
         { name: 'pinterest-rich-pin', content: 'false' }
       ]}
     />
-    {/* <ReactNavbar siteTitle={data.site.siteMetadata.title} /> */}
     <div
       style={{
         margin: '0 auto',

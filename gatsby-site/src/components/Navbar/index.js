@@ -61,7 +61,7 @@ export default class ReactNavbar extends React.Component {
                 <NavLink href="/components/">Team</NavLink>
               </NavItem>
               <NavItem>
-                <button>Sign in</button>
+                <button className="signin-button">Sign in</button>
               </NavItem>
             </Nav>
           </Collapse> */}
