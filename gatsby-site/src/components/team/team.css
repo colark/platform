@@ -62,3 +62,12 @@ h2 {
     text-align: right;
   }
 }
+
+@media only screen and (min-width: 1300px) {
+  .team {
+    width: 80%;
+  }
+  .team-path {
+    width: 100%;
+  }
+}
