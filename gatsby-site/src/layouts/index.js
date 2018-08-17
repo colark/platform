@@ -6,13 +6,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // You can copy the minified CSS to into the ./src/layouts folder and change the import accordingly:
 // import './bootstrap.min.css';
 
-import ReactNavbar from '../components/header'
+// import ReactNavbar from '../components/Navbar';
+import View from '../components/View';
 import './index.css'
 
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
       title={data.site.siteMetadata.title}
+      link={[
+        {href: "https://fonts.googleapis.com/css?family=Mukta+Malar:400,600,700",
+        rel: "stylesheet"}
+      ]}
       meta={[
         { property: 'og:title', content: 'Colark Inc'},
         { property: 'og:url', content: 'colark.com' },
@@ -40,11 +45,10 @@ const Layout = ({ children, data }) => (
         { name: 'pinterest-rich-pin', content: 'false' }
       ]}
     />
-    <ReactNavbar siteTitle={data.site.siteMetadata.title} />
     <div
       style={{
         margin: '0 auto',
-        padding: '0px 1.0875rem 1.45rem',
+        padding: 0,
         paddingTop: 0,
       }}
     >
