@@ -1,10 +1,10 @@
 import React from 'react'
 import TeamMember from '../team-member/team-member'
 import styles from "./team.css"
-const alina = "https://res.cloudinary.com/colark/image/upload/v1534305485/alina-photo.png"
-const ellie = "https://res.cloudinary.com/colark/image/upload/v1534305486/ellie-photo.png"
-const lian = "https://res.cloudinary.com/colark/image/upload/v1534305485/lian-photo.png"
-const olga = "https://res.cloudinary.com/colark/image/upload/v1534305498/olga-photo.png"
+const alina = "https://res.cloudinary.com/colark/image/upload/v1534305485/Colark%20Marketing%20Site/alina-photo.png"
+const ellie = "https://res.cloudinary.com/colark/image/upload/v1534305486/Colark%20Marketing%20Site/ellie-photo.png"
+const lian = "https://res.cloudinary.com/colark/image/upload/v1534305485/Colark%20Marketing%20Site/lian-photo.png"
+const olga = "https://res.cloudinary.com/colark/image/upload/v1534305498/Colark%20Marketing%20Site/olga-photo.png"
 const claire = "https://res.cloudinary.com/colark/image/upload/v1534456735/Colark%20Marketing%20Site/claire-photo.jpg"
 
 function Team(props) {
