@@ -1,0 +1,64 @@
+:root {
+  --colarkblue: #0111FC;
+}
+
+.team {
+  position: absolute;
+  left: -9999px;
+  right: -9999px;
+  width: 1600px;
+  margin: 0 auto;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+h2 {
+  display: block;
+  color: var(--colarkblue);
+  font-size: 24px;
+  font-family: "Mukta-Malar", "Roboto", sans-serif;
+  height: 50px;
+  margin: 15px auto;
+  width: 900px;
+  padding-left: 50px;
+  z-index: 2;
+}
+
+.team-member-div {
+  display: inline-block;
+  position: relative;
+}
+
+.team-path-div {
+  margin: 0 auto;
+  width: 1400px;
+  height: 100%;
+}
+
+.team-path {
+  margin: 0 auto;
+  width: 1000px;
+  height: 100%;
+  background-image: url("https://res.cloudinary.com/colark/image/upload/v1534305667/Meet_our_team_Scam.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media only screen and (max-width: 800px) {
+  .team {
+    right: -9729px;
+  }
+  .team-path {
+    margin-top: 200px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  .team-member__photo-div, .team-member__info {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+  h2 {
+    width: 430px;
+    text-align: right;
+  }
+}
