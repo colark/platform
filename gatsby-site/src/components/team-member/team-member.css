@@ -64,7 +64,7 @@ img.team-member__photo {
     border-radius: 6px;
     padding: 10px;
     position: absolute;
-    z-index: 3;
+    z-index: 2;
     top: 105px;
     left: -10px;
     opacity: 0.9;
@@ -93,20 +93,7 @@ img.team-member__photo {
     border-color: transparent transparent var(--colarkblue) transparent;
 }
 
-div.alina-photo:hover .tooltiptext,
-div.alina-photo:active .tooltiptext,
-div.alina-photo .tooltiptext:hover,
-div.lian-photo:hover .tooltiptext,
-div.lian-photo:active .tooltiptext,
-div.lian-photo .tooltiptext:hover,
-div.ellie-photo:hover .tooltiptext,
-div.ellie-photo:active .tooltiptext,
-div.ellie-photo .tooltiptext:hover,
-div.olga-photo:hover .tooltiptext,
-div.olga-photo:active .tooltiptext,
-div.olga-photo .tooltiptext:hover,
-div.claire-photo:hover .tooltiptext,
-div.claire-photo:active .tooltiptext,
-div.claire-photo .tooltiptext:hover {
+div.team-member__photo-div:hover .tooltiptext,
+div.team-member__photo-div:active .tooltiptext {
     display: inline-block;
 }

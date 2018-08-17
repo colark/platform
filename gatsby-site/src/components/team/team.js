@@ -5,12 +5,12 @@ const alina = "https://res.cloudinary.com/colark/image/upload/v1534305485/alina-
 const ellie = "https://res.cloudinary.com/colark/image/upload/v1534305486/ellie-photo.png"
 const lian = "https://res.cloudinary.com/colark/image/upload/v1534305485/lian-photo.png"
 const olga = "https://res.cloudinary.com/colark/image/upload/v1534305498/olga-photo.png"
-const claire = "https://res.cloudinary.com/colark/image/upload/v1534456735/Colark%20Marketing%20Site/claire-photo.jpg";
+const claire = "https://res.cloudinary.com/colark/image/upload/v1534456735/Colark%20Marketing%20Site/claire-photo.jpg"
 
 function Team(props) {
   const teamMembers = [{
       name: "Ellie Day",
-      className: "ellie-photo team-member__photo-div",
+      className: "team-member__photo-div ellie-photo",
       position: "Founder, Engineer",
       photo: ellie,
       email: "ellie@colark.com",
@@ -18,7 +18,7 @@ function Team(props) {
     },
     {
       name: "Olga Kuri",
-      className: "olga-photo team-member__photo-div",
+      className: "team-member__photo-div olga-photo",
       position: "Visual Designer/ Illustrator",
       photo: olga,
       email: "olga@colark.com",
@@ -26,7 +26,7 @@ function Team(props) {
     },
     {
       name: "Alina Lodahl",
-      className: "alina-photo team-member__photo-div",
+      className: "team-member__photo-div alina-photo",
       position: "Software Engineer",
       photo: alina,
       email: "alina@colark.com",
@@ -34,7 +34,7 @@ function Team(props) {
     },
     {
       name: "Lian Thompson",
-      className: "lian-photo team-member__photo-div",
+      className: "team-member__photo-div lian-photo",
       position: "Software Engineer",
       photo: lian,
       email: "lian@colark.com",
@@ -42,7 +42,7 @@ function Team(props) {
     },
     {
       name: "Claire Gallant",
-      className: "claire-photo team-member__photo-div",
+      className: "team-member__photo-div claire-photo",
       position: "Product Manager",
       photo: claire,
       email: "claire@colark.com",
@@ -50,7 +50,7 @@ function Team(props) {
     },
     {
       name: "Someone",
-      className: "someone-photo team-member__photo-div",
+      className: " team-member__photo-div someone-photo",
       position: "Software Engineer",
       photo: "",
       email: "someone@colark.com",
@@ -60,7 +60,7 @@ function Team(props) {
   let team = teamMembers.map((member, index) => {
     return(
     <div className="team-member-div" key={ index }>
-      <TeamMember data={ member } />
+      <TeamMember { ...member } />
     </div>);
   });
 
