@@ -3,6 +3,13 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
+html,body
+{
+
+    overflow-x: hidden; 
+}
+
 body {
   margin: 0;
 }

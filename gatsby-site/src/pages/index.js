@@ -1,13 +1,12 @@
 import React from 'react'
+import { Jumbotron, Button } from 'reactstrap';
 import Link from 'gatsby-link'
+//import './index.css';
+import View from '../components/View';
 
 const IndexPage = () => (
   <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <p>Hello, I'm new.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <View/>
   </div>
 )
 

@@ -1,0 +1,79 @@
+:root {
+    --navheight: 40px;
+    --colarkfontcolor: #000000;
+    --colarkfont: 'Mukta Malar', sans-serif;
+    --background: #FFFFFF;
+}
+
+.sticky-nav {
+    top: 0;
+    padding-left: 100px;
+    width: 100% !important;
+    border-bottom: 1px solid #C4C4C4;
+  }
+
+.nav-link {
+    padding: 0;
+}
+
+li.nav-item {
+    display: flex;
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--colarkfontcolor); 
+}
+
+.navbar-light .navbar-brand {
+    color: var(--colarkfontcolor);
+    font-family: var(--colarkfont);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.navbar {
+    display: flex !important;
+    justify-content: space-between !important;
+    font-family: var(--colarkfont);
+    letter-spacing: 15%;
+    font-size: 24px;
+    position: sticky !important;
+}
+
+.bg-light {
+    background-color: var(--background);
+}
+
+.dropdown-item {
+    color: var(--colarkfontcolor);
+    font-size: 1.5vw;
+    font-family: var(--colarkfont);
+}
+
+span.navbar-toggler-icon {
+    font-size: 24px;
+}
+
+.signin-button {
+    background-color: #FF6969;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-size: 24px !important;
+    height: var(--navheight);
+    padding-bottom: 5px !important;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-bottom: 0px;
+}
+
+.navbar.navbar-expand-md.navbar-light.bg-light {
+    background: rgba(0,0,0,0) !important;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    width: 900px !important;
+}
+

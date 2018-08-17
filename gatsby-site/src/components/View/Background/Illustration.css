@@ -1,0 +1,33 @@
+
+    .illustration-container {
+        top: -40px;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        overflow: hidden;
+        width: 50%;
+    }
+
+@media only screen and (max-width: 700px) {
+    .illustration-container {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .illustration-container {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .illustration-container {
+        display: none;
+    }
+}

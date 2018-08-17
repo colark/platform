@@ -1,0 +1,90 @@
+:root {
+    --navheight: 40px;
+    --colarkfontcolor: #0111FC;
+    --colarkfont: 'Mukta Malar', sans-serif;
+    --background: rgba(255,255,255,0);
+    --leftmargin: 80px;
+}
+
+
+
+div.jumbotron {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--background);
+    font-family: var(--colarkfont);
+    color: var(--colarkfontcolor);
+    margin: 0px;
+}
+
+
+h1.display-3 {
+    font-family: var(--colarkfont) !important;
+    float: left;
+    margin: 0px;
+    padding-left: var(--leftmargin);
+    font-size: 48px !important;
+    font-weight: 700;
+    letter-spacing: 15px !important;
+    width: 65%;
+}
+
+#title {
+    margin-top: 30px;
+    
+}
+
+p.lead {
+    display: flex;
+    justify-content: left;
+    padding-top: 40px;
+    padding-left: var(--leftmargin);
+    font-size: 20px !important;
+    font-weight: 400;
+    color: #C4C4C4;
+    width: 60%;
+}
+
+.btncolor {
+    background-color: var(--colarkfontcolor);
+    font-size: 1.5vw !important;
+}
+
+.btntext {
+    color: #FFFFFF;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5vw;
+}
+
+h3 {
+    font-size: 2vw;
+    display: flex;
+    justify-content: left;
+    margin-top: 6vw;
+}
+
+
+@media only screen and (max-width: 700px) {
+    p.lead {
+        width: 100%;
+    }
+
+    h1.display-3 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    p.lead {
+        width: 100%;
+    }
+
+    h1.display-3 {
+        width: 100%;
+    }
+}
