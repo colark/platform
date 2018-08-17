@@ -47,14 +47,6 @@ function Team(props) {
       photo: claire,
       email: "claire@colark.com",
       linkedin: "https://www.linkedin.com/in/claire-gallant-4494b683/"
-    },
-    {
-      name: "Someone",
-      className: " team-member__photo-div someone-photo",
-      position: "Software Engineer",
-      photo: "",
-      email: "someone@colark.com",
-      linkedin: ""
     }
   ];
   let team = teamMembers.map((member, index) => {
@@ -70,6 +62,7 @@ function Team(props) {
       <h2>Meet our team</h2>
         <div className="team-path">
             { team }
+        <div className="team-accent-dot"></div>
         </div>
       </div>
     </div>
