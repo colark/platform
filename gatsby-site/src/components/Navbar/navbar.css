@@ -78,3 +78,76 @@ span.navbar-toggler-icon {
     width: 900px !important;
 }
 
+@media only screen and (max-width: 320px) {
+    .svg {
+        margin-left: 20px;
+    }
+
+    .sticky-nav {
+        padding-left: 20px;
+    }
+
+    .navbar.navbar-expand-md.navbar-light.bg-light {
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .svg {
+        margin-left: 20px;
+    }
+
+    .sticky-nav {
+        padding-left: 20px;
+    }
+
+    .navbar.navbar-expand-md.navbar-light.bg-light {
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    .sticky-nav {
+        padding-left: 0px;
+    }
+
+    .navbar.navbar-expand-md.navbar-light.bg-light {
+        padding-left: 5px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .sticky-nav {
+        padding-left: 0px;
+    }
+
+    .navbar.navbar-expand-md.navbar-light.bg-light {
+        padding-left: 5px;
+    }
+}
+
+@media only screen and (max-width: 702px) {
+    .sticky-nav {
+        margin-left: 40px;
+    }
+    
+    .svg {
+        margin-left: 80px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .sticky-nav {
+        padding-left: 20px;
+    }
+    
+    .svg {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .sticky-nav {
+        margin-left: 20px;
+    }
+}

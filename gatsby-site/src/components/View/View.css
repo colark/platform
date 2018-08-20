@@ -6,7 +6,9 @@
     --leftmargin: 80px;
 }
 
-
+#page-container {
+    overflow: hidden;
+}
 
 div.jumbotron {
     display: flex;
@@ -69,7 +71,53 @@ h3 {
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1024px) {
+    p.lead {
+        width: 50%;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    h1.display-3 {
+        width: 50%;
+        margin-left: 20px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 796px) {
+    p.lead {
+        width: 50%;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    h1.display-3 {
+        width: 50%;
+        margin-left: 20px;
+        text-align: center;
+        font-size: 36px !important;
+    }
+}
+
+
+@media only screen and (max-width: 704px) {
+    p.lead {
+        width: 100%;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    h1.display-3 {
+        width: 100%;
+        margin-left: 20px;
+        font-size: 34px !important;
+    }
+}
+
+
+
+@media only screen and (max-width: 400px) {
     p.lead {
         width: 100%;
     }
@@ -79,12 +127,92 @@ h3 {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
     p.lead {
         width: 100%;
+        padding-left: 20px;
+        text-align: center;
     }
 
     h1.display-3 {
         width: 100%;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .jumbotron {
+        padding: 1rem .75rem;
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    p.lead {
+        width: 100%;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    h1.display-3 {
+        width: 100%;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .jumbotron {
+        padding: 1rem .75rem;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    p.lead {
+        width: 100%;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    h1.display-3 {
+        width: 110%;
+        padding-left: 0px;
+        font-size: 34px !important;
+        text-align: center;
+    }
+
+    div.jumbotron {
+        padding-left: 7px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    p.lead {
+        width: 100%;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    h1.display-3 {
+        width: 110%;
+        padding-left: 0px;
+        font-size: 35px !important;
+        text-align: center;
+    }
+
+    div.jumbotron {
+        padding-left: 7px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    p.lead {
+        width: 100%;
+        margin: 20px;
+        text-align: center;
+        padding: 0px !important;
+    }
+
+    h1.display-3 {
+        width: 110%;
+        margin-left: 20px;
+        font-size: 35px !important;
+        text-align: center;
     }
 }

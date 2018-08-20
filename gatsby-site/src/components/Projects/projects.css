@@ -18,10 +18,19 @@
     border-radius: 10px;
 }
 
+
 @media only screen and (max-width: 900px) {
     .project {
         width: 100%;
         margin: 0 auto;
         display: block;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .project {
+        text-align: left;
+        padding-left: 0;
     }
 }
