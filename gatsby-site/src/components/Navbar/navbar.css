@@ -7,11 +7,18 @@
 
 .sticky-nav {
     top: 0;
-    padding-left: 100px;
     width: 100% !important;
     border-bottom: 1px solid #C4C4C4;
     background: var(--background);
   }
+
+a.navbar-brand {
+    width: 100%;
+}
+
+#logo {
+    width: 27%;
+}
 
 .nav-link {
     padding: 0;
@@ -73,8 +80,7 @@ span.navbar-toggler-icon {
 
 .navbar.navbar-expand-md.navbar-light.bg-light {
     background: var(--background) !important;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    padding: 0;
     width: 100%;
 }
 
@@ -119,10 +125,6 @@ span.navbar-toggler-icon {
         margin: 0 auto !important;
         width: 100% !important;
     }
-
-    .navbar.navbar-expand-md.navbar-light.bg-light {
-        padding-left: 5px;
-    }
 }
 
 @media only screen and (max-width: 702px) {
@@ -148,6 +150,13 @@ span.navbar-toggler-icon {
 @media only screen and (max-width: 1024px) {
     .sticky-nav {
         margin: 0 auto;
-        padding-left: 60px;
+    }
+    
+    a.navbar-brand {
+        width: 100%;
+    }
+    
+    #logo {
+        width: 30%;
     }
 }

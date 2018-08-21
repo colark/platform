@@ -26,10 +26,9 @@ div.jumbotron {
 h1.display-3 {
     font-family: var(--colarkfont) !important;
     text-align: left !important;
-    margin-left: var(--leftmargin) !important;
-    font-size: 48px !important;
+    font-size: 65px !important;
     font-weight: 700;
-    letter-spacing: 15px !important;
+    letter-spacing: 10px !important;
     width: 65% !important;
 }
 
@@ -42,8 +41,7 @@ p.lead {
     display: flex;
     justify-content: left;
     padding-top: 40px;
-    padding-left: var(--leftmargin);
-    font-size: 20px !important;
+    font-size: 25px !important;
     font-weight: 400;
     color: #C4C4C4;
     width: 60%;
