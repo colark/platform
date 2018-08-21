@@ -109,13 +109,15 @@ span.navbar-toggler-icon {
 @media only screen and (max-width: 411px) {
     div.sticky-nav {
         border-bottom: 1px solid #C4C4C4;
+        width: 100% !important;
         margin: 0 auto;
     }
 }
 
 @media only screen and (max-width: 414px) {
     .sticky-nav {
-        padding-left: 0px;
+        margin: 0 auto !important;
+        width: 100% !important;
     }
 
     .navbar.navbar-expand-md.navbar-light.bg-light {

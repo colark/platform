@@ -130,16 +130,18 @@ h3 {
 
 @media only screen and (max-width: 414px) {
     p.lead {
-        width: 100%;
-        margin: 0px;
-        text-align: center;
-        font-size: 30px !important;
+        margin-left: 0px;
+        text-align: left;
+        padding-left: 0;
+        font-size: 25px !important;
     }
 
     h1.display-3 {
-        margin: 0 auto;
-        font-size: 45px !important;
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+        position: relative;
         text-align: center;
+        font-size: 50px !important;
     }
 }
 
