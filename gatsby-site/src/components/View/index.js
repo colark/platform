@@ -17,7 +17,6 @@ const View = (props) => {
         </div>
         <p className="lead">Through expert guidance and distraction-free tech, working with Colark allows a company to fous on what's unique while also establishing a technical foundation that will scale to millions of users.</p>
       </Jumbotron>
-      <Projects />
     </div>
   );
 };

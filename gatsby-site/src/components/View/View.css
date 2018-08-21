@@ -101,6 +101,25 @@ h3 {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    p.lead {
+        margin-left: 0px;
+        width:100%;
+        text-align: left;
+        padding-left: 0;
+        font-size: 30px !important;
+    }
+
+    h1.display-3 {
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+        position: relative;
+        text-align: center;
+        font-size: 50px !important;
+        width: 100% !important;
+    }
+}
+
 
 @media only screen and (max-width: 704px) {
     p.lead {
