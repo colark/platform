@@ -192,7 +192,7 @@ textarea {
 html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 * {
   box-sizing: inherit;
@@ -414,7 +414,7 @@ pre {
   line-height: 1.42;
   background: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
-  overflow: auto;
+  overflow: hidden;
   word-wrap: normal;
   padding: 1.45rem;
 }

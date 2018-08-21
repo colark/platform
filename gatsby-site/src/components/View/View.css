@@ -163,21 +163,38 @@ h3 {
 
 @media only screen and (max-width: 375px) {
     p.lead {
-        margin: 0 auto;
-        text-align: center;
+        margin-left: 0px;
+        text-align: left;
+        padding-left: 0;
         font-size: 25px !important;
-        position: relative;
     }
 
     h1.display-3 {
-        margin: 0 auto;
-        font-size: 30px !important;
-        text-align: center;
+        margin-left: 0px !important;
+        padding-left: 0px !important;
         position: relative;
+        text-align: center;
+        font-size: 45px !important;
+    }
+}
+@media only screen and (max-width: 360px) {
+    p.lead {
+        margin-left: 0px;
+        text-align: left;
+        padding-left: 0;
+        font-size: 20px !important;
+    }
+
+    h1.display-3 {
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+        position: relative;
+        text-align: center;
+        font-size: 35px !important;
     }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 320px) {
     p.lead {
         margin-left: 0px;
         text-align: left;
