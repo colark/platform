@@ -20,6 +20,18 @@
 }
 
 
+@media only screen and (max-width: 1024px) {
+    .project {
+        text-align: center;
+        padding: 50px;
+        width: 40%;
+    }
+
+    div.project-container {
+        padding: 0;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     .project {
         width: 100%;

@@ -147,6 +147,7 @@ span.navbar-toggler-icon {
 
 @media only screen and (max-width: 1024px) {
     .sticky-nav {
-        margin-left: 20px;
+        margin: 0 auto;
+        padding-left: 60px;
     }
 }
