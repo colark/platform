@@ -18,8 +18,10 @@ div.jumbotron {
     font-family: var(--colarkfont);
     color: var(--colarkfontcolor);
     margin: 0 auto;
-    width: 90% !important;
+    width: 80% !important;
     overflow: hidden !important;
+    padding: 0;
+    margin-top: 60px;
 }
 
 

@@ -80,36 +80,37 @@ span.navbar-toggler-icon {
 
 .navbar.navbar-expand-md.navbar-light.bg-light {
     background: var(--background) !important;
+    margin: 0 auto;
+    width: 80% !important;
     padding: 0;
-    width: 100%;
 }
 
-@media only screen and (max-width: 320px) {
-    .svg {
-        margin-left: 20px;
-    }
-
-    .sticky-nav {
-        padding-left: 20px;
-    }
-
-    .navbar.navbar-expand-md.navbar-light.bg-light {
-        padding-left: 20px;
-    }
-}
 
 @media only screen and (max-width: 360px) {
-    div.sticky-nav {
-        border-bottom: 1px solid #C4C4C4;
+    .sticky-nav {
+        width: 100%;
+    }
+    
+    .navbar.navbar-expand-md.navbar-light.bg-light {
+        width: 90%;
         margin: 0 auto;
     }
+}
 
-    svg {
-        width: 80px !important;
-        margin: 0 auto !important;
-        width: 60% !important;
+@media only screen and (max-width: 375px) {
+    .sticky-nav {
+        width: 100%;
+        margin: 0 auto;
     }
-
+    
+    a.navbar-brand {
+        width: 90%;
+        margin: 0;
+    }
+    
+    #logo {
+        margin: 0 auto !important;
+    }
 }
 
 @media only screen and (max-width: 411px) {
@@ -129,34 +130,49 @@ span.navbar-toggler-icon {
 
 @media only screen and (max-width: 702px) {
     .sticky-nav {
-        margin-left: 40px;
+        margin: 0 auto;
     }
     
-    .svg {
-        margin-left: 80px;
+    a.navbar-brand {
+        width: 100% ;
+    }
+    
+    #logo {
+        width: 30% !important;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .sticky-nav {
-        padding-left: 20px;
+        width: 100%;
     }
     
-    .svg {
-        margin-left: 20px;
+    .navbar.navbar-expand-md.navbar-light.bg-light {
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
 @media only screen and (max-width: 1024px) {
     .sticky-nav {
-        margin: 0 auto;
-    }
-    
-    a.navbar-brand {
         width: 100%;
     }
     
-    #logo {
-        width: 30%;
+    .navbar.navbar-expand-md.navbar-light.bg-light {
+        width: 80% !important;
+        margin: 0 auto;
+        padding-right: 275px;
+    }
+}
+
+@media only screen and (max-width: 1394px) {
+    .sticky-nav {
+        width: 100%;
+    }
+    
+    .navbar.navbar-expand-md.navbar-light.bg-light {
+        width: 80% !important;
+        margin: 0 auto;
+        padding-right: 575px;
     }
 }
