@@ -143,6 +143,23 @@ h3 {
     }
 }
 
+@media only screen and (max-width: 411px) {
+    p.lead {
+        margin-left: 0px;
+        text-align: left;
+        padding-left: 0;
+        font-size: 25px !important;
+    }
+
+    h1.display-3 {
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+        position: relative;
+        text-align: center;
+        font-size: 45px !important;
+    }
+}
+
 
 @media only screen and (max-width: 375px) {
     p.lead {
@@ -165,7 +182,7 @@ h3 {
         margin-left: 0px;
         text-align: left;
         padding-left: 0;
-        font-size: 15px !important;
+        font-size: 20px !important;
     }
 
     h1.display-3 {
@@ -173,6 +190,6 @@ h3 {
         padding-left: 0px !important;
         position: relative;
         text-align: center;
-        font-size: 30px !important;
+        font-size: 35px !important;
     }
 }
