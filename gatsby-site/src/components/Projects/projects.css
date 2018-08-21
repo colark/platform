@@ -10,6 +10,7 @@
     display: inline-block;
     width: 50%;
     padding: 50px;
+    text-align: center;
 }
 
 .image {
@@ -31,6 +32,55 @@
 @media only screen and (max-width: 768px) {
     .project {
         text-align: left;
-        padding-left: 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 411px) {
+    .project {
+        text-align: center;
+        padding: 0;
+    }
+
+    div.project-container {
+        padding: 0;
+    }
+
+    img.image {
+        width: 300px;
+        margin-top: 100px !important;
+    }
+}
+
+@media only screen and (max-width: 375x) {
+    .project {
+        text-align: center;
+        padding: 0;
+    }
+
+    div.project-container {
+        padding: 0;
+    }
+
+    img.image {
+        width: 250px;
+        margin-top: 40px !important;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .project {
+        text-align: center;
+        padding: 0;
+    }
+
+    div.project-container {
+        padding: 0;
+    }
+
+    img.image {
+        width: 250px;
+        margin-top: 40px !important;
     }
 }

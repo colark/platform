@@ -75,7 +75,7 @@ span.navbar-toggler-icon {
     background: var(--background) !important;
     padding-bottom: 0px;
     padding-top: 0px;
-    width: 900px !important;
+    width: 100%;
 }
 
 @media only screen and (max-width: 320px) {
@@ -93,26 +93,23 @@ span.navbar-toggler-icon {
 }
 
 @media only screen and (max-width: 360px) {
-    .svg {
-        margin-left: 20px;
+    div.sticky-nav {
+        border-bottom: 1px solid #C4C4C4;
+        margin: 0 auto;
     }
 
-    .sticky-nav {
-        padding-left: 20px;
+    svg {
+        width: 80px !important;
+        margin: 0 auto !important;
+        width: 60% !important;
     }
 
-    .navbar.navbar-expand-md.navbar-light.bg-light {
-        padding-left: 20px;
-    }
 }
 
 @media only screen and (max-width: 411px) {
-    .sticky-nav {
-        padding-left: 0px;
-    }
-
-    .navbar.navbar-expand-md.navbar-light.bg-light {
-        padding-left: 5px;
+    div.sticky-nav {
+        border-bottom: 1px solid #C4C4C4;
+        margin: 0 auto;
     }
 }
 

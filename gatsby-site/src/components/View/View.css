@@ -17,19 +17,20 @@ div.jumbotron {
     background-color: var(--background);
     font-family: var(--colarkfont);
     color: var(--colarkfontcolor);
-    margin: 0px;
+    margin: 0 auto;
+    width: 90% !important;
+    overflow: hidden !important;
 }
 
 
 h1.display-3 {
     font-family: var(--colarkfont) !important;
-    float: left;
-    margin: 0px;
-    padding-left: var(--leftmargin);
+    text-align: left !important;
+    margin-left: var(--leftmargin) !important;
     font-size: 48px !important;
     font-weight: 700;
     letter-spacing: 15px !important;
-    width: 65%;
+    width: 65% !important;
 }
 
 #title {
@@ -130,89 +131,48 @@ h3 {
 @media only screen and (max-width: 414px) {
     p.lead {
         width: 100%;
-        padding-left: 20px;
+        margin: 0px;
         text-align: center;
+        font-size: 30px !important;
     }
 
     h1.display-3 {
-        width: 100%;
-        padding-left: 20px;
+        margin: 0 auto;
+        font-size: 45px !important;
         text-align: center;
-    }
-
-    .jumbotron {
-        padding: 1rem .75rem;
     }
 }
 
-@media only screen and (max-width: 411px) {
+
+@media only screen and (max-width: 375px) {
     p.lead {
-        width: 100%;
-        padding-left: 20px;
+        margin: 0 auto;
         text-align: center;
+        font-size: 25px !important;
+        position: relative;
     }
 
     h1.display-3 {
-        width: 100%;
-        padding-left: 20px;
+        margin: 0 auto;
+        font-size: 30px !important;
         text-align: center;
-    }
-
-    .jumbotron {
-        padding: 1rem .75rem;
-    }
-}
-
-@media only screen and (max-width: 370px) {
-    p.lead {
-        width: 100%;
-        padding-left: 20px;
-        text-align: center;
-    }
-
-    h1.display-3 {
-        width: 110%;
-        padding-left: 0px;
-        font-size: 34px !important;
-        text-align: center;
-    }
-
-    div.jumbotron {
-        padding-left: 7px;
+        position: relative;
     }
 }
 
 @media only screen and (max-width: 360px) {
     p.lead {
-        width: 100%;
-        padding-left: 20px;
-        text-align: center;
+        margin-left: 0px;
+        text-align: left;
+        padding-left: 0;
+        font-size: 15px !important;
     }
 
     h1.display-3 {
-        width: 110%;
-        padding-left: 0px;
-        font-size: 35px !important;
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+        position: relative;
         text-align: center;
-    }
-
-    div.jumbotron {
-        padding-left: 7px;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    p.lead {
-        width: 100%;
-        margin: 20px;
-        text-align: center;
-        padding: 0px !important;
-    }
-
-    h1.display-3 {
-        width: 110%;
-        margin-left: 20px;
-        font-size: 35px !important;
-        text-align: center;
+        font-size: 30px !important;
     }
 }
