@@ -5,11 +5,12 @@ import Team from '../components/team/team'
 import View from '../components/View';
 import Projects from '../components/Projects/index.js';
 
+
 const IndexPage = () => (
   <div>
     <View/>
     <Projects />
-    {/* <Team/> */}
+    <Team/>
   </div>
 )
 
