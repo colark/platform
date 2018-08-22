@@ -3,12 +3,12 @@ import { Jumbotron, Button } from 'reactstrap';
 import Link from 'gatsby-link'
 import Team from '../components/team/team'
 import View from '../components/View';
-import Partner from '../components/partner/Partner';
+import Partners from '../components/partners/Partners';
 
 const IndexPage = () => (
   <div>
     <View/>
-    <Partner/>
+    <Partners/>
     <Team/>
   </div>
 )
