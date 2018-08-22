@@ -16,6 +16,7 @@ div.jumbotron {
     font-family: var(--colarkfont);
     color: var(--colarkfontcolor);
     margin: 0px;
+    height: 706px;
 }
 
 
@@ -32,7 +33,6 @@ h1.display-3 {
 
 #title {
     margin-top: 30px;
-    
 }
 
 p.lead {
