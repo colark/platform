@@ -1,5 +1,4 @@
 import React from 'react';
-import './projects.css';
 import Rectangle from './BackgroundWave/Rectangle.js';
 import Iceberg from './BackgroundWave/Iceberg/index.js';
 

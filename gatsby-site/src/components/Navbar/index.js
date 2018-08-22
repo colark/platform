@@ -13,7 +13,7 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 import "./navbar.css";
-//import "./logo.png";
+
 
 export default class ReactNavbar extends React.Component {
   constructor(props) {
@@ -35,7 +35,7 @@ export default class ReactNavbar extends React.Component {
 
         <Navbar color="light" light expand="md">
         <NavbarBrand href="/">
-          <svg width="145" height="50" viewBox="0 0 145 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg id="logo" width="145" height="50" viewBox="0 0 145 50" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="144" height="46" fill-opacity="0" transform="translate(1 2)"/>
           <path d="M26.1152 38.11V11.89L51 16.4785V34.0459L26.1152 38.11Z" fill="#0111FC"/>
           <path d="M1 48V2L47.083 10.05V40.87L1 48Z" stroke="black" stroke-width="2"/>
@@ -61,7 +61,7 @@ export default class ReactNavbar extends React.Component {
                 <NavLink href="/components/">Team</NavLink>
               </NavItem>
               <NavItem>
-                <button>Sign in</button>
+                <button className="signin-button">Sign in</button>
               </NavItem>
             </Nav>
           </Collapse> */}

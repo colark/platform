@@ -192,7 +192,7 @@ textarea {
 html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 * {
   box-sizing: inherit;
@@ -207,7 +207,7 @@ body {
   color: hsla(0, 0%, 0%, 0.8);
   font-family: georgia, serif;
   font-weight: normal;
-  word-wrap: break-word;
+  word-wrap: normal;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -414,7 +414,7 @@ pre {
   line-height: 1.42;
   background: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
-  overflow: auto;
+  overflow: hidden;
   word-wrap: normal;
   padding: 1.45rem;
 }
