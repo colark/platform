@@ -29,10 +29,10 @@ div.jumbotron {
 h1.display-3 {
     font-family: var(--colarkfont) !important;
     text-align: left !important;
-    font-size: 65px !important;
+    font-size: 60px !important;
     font-weight: 700;
     letter-spacing: 10px !important;
-    width: 65% !important;
+    width: 100% !important;
 }
 
 p.lead {
@@ -60,26 +60,25 @@ p.lead {
     font-size: 1.5vw;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1400px) {
     p.lead {
         width:70%;
         font-size: 30px !important;
     }
 
     h1.display-3 {
-        font-size: 40px !important;
-        width: 90%;
+        width: 60% !important;
+        font-size: 55px !important;
     }
 }
 
-@media only screen and (min-width: 815px) {
+@media only screen and (min-width: 875px) {
     p.lead {
         width: 70% !important;
     }
 
     h1.display-3 {
         width: 80%;
-        font-size: 40px !important;
     }
 }
 
