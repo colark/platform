@@ -33,12 +33,6 @@ h1.display-3 {
     font-weight: 700;
     letter-spacing: 10px !important;
     width: 65% !important;
-    margin-right: 0px !important;
-}
-
-#title {
-    margin-top: 30px;
-    border: 3px solid green;
 }
 
 p.lead {
@@ -48,6 +42,7 @@ p.lead {
     font-size: 25px !important;
     font-weight: 400;
     color: #C4C4C4;
+    width: 50% !important;
 }
 
 .btncolor {
@@ -65,29 +60,13 @@ p.lead {
     font-size: 1.5vw;
 }
 
-h3 {
-    font-size: 2vw;
-    display: flex;
-    justify-content: left;
-    margin-top: 6vw;
-}
-
-
 @media only screen and (max-width: 1024px) {
     p.lead {
-        margin-left: 0px;
         width:70%;
-        text-align: left;
-        padding-left: 0;
         font-size: 30px !important;
     }
 
     h1.display-3 {
-        margin-left: 0px !important;
-        margin-right: 0px !important;
-        padding-left: 0px !important;
-        position: relative;
-        text-align: center;
         font-size: 40px !important;
         width: 90%;
     }
@@ -95,32 +74,22 @@ h3 {
 
 @media only screen and (min-width: 815px) {
     p.lead {
-        width: 60%;
-        margin-left: 20px;
-        text-align: center;
+        width: 70% !important;
     }
 
     h1.display-3 {
-        width: 60%;
-        margin-left: 20px;
-        font-size: 34px !important;
+        width: 80%;
+        font-size: 40px !important;
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 788px) {
     p.lead {
-        margin-left: 0px;
-        width:100%;
-        text-align: left;
-        padding-left: 0;
+        width:100% !important;
         font-size: 30px !important;
     }
 
     h1.display-3 {
-        margin-left: 0px !important;
-        padding-left: 0px !important;
-        position: relative;
-        text-align: center;
         font-size: 50px !important;
         width: 100% !important;
     }
@@ -130,50 +99,20 @@ h3 {
 @media only screen and (max-width: 600px) {
     p.lead {
         width: 100%;
-        margin-left: 20px;
-        text-align: center;
     }
 
     h1.display-3 {
         width: 100%;
-        margin-left: 20px;
-        font-size: 34px !important;
+        font-size: 45px !important;
     }
 }
 
 @media only screen and (max-width: 414px) {
     p.lead {
-        margin-left: 0px;
-        text-align: left;
-        padding-left: 0;
         font-size: 25px !important;
     }
 
     h1.display-3 {
-        margin-left: 0px !important;
-        padding-left: 0px !important;
-        position: relative;
-        text-align: center;
-        font-size: 50px !important;
+        font-size: 45px !important;
     }
 }
-
-
-@media only screen and (min-width: 414px) {
-    p.lead {
-        margin-left: 0px;
-        text-align: left;
-        padding-left: 0;
-        font-size: 25px !important;
-    }
-
-    h1.display-3 {
-        margin-left: 0px !important;
-        padding-left: 0px !important;
-        position: relative;
-        text-align: center;
-        font-size: 50px !important;
-    }
-}
-
-
