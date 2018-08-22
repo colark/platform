@@ -59,7 +59,7 @@ function Team(props) {
   return(
     <div>
       <div className="team" id="team">
-      <h2>Meet our team</h2>
+        <h2 className="team__title">Meet our team</h2>
         <div className="team-path">
             { team }
         <div className="team-accent-dot"></div>
