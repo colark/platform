@@ -6,7 +6,10 @@
     --leftmargin: 80px;
 }
 
-
+#page-container {
+    overflow: hidden;
+    width: 100%;
+}
 
 div.jumbotron {
     display: flex;
@@ -15,35 +18,36 @@ div.jumbotron {
     background-color: var(--background);
     font-family: var(--colarkfont);
     color: var(--colarkfontcolor);
-    margin: 0px;
+    margin: 0 auto;
+    width: 80% !important;
+    overflow: hidden !important;
+    padding: 0;
+    margin-top: 140px !important;
 }
 
 
 h1.display-3 {
     font-family: var(--colarkfont) !important;
-    float: left;
-    margin: 0px;
-    padding-left: var(--leftmargin);
-    font-size: 48px !important;
+    text-align: left !important;
+    font-size: 65px !important;
     font-weight: 700;
-    letter-spacing: 15px !important;
-    width: 65%;
+    letter-spacing: 10px !important;
+    width: 65% !important;
+    margin-right: 0px !important;
 }
 
 #title {
     margin-top: 30px;
-    
+    border: 3px solid green;
 }
 
 p.lead {
     display: flex;
     justify-content: left;
     padding-top: 40px;
-    padding-left: var(--leftmargin);
-    font-size: 20px !important;
+    font-size: 25px !important;
     font-weight: 400;
     color: #C4C4C4;
-    width: 60%;
 }
 
 .btncolor {
@@ -69,22 +73,107 @@ h3 {
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1024px) {
+    p.lead {
+        margin-left: 0px;
+        width:70%;
+        text-align: left;
+        padding-left: 0;
+        font-size: 30px !important;
+    }
+
+    h1.display-3 {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        padding-left: 0px !important;
+        position: relative;
+        text-align: center;
+        font-size: 40px !important;
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 815px) {
+    p.lead {
+        width: 60%;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    h1.display-3 {
+        width: 60%;
+        margin-left: 20px;
+        font-size: 34px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    p.lead {
+        margin-left: 0px;
+        width:100%;
+        text-align: left;
+        padding-left: 0;
+        font-size: 30px !important;
+    }
+
+    h1.display-3 {
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+        position: relative;
+        text-align: center;
+        font-size: 50px !important;
+        width: 100% !important;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
     p.lead {
         width: 100%;
+        margin-left: 20px;
+        text-align: center;
     }
 
     h1.display-3 {
         width: 100%;
+        margin-left: 20px;
+        font-size: 34px !important;
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
     p.lead {
-        width: 100%;
+        margin-left: 0px;
+        text-align: left;
+        padding-left: 0;
+        font-size: 25px !important;
     }
 
     h1.display-3 {
-        width: 100%;
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+        position: relative;
+        text-align: center;
+        font-size: 50px !important;
     }
 }
+
+
+@media only screen and (min-width: 414px) {
+    p.lead {
+        margin-left: 0px;
+        text-align: left;
+        padding-left: 0;
+        font-size: 25px !important;
+    }
+
+    h1.display-3 {
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+        position: relative;
+        text-align: center;
+        font-size: 50px !important;
+    }
+}
+
+

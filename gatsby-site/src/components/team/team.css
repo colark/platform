@@ -10,6 +10,7 @@
   margin: 0 auto;
   height: 600px;
   background-color: rgba(255, 255, 255, 0);
+  overflow: hidden !important;
 }
 
 h2 {
@@ -46,7 +47,6 @@ h2 {
 
 @media only screen and (max-width: 800px) {
   .team {
-    right: -9729px;
   }
   .team-path {
     margin-top: 200px;
