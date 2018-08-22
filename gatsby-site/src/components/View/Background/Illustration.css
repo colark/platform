@@ -25,7 +25,6 @@
         right: 0;
         z-index: -1;
         width: 30%;
-        display: none;
     }
 }
 
@@ -35,12 +34,6 @@
         right: 0;
         z-index: -1;
         width: 20%;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    .illustration-container {
-        display: none;
     }
 }
 

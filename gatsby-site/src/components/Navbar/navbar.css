@@ -17,7 +17,7 @@ a.navbar-brand {
 }
 
 #logo {
-    width: 27%;
+    width: 200px;
 }
 
 .nav-link {
@@ -81,74 +81,18 @@ span.navbar-toggler-icon {
 .navbar.navbar-expand-md.navbar-light.bg-light {
     background: var(--background) !important;
     margin: 0 auto;
-    width: 80% !important;
+    width: 85% !important;
     padding: 0;
 }
 
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 1394px) {
     .sticky-nav {
         width: 100%;
     }
     
     .navbar.navbar-expand-md.navbar-light.bg-light {
-        width: 90%;
-        margin: 0 auto;
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    .sticky-nav {
-        width: 100%;
-        margin: 0 auto;
-    }
-    
-    a.navbar-brand {
-        width: 90%;
-        margin: 0;
-    }
-    
-    #logo {
-        margin: 0 auto !important;
-    }
-}
-
-@media only screen and (max-width: 411px) {
-    div.sticky-nav {
-        border-bottom: 1px solid #C4C4C4;
-        width: 100% !important;
-        margin: 0 auto;
-    }
-}
-
-@media only screen and (max-width: 414px) {
-    .sticky-nav {
-        margin: 0 auto !important;
-        width: 100% !important;
-    }
-}
-
-@media only screen and (max-width: 702px) {
-    .sticky-nav {
-        margin: 0 auto;
-    }
-    
-    a.navbar-brand {
-        width: 100% ;
-    }
-    
-    #logo {
-        width: 30% !important;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .sticky-nav {
-        width: 100%;
-    }
-    
-    .navbar.navbar-expand-md.navbar-light.bg-light {
-        width: 80%;
+        width: 85% !important;
         margin: 0 auto;
     }
 }
@@ -159,20 +103,29 @@ span.navbar-toggler-icon {
     }
     
     .navbar.navbar-expand-md.navbar-light.bg-light {
-        width: 80% !important;
+        width: 85% !important;
         margin: 0 auto;
-        padding-right: 275px;
     }
 }
 
-@media only screen and (max-width: 1394px) {
+@media only screen and (max-width: 830px) {
     .sticky-nav {
         width: 100%;
     }
     
     .navbar.navbar-expand-md.navbar-light.bg-light {
-        width: 80% !important;
+        width: 90% !important;
         margin: 0 auto;
-        padding-right: 575px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .sticky-nav {
+        width: 100%;
+    }
+    
+    .navbar.navbar-expand-md.navbar-light.bg-light {
+        width: 95% !important;
+        margin: 0 auto;
     }
 }
