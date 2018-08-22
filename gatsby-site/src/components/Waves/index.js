@@ -3,7 +3,7 @@ import './projects.css';
 import Rectangle from './BackgroundWave/Rectangle.js';
 import Iceberg from './BackgroundWave/Iceberg/index.js';
 
-const Projects = (props) => {
+const Waves = (props) => {
   return (
     <div>
       <Rectangle/>
@@ -20,5 +20,5 @@ const Projects = (props) => {
   );
 };
 
-export default Projects;
+export default Waves;
 

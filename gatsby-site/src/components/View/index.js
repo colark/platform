@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import './View.css';
 import Illustration from './Background/Illustration.js';
 import ReactNavbar from '../Navbar/index.js';
-import Projects from '../Projects/index.js';
+import Waves from '../Waves/index.js';
 
 const View = (props) => {
   return (
@@ -17,7 +17,7 @@ const View = (props) => {
         </div>
         <p className="lead">Teams that consistently perform at the highest levels are able to come together and be unified across the organization - staff, players, coaches, management, and ownership. When everyone is on the same page, trust develops and teams can grow and succeed together.</p>
       </Jumbotron>
-      <Projects />
+      <Waves />
     </div>
   );
 };
