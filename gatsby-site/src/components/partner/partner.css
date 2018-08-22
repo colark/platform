@@ -1,3 +1,30 @@
+:root {
+  --background: #FFF;
+  --colarkblue: #0111FC;
+  --colarklightblue: #E3E5FC;
+}
+
+.partner-container {
+  height: 800px;
+  background-color: var(--colarkblue);
+}
+
+.partner {
+  display: inline-block;
+  margin: 400px auto;
+}
+
+.illustration2-container {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 50%;
+}
+
+.illustration2-container svg{
+    height: 706px;
+}
+
 li {
   list-style: none;
   display: inline-block;
@@ -5,9 +32,10 @@ li {
 
 .partner {
   background-color: white;
-  border: 1px solid #eee;
-  height: 100px;
-  width: 300px;
+  border: 1px solid white;
+  border-radius: 6px;
+  height: 75px;
+  width: 200px;
   padding: 10px;
 }
 
@@ -21,19 +49,9 @@ img.partner__logo {
 .partner__info, .partner__logo-div {
 }
 
-.partner__info {
-  display: inline-block;
-  text-align: left;
-  padding: 0;
-}
 
-.partner__name, .partner__website {
-  margin: 5px 10px;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 200;
-}
-
-.partner__name {
-  font-weight: 600;
+@media only screen and (max-width: 800px) {
+    .illustration2-container {
+        display: none;
+    }
 }
