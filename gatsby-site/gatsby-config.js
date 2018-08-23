@@ -3,4 +3,5 @@ module.exports = {
     title: 'Colark',
   },
   plugins: ['gatsby-plugin-react-helmet'],
+  pathPrefix: `/gatsby-site`,
 }

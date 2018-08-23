@@ -4,7 +4,6 @@ import Link from 'gatsby-link'
 import './View.css';
 import Illustration from './Background/Illustration.js';
 import ReactNavbar from '../Navbar/index.js';
-import Projects from '../Projects/index.js';
 
 const View = (props) => {
   return (
@@ -12,12 +11,9 @@ const View = (props) => {
       <Illustration />
       <ReactNavbar />
       <Jumbotron>
-        <div id="title">
           <h1 className="display-3">Building <br></br> better software, together.</h1>
-        </div>
-        <p className="lead">Teams that consistently perform at the highest levels are able to come together and be unified across the organization - staff, players, coaches, management, and ownership. When everyone is on the same page, trust develops and teams can grow and succeed together.</p>
+        <p className="lead">Through expert guidance and distraction-free tech, working with Colark allows a company to focus on what's unique while also establishing a technical foundation that will scale to millions of users.</p>
       </Jumbotron>
-      <Projects />
     </div>
   );
 };

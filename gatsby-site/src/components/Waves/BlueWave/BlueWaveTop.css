@@ -1,0 +1,11 @@
+.wave-container-top {
+    height: 400px;
+    top: 800px;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.blue-wave-top {
+    margin-top: 100px;
+}
