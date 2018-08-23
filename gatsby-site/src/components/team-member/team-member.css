@@ -101,7 +101,7 @@ div.team-member__photo-div:active .tooltiptext {
     display: inline-block;
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1300px) {
   img.team-member__photo, .team-accent-dot {
     width: 120px;
     height: 120px;
@@ -128,7 +128,7 @@ div.team-member__photo-div:active .tooltiptext {
 
 }
 
-@media only screen and (min-width: 1700px) {
+@media only screen and (min-width: 1300px) {
   img.team-member__photo, .team-accent-dot {
     width: 150px;
     height: 150px;
@@ -140,7 +140,7 @@ div.team-member__photo-div:active .tooltiptext {
   }
 
   .claire-photo {
-    left: 550px;
+    left: 460px;
   }
 
   .tooltiptext {
