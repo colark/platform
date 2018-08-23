@@ -9,7 +9,7 @@ const IndexPage = () => (
   <div>
     <View/>
     <Projects />
-    {/* <Team/> */}
+    <Team/>
   </div>
 )
 
