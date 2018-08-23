@@ -1,0 +1,15 @@
+.wave-container {
+    position: absolute;
+}
+
+.purple-wave {
+    top: -550px;
+    z-index: -2 !important;
+    position: absolute;
+}
+
+.blue-wave {
+    position: absolute;
+    top: -470px !important;
+    z-index: -1;
+}
