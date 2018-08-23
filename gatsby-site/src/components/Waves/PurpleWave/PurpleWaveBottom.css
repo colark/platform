@@ -1,0 +1,6 @@
+.wave-container-bottom {
+    z-index: -2;
+    position: absolute;
+    overflow: hidden;
+    height: 800px;
+}
