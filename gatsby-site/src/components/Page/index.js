@@ -4,7 +4,7 @@ import "./Page.css";
 
  export default function Page(props) {
     return(
-        <div>
+        <div className="page-container">
             <h1 className="page_title">{props.title}</h1>
             <a href={props.website} target="__blank">
                 <img src={props.logo} className="logo" />

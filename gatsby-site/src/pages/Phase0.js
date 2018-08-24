@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar';
-import PhaseZero from '../components/Phase0';
+import PhaseZero from '../components/Pages/Phase0.js';
 
 const Phase0 = () => (
   <div>

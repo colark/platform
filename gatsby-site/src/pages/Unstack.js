@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import UnstackPage from '../components/Unstack';
+import UnstackPage from '../components/Pages/Unstack.js';
 import Navbar from '../components/Navbar';
 
 
