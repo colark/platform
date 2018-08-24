@@ -7,9 +7,10 @@
 }
 
 .page-container {
+    margin: 0 auto;
     margin-top: 60px;
     text-align: center;
-    width: 100%;
+    width: 80%;
 }
 
 .page {
@@ -43,6 +44,7 @@ img.logo {
 @media only screen and (max-width: 535px) {
     .page-container {
         width: 80% !important;
+        margin-left: 60px;
     }
     .img.logo {
       margin: 0 auto;
