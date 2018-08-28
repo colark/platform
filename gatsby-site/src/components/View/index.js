@@ -7,7 +7,7 @@ import Projects from '../Projects/index.js';
 
 const View = (props) => {
   return (
-    <div id="page-container">
+    <div id="view-container">
       <Illustration/>
       <Jumbotron>
         <div id="title">

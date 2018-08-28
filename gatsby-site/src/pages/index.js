@@ -4,13 +4,13 @@ import Link from 'gatsby-link'
 import Team from '../components/team/team'
 import View from '../components/View';
 import ReactNavbar from '../components/Navbar';
-import BackgroundWave from '../components/BackgroundWave';
+import BlueWaveBottom from '../components/blue-wave-bottom/BlueWaveBottom';
 
 const IndexPage = () => (
   <div>
     <ReactNavbar />
     <View/>
-    <BackgroundWave />
+    <BlueWaveBottom/>
     <Team/>
   </div>
 )

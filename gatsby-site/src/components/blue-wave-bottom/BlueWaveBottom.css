@@ -1,0 +1,10 @@
+.blue-wave-bottom-div {
+  position: relative;
+  height: 500px;
+  width: 105%;
+  right: 3px;
+  margin-top: -3px;
+  background-image: url('https://res.cloudinary.com/colark/image/upload/v1535478649/Colark%20Marketing%20Site/blue-wave-bottom.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
