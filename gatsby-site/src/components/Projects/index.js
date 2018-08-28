@@ -6,14 +6,14 @@ const Projects = (props) => {
   return (
     <div className="project-container">
         <div className="project">
-          <Link to="Phase0">
+          {/* <Link to="Phase0"> */}
             <img className="image" src='https://res.cloudinary.com/colark/image/upload/v1534454636/Colark%20Marketing%20Site/Colark_Marketing_Site_PhaseZeroEdited.png'/>
-          </Link>
+          {/* </Link> */}
         </div>
         <div className="project">
-          <Link to="Unstack">
+          {/* <Link to="Unstack"> */}
             <img className="image" src='http://res.cloudinary.com/colark/image/upload/r_10/v1534365717/Colark%20Marketing%20Site/Unstack.png'/>
-          </Link>
+          {/* </Link> */}
         </div>
     </div>
   );
@@ -22,4 +22,3 @@ const Projects = (props) => {
 
 
 export default Projects;
-

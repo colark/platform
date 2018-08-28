@@ -10,7 +10,7 @@
     margin: 0 auto;
     margin-top: 60px;
     text-align: center;
-    width: 80%;
+    width: 100%;
 }
 
 .page {
@@ -33,7 +33,7 @@ img.logo {
 }
 
 .page-description {
-    width: 50%;
+    width: 30% !important;
     text-align: center;
     margin: 0 auto;
     margin-top: 40px;
@@ -41,13 +41,24 @@ img.logo {
     color: var(--colarkfontcolor);
 }
 
-@media only screen and (max-width: 535px) {
-    .page-container {
-        width: 80% !important;
-        margin-left: 60px;
+@media only screen and (min-width: 300px) {
+    .page-description {
+        width: 90% !important;
     }
-    .img.logo {
-      margin: 0 auto;
-      text-align: center;
+
+    img.logo {
+        width: 250px;
     }
-  }
+}
+
+@media only screen and (min-width: 625px) {
+    .page-description {
+        width: 50% !important;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .page-description {
+        width: 40%;
+    }
+}
