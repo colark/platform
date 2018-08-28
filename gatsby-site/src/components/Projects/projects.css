@@ -27,9 +27,16 @@
     display: inline-block;
     width: 50%;
     padding: 50px;
+    text-align: center;
 }
 
-.image {
+.phase-zero-image {
+    width: 400px;
+    box-shadow: 5px 10px 18px #797676;
+    border-radius: 10px;
+}
+
+.unstack-image {
     width: 400px;
     box-shadow: 5px 10px 18px #797676;
     border-radius: 10px;
@@ -40,5 +47,21 @@
         width: 100%;
         margin: 0 auto;
         display: block;
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    .project {
+        padding: 0;
+    }
+
+    img.phase-zero-image {
+        width: 250px;
+        margin-top: 100px !important;
+    }
+
+    img.unstack-image {
+        width: 250px;
+        margin-top: 100px !important;
     }
 }
