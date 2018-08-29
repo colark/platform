@@ -31,13 +31,13 @@
 
 .phase-zero-image {
     width: 400px;
-    box-shadow: 5px 10px 18px #797676;
+    box-shadow: 5px 10px 18px rgba(0, 0, 0, .5);
     border-radius: 10px;
 }
 
 .unstack-image {
     width: 400px;
-    box-shadow: 5px 10px 18px #797676;
+    box-shadow: 5px 10px 18px rgba(0, 0, 0, .5);
     border-radius: 10px;
 }
 
