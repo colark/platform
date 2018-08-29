@@ -6,10 +6,7 @@
     --leftmargin: 80px;
 }
 
-#page-container {
-    overflow: hidden;
-    width: 100%;
-}
+
 
 div.jumbotron {
     display: flex;
@@ -40,7 +37,8 @@ p.lead {
     display: flex;
     justify-content: left;
     padding-top: 40px;
-    font-size: 25px !important;
+    padding-left: var(--leftmargin);
+    font-size: 20px !important;
     font-weight: 400;
     color: #C4C4C4;
     width: 50% !important;

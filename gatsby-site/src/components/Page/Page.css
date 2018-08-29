@@ -1,0 +1,64 @@
+:root {
+    --navheight: 40px;
+    --colarkfontcolor: #0111FC;
+    --colarkfont: 'Mukta Malar', sans-serif;
+    --background: rgba(255,255,255,0);
+    --leftmargin: 80px;
+}
+
+.page-container {
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+.page {
+    margin-top: 60px;
+}
+   
+.page_title {
+    font-family: var(--colarkfont);
+    color: var(--colarkfontcolor);
+}
+
+img.logo {
+    height: 100%;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.3);
+}
+
+.page-description {
+    width: 30% !important;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-family: var(--colarkfont);
+    color: var(--colarkfontcolor);
+}
+
+@media only screen and (min-width: 300px) {
+    .page-description {
+        width: 90% !important;
+    }
+
+    img.logo {
+        width: 250px;
+    }
+}
+
+@media only screen and (min-width: 625px) {
+    .page-description {
+        width: 50% !important;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .page-description {
+        width: 40%;
+    }
+}
