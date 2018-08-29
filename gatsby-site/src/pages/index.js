@@ -4,11 +4,14 @@ import Link from 'gatsby-link'
 import Team from '../components/team/team'
 import View from '../components/View';
 import Projects from '../components/Projects/index.js';
+import Partners from '../components/partners/Partners';
+
 
 const IndexPage = () => (
   <div>
     <View/>
     <Projects />
+    <Partners/>
     <Team/>
   </div>
 )
