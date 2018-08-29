@@ -6,12 +6,15 @@ import View from '../components/View';
 import ReactNavbar from '../components/Navbar';
 import BlueWaveBottom from '../components/blue-wave-bottom/BlueWaveBottom';
 import Projects from '../components/Projects/index.js';
+import Partners from '../components/partners/Partners';
+
 
 const IndexPage = () => (
   <div>
     <ReactNavbar />
     <View/>
     <Projects />
+    <Partners/>
     <BlueWaveBottom/>
     <Team/>
   </div>
