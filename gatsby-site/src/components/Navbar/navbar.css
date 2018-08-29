@@ -71,9 +71,20 @@ span.navbar-toggler-icon {
 }
 
 .navbar.navbar-expand-md.navbar-light.bg-light {
-    background: rgba(0,0,0,0) !important;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    width: 900px !important;
+    background: var(--background) !important;
+    margin: 0 auto;
+    width: 85% !important;
+    padding: 0;
 }
 
+@media only screen and (max-width: 815px) {    
+    .navbar.navbar-expand-md.navbar-light.bg-light {
+        width: 90% !important;
+    }
+}
+
+@media only screen and (max-width: 589px) {    
+    .navbar.navbar-expand-md.navbar-light.bg-light {
+        width: 95% !important;
+    }
+}

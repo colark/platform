@@ -7,6 +7,7 @@ import View from '../components/View';
 const IndexPage = () => (
   <div>
     <View/>
+    <Projects />
     <Team/>
   </div>
 )
