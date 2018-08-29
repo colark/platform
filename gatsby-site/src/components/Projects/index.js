@@ -5,6 +5,9 @@ import './projects.css';
 const Projects = (props) => {
   return (
     <div className="project-container" id="projects">
+        <div className="blue-wave-top-container">
+            <img src='https://res.cloudinary.com/colark/image/upload/v1535481008/Colark%20Marketing%20Site/blue-wave-top.svg'/>
+        </div>
         <div className="project">
           {/* <Link to="Phase0"> */}
             <img className="image" src='https://res.cloudinary.com/colark/image/upload/v1534454636/Colark%20Marketing%20Site/Colark_Marketing_Site_PhaseZeroEdited.png'/>
