@@ -3,7 +3,7 @@ import './projects.css';
 
 const Projects = (props) => {
   return (
-    <div className="project-container">
+    <div className="project-container" id="projects">
         <div className="blue-wave-top-container">
             <img src='https://res.cloudinary.com/colark/image/upload/v1535481008/Colark%20Marketing%20Site/blue-wave-top.svg'/>
         </div>
