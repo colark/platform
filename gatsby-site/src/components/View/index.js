@@ -4,7 +4,6 @@ import Link from 'gatsby-link'
 import './View.css';
 import Illustration from './Background/Illustration.js';
 import ReactNavbar from '../Navbar/index.js';
-import Projects from '../Projects/index.js';
 
 const View = (props) => {
   return (

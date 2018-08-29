@@ -1,6 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
-// import Img from 'gatsby-image'
 import Mailto from 'react-mailto';
 import styles from "./team-member.css"
 
@@ -23,7 +21,7 @@ export default function TeamMember(props) {
         <h3 className="team-member__name">{props.name}</h3>
         <h4 className="team-member__title">{props.position}</h4>
         <Mailto className="team-member__email" email={props.email} >Email</Mailto>
-        <Link className="team-member__linkedin" to={props.linkedin} target="__blank">LinkedIn</Link>
+        <a className="team-member__linkedin" href={props.linkedin} target="__blank">LinkedIn</a>
       </div>
   </div>
   );

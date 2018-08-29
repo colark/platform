@@ -4,7 +4,7 @@ import './projects.css';
 
 const Projects = (props) => {
   return (
-    <div className="project-container">
+    <div className="project-container" id="projects">
         <div className="project">
           {/* <Link to="Phase0"> */}
             <img className="image" src='https://res.cloudinary.com/colark/image/upload/v1534454636/Colark%20Marketing%20Site/Colark_Marketing_Site_PhaseZeroEdited.png'/>
