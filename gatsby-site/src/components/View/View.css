@@ -89,10 +89,16 @@ p.lead {
     #view-container {
         height: 500px;
     }
+    div.jumbotron {
+        height: 525px;
+    }
 }
 
 
 @media only screen and (max-width: 600px) {
+    div.jumbotron {
+        height: 475px;
+    }
     p.lead {
         width: 100%;
     }
