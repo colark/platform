@@ -7,7 +7,6 @@
 
 .sticky-nav {
     top: 0;
-    padding-left: 100px;
     width: 100% !important;
     border-bottom: 1px solid #C4C4C4;
     background: var(--background);
@@ -49,18 +48,18 @@ span.navbar-toggler-icon {
 .navbar.navbar-expand-md.navbar-light.bg-light {
     background: var(--background) !important;
     margin: 0 auto;
-    width: 85% !important;
+    width: 80% !important;
     padding: 0;
 }
 
 @media only screen and (max-width: 815px) {    
     .navbar.navbar-expand-md.navbar-light.bg-light {
-        width: 90% !important;
+        width: 80% !important;
     }
 }
 
 @media only screen and (max-width: 589px) {    
     .navbar.navbar-expand-md.navbar-light.bg-light {
-        width: 95% !important;
+        width: 85% !important;
     }
 }

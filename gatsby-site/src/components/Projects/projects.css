@@ -3,10 +3,13 @@
 }
 
 .project-container {
-    margin-top: 200px;
     position: relative;
     margin: 0 auto;
     text-align: center;
+}
+
+.projects-container {
+    background-color: var(--colarkblue);
 }
 
 .blue-wave-top-container {
@@ -22,8 +25,6 @@
 }
 
 .project {
-    border: none;
-    background-color: var(--colarkblue);
     display: inline-block;
     width: 50%;
     padding: 50px;

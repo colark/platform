@@ -45,13 +45,7 @@ export default class ReactNavbar extends React.Component {
         <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
-                <Scrollchor to="partners" className="nav-link">Partners</Scrollchor>
-              </NavItem>
-              <NavItem>
-                <Scrollchor to="#team" className="nav-link">Team</Scrollchor>
-              </NavItem>
-                <UncontrolledDropdown nav inNavbar>
+            <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav caret>
                     Projects
                   </DropdownToggle>
@@ -64,6 +58,15 @@ export default class ReactNavbar extends React.Component {
                       </DropdownItem>
                     </DropdownMenu>
                 </UncontrolledDropdown>
+                <NavItem>
+                  <Scrollchor to="partners" className="nav-link">Partners</Scrollchor>
+                </NavItem>
+                <NavItem>
+                  <Scrollchor to="#team" className="nav-link">Team</Scrollchor>
+                </NavItem>
+                <NavItem>
+                  <a href="mailto:ellie@colark.com" className="nav-link">Contact</a>
+                </NavItem>
                 {/* <NavItem>
                 <button className="signin-button">Sign in</button>
                 </NavItem> */}

@@ -6,7 +6,9 @@
     --leftmargin: 80px;
 }
 
-
+#view-container {
+    height: 706px;
+}
 
 div.jumbotron {
     display: flex;
@@ -19,45 +21,29 @@ div.jumbotron {
     width: 80% !important;
     overflow: hidden !important;
     padding: 0;
-    margin-top: 140px !important;
-    height: 706px;
+    height: 500px;
 }
 
 
 h1.display-3 {
     font-family: var(--colarkfont) !important;
     text-align: left !important;
-    font-size: 60px !important;
-    font-weight: 700;
-    letter-spacing: 10px !important;
-    width: 100% !important;
+    font-size: 48px !important;
+    font-weight: 400;
+    letter-spacing: 6px !important;
+    width: 60% !important;
 }
 
 p.lead {
     display: flex;
     justify-content: left;
-    padding-top: 40px;
-    padding-left: var(--leftmargin);
-    font-size: 20px !important;
+    font-size: 24px !important;
     font-weight: 400;
     color: #C4C4C4;
     width: 50% !important;
+    letter-spacing: 3px;
 }
 
-.btncolor {
-    background-color: var(--colarkfontcolor);
-    font-size: 1.5vw !important;
-}
-
-.btntext {
-    color: #FFFFFF;
-}
-
-.container {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 1.5vw;
-}
 
 @media only screen and (max-width: 1400px) {
     p.lead {
@@ -67,7 +53,15 @@ p.lead {
 
     h1.display-3 {
         width: 60% !important;
-        font-size: 55px !important;
+        font-size: 48px !important;
+    }
+
+    div.jumbotron {
+        height: 600px;
+    }
+
+    #view-container {
+        height: 600px;
     }
 }
 
@@ -88,8 +82,12 @@ p.lead {
     }
 
     h1.display-3 {
-        font-size: 50px !important;
+        font-size: 48px !important;
         width: 100% !important;
+    }
+
+    #view-container {
+        height: 500px;
     }
 }
 
@@ -102,6 +100,7 @@ p.lead {
     h1.display-3 {
         width: 100%;
         font-size: 45px !important;
+        margin-top: 50px;
     }
 }
 

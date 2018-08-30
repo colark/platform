@@ -9,8 +9,8 @@ const View = (props) => {
     <div id="view-container">
       <Illustration/>
       <Jumbotron>
-          <h1 className="display-3">Building <br></br> better software, together.</h1>
-        <p className="lead">Through expert guidance and distraction-free tech, working with Colark allows a company to focus on what's unique while also establishing a technical foundation that will scale to millions of users.</p>
+          <h1 className="display-3">Go from <strong>zero</strong> to <strong>product-market</strong> fit</h1>
+        <p className="lead">(with no throwaway code)</p>
       </Jumbotron>
     </div>
   );
