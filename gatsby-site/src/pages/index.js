@@ -20,5 +20,6 @@ const IndexPage = () => (
       <Team/>
     </div>
     <Footer/>
+  </div>
 
 export default IndexPage
