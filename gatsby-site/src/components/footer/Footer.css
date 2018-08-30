@@ -1,0 +1,60 @@
+:root {
+    --footerheight: 60px;
+    --colarkfontcolor: #000000;
+    --colarkfont: 'Mukta Malar', sans-serif;
+    --background: #FFFFFF;
+}
+
+.body-container-minus-footer {
+    margin-bottom: var(--footerheight);
+}
+
+div.footer.colark-footer {
+    clear: both;
+    height: var(--footerheight);
+    position: relative;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+    border-top: 1px solid #C4C4C4;
+    background: var(--background);
+    margin-top: 10px;
+}
+
+.footer__contents {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.footer__icons {
+  float: right;
+  display: inline;
+  line-height: var(--footerheight);
+}
+
+.footer__icons--icon-image {
+    height: 40px;
+    padding: 5px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+a.navbar-brand {
+    width: 100%;
+}
+
+.footer-logo {
+    display: inline;
+    line-height: var(--footerheight);
+    margin: 5px;
+}
+
+@media only screen and (max-width: 370px) {
+  .footer__icons {
+    float: none;
+    display: inline-block;
+  }
+  div.footer.colark-footer {
+    text-align: center;
+  }
+}
