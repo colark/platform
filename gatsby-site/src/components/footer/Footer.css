@@ -1,5 +1,5 @@
 :root {
-    --footerheight: 60px;
+    --footerheight: 70px;
     --background: #FFFFFF;
 }
 
@@ -37,14 +37,8 @@ div.footer.colark-footer {
     cursor: pointer;
 }
 
-a.navbar-brand {
-    width: 100%;
-}
-
 .footer-logo {
-    display: inline;
-    line-height: var(--footerheight);
-    margin: 5px;
+    margin: 10px;
 }
 
 @media only screen and (max-width: 370px) {

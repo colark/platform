@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Mailto from 'react-mailto'
-import "../Navbar/navbar.css"
 import "./Footer.css"
 
 
