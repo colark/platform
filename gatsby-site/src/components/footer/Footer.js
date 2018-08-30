@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import Mailto from 'react-mailto'
 import "./Footer.css"
 
@@ -13,7 +12,7 @@ export default function Footer(props) {
     },
     {
       imageUrl: 'https://res.cloudinary.com/colark/image/upload/v1535501727/Colark%20Marketing%20Site/Twitter.svg',
-      linkUrl: 'https://twitter.com/colarkinc',
+      linkUrl: 'https://twitter.com/colarkHQ',
       alt: 'Find Colark on Twitter'
     },
     {
