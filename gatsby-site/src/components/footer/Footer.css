@@ -31,17 +31,18 @@ div.footer.colark-footer {
 }
 
 .footer__icons--icon-image {
-    height: 40px;
-    padding: 5px;
+    height: 50px;
+    padding: 7px;
     margin: 0 2px;
     cursor: pointer;
 }
 
 .footer-logo {
     margin: 10px;
+    width: 120px;
 }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 400px) {
   .footer__icons {
     float: none;
     display: inline-block;
