@@ -1,5 +1,5 @@
 import React from 'react';
-import Project from '../project'
+import Project from '../Project'
 import Link from 'gatsby-link';
 import './projects.css';
 
