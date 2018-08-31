@@ -18,7 +18,6 @@ function Projects(props) {
     return(      
         <div className="project" key={ index }>
             <Project { ...data } />
-
         </div>
     );
   });
@@ -29,7 +28,7 @@ function Projects(props) {
         <img src='https://res.cloudinary.com/colark/image/upload/v1535481008/Colark%20Marketing%20Site/blue-wave-top.svg' />
       </div>
         <div className="projects-container" id="projects">
-                { projects }
+          { projects }
         </div>
     </div>
   );

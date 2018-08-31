@@ -4,7 +4,7 @@ import "./Project.css"
 
 export default function Project(props) {
   return(
-      <a className="project-container">
+      <a>
         <img src={props.logo} alt={props.name} className="project_logo" />
       </a>
   );
