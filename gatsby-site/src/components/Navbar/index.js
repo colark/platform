@@ -57,10 +57,10 @@ export default class ReactNavbar extends React.Component {
                   </DropdownToggle>
                     <DropdownMenu right>
                       <DropdownItem>
-                        <Scrollchor to="projects" className="nav-link">Phase Zero</Scrollchor>
+                        <Link to="/projects/phase0" className="nav-link">Phase Zero</Link>
                       </DropdownItem>
                       <DropdownItem>
-                        <Scrollchor to="projects" className="nav-link">Unstack</Scrollchor>
+                        <Link to="/projects/unstack" className="nav-link">Unstack</Link>
                       </DropdownItem>
                     </DropdownMenu>
                 </UncontrolledDropdown>
