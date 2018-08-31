@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import "./Project.css"
 
 export default function Project(props) {
   return(
