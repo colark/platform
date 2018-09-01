@@ -22,7 +22,8 @@ export default class ReactNavbar extends React.Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
+      isOpen: false,
+      isMainPage: this.props.children.length > 4
     };
   }
   toggle() {
@@ -31,6 +32,7 @@ export default class ReactNavbar extends React.Component {
     });
   }
   render() {
+
     return (
       <div className="sticky-nav">
         <Navbar color="light" light expand="md">
@@ -46,10 +48,14 @@ export default class ReactNavbar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <Scrollchor to="partners" className="nav-link">Partners</Scrollchor>
+                {this.state.isMainPage
+                 ? <Scrollchor to="partners" className="nav-link">Partners</Scrollchor>
+                 : <Link to="../#partners" className="nav-link">Partners</Link>}
               </NavItem>
               <NavItem>
-                <Scrollchor to="#team" className="nav-link">Team</Scrollchor>
+                {this.state.isMainPage
+                 ? <Scrollchor to="#team" className="nav-link">Team</Scrollchor>
+                 : <Link to="../#team" className="nav-link">Team</Link>}
               </NavItem>
                 <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav caret>

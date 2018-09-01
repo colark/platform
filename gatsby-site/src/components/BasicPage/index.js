@@ -10,7 +10,7 @@ class BasicPage extends React.Component {
   render() {
     return (
     <div>
-      <ReactNavbar />
+      <ReactNavbar children={this.props.children}/>
       {this.props.children}
     </div>
   )}
