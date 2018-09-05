@@ -65,23 +65,30 @@ export default class ReactNavbar extends React.Component {
                   </Scrollchor>
                 </NavItem>
               : <NavItem>
-                <Link to="../#team" className="nav-link">
-                  Team
-                </Link>
-              </NavItem> }
-                <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav caret>
-                    Projects
-                  </DropdownToggle>
-                    <DropdownMenu right>
-                      <DropdownItem>
-                        <Link to="/projects/phase0" className="nav-link">Phase Zero</Link>
-                      </DropdownItem>
-                      <DropdownItem>
-                        <Link to="/projects/unstack" className="nav-link">Unstack</Link>
-                      </DropdownItem>
-                    </DropdownMenu>
-                </UncontrolledDropdown>
+                  <Link to="../#team" className="nav-link">
+                    Team
+                  </Link>
+                </NavItem> }
+              {this.state.isMainPage ?
+                <NavItem>
+                    <Scrollchor to="#projects" className="nav-link">
+                      Projects
+                    </Scrollchor>
+                  </NavItem>
+                :<UncontrolledDropdown nav inNavbar>
+                    <DropdownToggle nav caret>
+                      Projects
+                    </DropdownToggle>
+                      <DropdownMenu right>
+                        <DropdownItem>
+                          <Link to="/projects/phase0" className="nav-link">Phase Zero</Link>
+                        </DropdownItem>
+                        <DropdownItem>
+                          <Link to="/projects/unstack" className="nav-link">Unstack</Link>
+                        </DropdownItem>
+                      </DropdownMenu>
+                  </UncontrolledDropdown> }
+
                 {/* <NavItem>
                 <button className="signin-button">Sign in</button>
                 </NavItem> */}
