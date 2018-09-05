@@ -53,14 +53,22 @@ export default class ReactNavbar extends React.Component {
                     Partners
                   </Scrollchor>
                 </NavItem>
-              : null }
+              : <NavItem>
+                  <Link to="../#partners" className="nav-link">
+                    Partners
+                  </Link>
+                </NavItem> }
               {this.state.isMainPage ?
                 <NavItem>
                   <Scrollchor to="#team" className="nav-link">
                     Team
                   </Scrollchor>
                 </NavItem>
-              : null }
+              : <NavItem>
+                <Link to="../#team" className="nav-link">
+                  Team
+                </Link>
+              </NavItem> }
                 <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav caret>
                     Projects
