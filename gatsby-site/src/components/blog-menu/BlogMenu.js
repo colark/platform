@@ -6,7 +6,7 @@ export default function BlogMenu() {
 
   return (
       <div className="blog-menu">
-          {BlogList}
+          <BlogList/>
       </div>
     );
 
