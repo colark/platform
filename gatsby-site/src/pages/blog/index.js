@@ -1,7 +1,6 @@
 import React from 'react'
 import BasicPage from '../../components/BasicPage'
 import BlogMenu from '../../components/blog-menu/BlogMenu'
-//these two files can become one once we have a global state
 
 const BlogMenuPage = () => (
   <div>
