@@ -9,11 +9,7 @@
  .blog {
    background-color: var(--colarkblue);
    color: var(--contrastcolor);
-   height: 450px;
+   height: 550px;
    overflow-y: hidden;
-   padding: 40px;
- }
-
- .blog__text {
-   padding-left: 200px;
+   padding: 80px 40px;
  }
