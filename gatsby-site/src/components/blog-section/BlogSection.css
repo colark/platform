@@ -11,4 +11,9 @@
    color: var(--contrastcolor);
    height: 450px;
    overflow-y: hidden;
+   padding: 40px;
+ }
+
+ .blog__text {
+   padding-left: 200px;
  }
