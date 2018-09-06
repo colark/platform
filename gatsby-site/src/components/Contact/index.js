@@ -13,13 +13,13 @@ export default class Example extends React.Component {
                         <h1 className="form-title">Get in touch</h1>
                         <Form>
                             <FormGroup>
-                            <Input type="name" name="name" id="name" placeholder="Name" />
+                            <Input type="name" name="name" id="name" placeholder="Name" required/>
                             </FormGroup>
                             <FormGroup>
-                            <Input type="email" name="email" id="email" placeholder="Email" />
+                            <Input type="email" name="email" id="email" placeholder="Email" required/>
                             </FormGroup>
                             <FormGroup>
-                            <Input type="textarea" name="text" id="exampleText" placeholder="Message" />
+                            <Input type="textarea" name="text" id="exampleText" placeholder="Message" required/>
                             </FormGroup>
                             <Button className="submitbtn">Send</Button>
                         </Form>
