@@ -8,10 +8,13 @@
     "gatsby": "^1.9.277",
     "gatsby-link": "^1.6.46",
     "gatsby-plugin-react-helmet": "^2.0.11",
+    "jquery": "^3.3.1",
     "react-helmet": "^5.2.0",
     "react-mailto": "^0.4.0",
     "react-scrollchor": "^6.0.0",
-    "reactstrap": "^6.3.1"
+    "react-slick": "^0.23.1",
+    "reactstrap": "^6.3.1",
+    "slick-carousel": "^1.8.1"
   },
   "keywords": [
     "gatsby"

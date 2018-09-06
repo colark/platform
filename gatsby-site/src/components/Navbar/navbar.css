@@ -23,8 +23,11 @@ li.nav-item {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: var(--colarkfontcolor) !important; 
+    color: var(--colarkfontcolor) !important;
     margin: 0 auto !important;
+}
+.nav-link {
+  font-family: var(--colarkfont);
 }
 
 .navbar-light .navbar-brand {
@@ -53,13 +56,13 @@ span.navbar-toggler-icon {
     padding: 0;
 }
 
-@media only screen and (max-width: 815px) {    
+@media only screen and (max-width: 815px) {
     .navbar.navbar-expand-md.navbar-light.bg-light {
         width: 90% !important;
     }
 }
 
-@media only screen and (max-width: 589px) {    
+@media only screen and (max-width: 589px) {
     .navbar.navbar-expand-md.navbar-light.bg-light {
         width: 95% !important;
     }
