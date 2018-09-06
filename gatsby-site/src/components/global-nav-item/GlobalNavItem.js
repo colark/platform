@@ -12,12 +12,12 @@ export default function GlobalNavItem(props) {
     props.isMainPage ?
       <NavItem>
         <Scrollchor to={props.scrollto} className="nav-link">
-          Partners
+          {props.text}
         </Scrollchor>
       </NavItem>
     : <NavItem>
         <Link to={props.linkto} className="nav-link">
-          Partners
+          {props.text}
         </Link>
       </NavItem>
     );

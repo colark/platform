@@ -51,10 +51,12 @@ export default class ReactNavbar extends React.Component {
               <GlobalNavItem
                 scrollto="partners"
                 linkto="../#partners"
+                text="Partners"
                 isMainPage={this.state.isMainPage} />
               <GlobalNavItem
                 scrollto="#team"
                 linkto="../#team"
+                text="Team"
                 isMainPage={this.state.isMainPage}/>
               {this.state.isMainPage ?
                 <NavItem>
