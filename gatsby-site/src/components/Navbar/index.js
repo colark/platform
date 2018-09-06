@@ -14,6 +14,7 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 import "./navbar.css";
+import GlobalNavItem from '../global-nav-item/GlobalNavItem'
 
 
 export default class ReactNavbar extends React.Component {
@@ -47,28 +48,14 @@ export default class ReactNavbar extends React.Component {
         <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              {this.state.isMainPage ?
-                <NavItem>
-                  <Scrollchor to="partners" className="nav-link">
-                    Partners
-                  </Scrollchor>
-                </NavItem>
-              : <NavItem>
-                  <Link to="../#partners" className="nav-link">
-                    Partners
-                  </Link>
-                </NavItem> }
-              {this.state.isMainPage ?
-                <NavItem>
-                  <Scrollchor to="#team" className="nav-link">
-                    Team
-                  </Scrollchor>
-                </NavItem>
-              : <NavItem>
-                  <Link to="../#team" className="nav-link">
-                    Team
-                  </Link>
-                </NavItem> }
+              <GlobalNavItem
+                scrollto="partners"
+                linkto="../#partners"
+                isMainPage={this.state.isMainPage} />
+              <GlobalNavItem
+                scrollto="#team"
+                linkto="../#team"
+                isMainPage={this.state.isMainPage}/>
               {this.state.isMainPage ?
                 <NavItem>
                     <Scrollchor to="#projects" className="nav-link">
