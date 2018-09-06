@@ -77,7 +77,6 @@ export default class ReactNavbar extends React.Component {
                         </DropdownItem>
                       </DropdownMenu>
                   </UncontrolledDropdown> }
-
                 {/* <NavItem>
                 <button className="signin-button">Sign in</button>
                 </NavItem> */}
