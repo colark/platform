@@ -1,0 +1,22 @@
+.blog-menu {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .blog-menu {
+    width: 900px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .blog-menu {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .blog-menu {
+    width: 300px;
+  }
+}
