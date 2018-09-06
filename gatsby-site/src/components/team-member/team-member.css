@@ -36,12 +36,12 @@ img.team-member__photo, .team-accent-dot {
 }
 
 .olga-photo {
-  top: 150px;
-  left: 520px;
+  top: 250px;
+  left: 630px;
 }
 
 .claire-photo {
-  top: 20px;
+  top: 60px;
   left: 300px;
 }
 
@@ -101,7 +101,13 @@ div.team-member__photo-div:active .tooltiptext {
     display: inline-block;
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (max-width: 900px) {
+  .olga-photo {
+    left: 500px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
   img.team-member__photo, .team-accent-dot {
     width: 120px;
     height: 120px;
@@ -113,11 +119,12 @@ div.team-member__photo-div:active .tooltiptext {
   }
 
   .olga-photo {
-    top: 300px;
+    top: 270px;
     left: 750px;
   }
 
   .claire-photo {
+    top: 80px;
     left: 450px;
   }
 
@@ -148,4 +155,11 @@ div.team-member__photo-div:active .tooltiptext {
     left: 16px;
   }
 
+}
+
+@media only screen and (max-width: 400px) {
+  .olga-photo {
+    top: 200px;
+    left: 530px;
+  }
 }
