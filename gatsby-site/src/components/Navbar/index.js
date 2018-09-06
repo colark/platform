@@ -14,6 +14,7 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 import "./navbar.css";
+import GlobalNavItem from '../global-nav-item/GlobalNavItem'
 
 
 export default class ReactNavbar extends React.Component {
@@ -22,7 +23,8 @@ export default class ReactNavbar extends React.Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
+      isOpen: false,
+      isMainPage: this.props.children.length > 4
     };
   }
   toggle() {
@@ -31,6 +33,7 @@ export default class ReactNavbar extends React.Component {
     });
   }
   render() {
+
     return (
       <div className="sticky-nav">
         <Navbar color="light" light expand="md">
@@ -45,25 +48,36 @@ export default class ReactNavbar extends React.Component {
         <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
-                <Scrollchor to="partners" className="nav-link">Partners</Scrollchor>
-              </NavItem>
-              <NavItem>
-                <Scrollchor to="#team" className="nav-link">Team</Scrollchor>
-              </NavItem>
-                <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav caret>
-                    Projects
-                  </DropdownToggle>
-                    <DropdownMenu right>
-                      <DropdownItem>
-                        <Scrollchor to="projects" className="nav-link">Phase Zero</Scrollchor>
-                      </DropdownItem>
-                      <DropdownItem>
-                        <Scrollchor to="projects" className="nav-link">Unstack</Scrollchor>
-                      </DropdownItem>
-                    </DropdownMenu>
-                </UncontrolledDropdown>
+              <GlobalNavItem
+                scrollto="partners"
+                linkto="../#partners"
+                text="Partners"
+                isMainPage={this.state.isMainPage} />
+              <GlobalNavItem
+                scrollto="#team"
+                linkto="../#team"
+                text="Team"
+                isMainPage={this.state.isMainPage}/>
+              {this.state.isMainPage ?
+                <NavItem>
+                    <Scrollchor to="#projects" className="nav-link">
+                      Projects
+                    </Scrollchor>
+                  </NavItem>
+                :<UncontrolledDropdown nav inNavbar>
+                    <DropdownToggle nav caret>
+                      Projects
+                    </DropdownToggle>
+                      <DropdownMenu right>
+                        <DropdownItem>
+                          <Link to="/projects/phase0" className="nav-link">Phase Zero</Link>
+                        </DropdownItem>
+                        <DropdownItem>
+                          <Link to="/projects/unstack" className="nav-link">Unstack</Link>
+                        </DropdownItem>
+                      </DropdownMenu>
+                  </UncontrolledDropdown> }
+
                 {/* <NavItem>
                 <button className="signin-button">Sign in</button>
                 </NavItem> */}

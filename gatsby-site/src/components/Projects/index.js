@@ -9,14 +9,14 @@ const Projects = (props) => {
             <img src='https://res.cloudinary.com/colark/image/upload/v1535481008/Colark%20Marketing%20Site/blue-wave-top.svg'/>
         </div>
         <div className="project">
-          {/* <Link to="Phase0"> */}
+          <Link to="/projects/phase0">
             <img className="phase-zero-image" src='https://res.cloudinary.com/colark/image/upload/v1534454636/Colark%20Marketing%20Site/Colark_Marketing_Site_PhaseZeroEdited.png'/>
-          {/* </Link> */}
+          </Link>
         </div>
         <div className="project">
-          {/* <Link to="Unstack"> */}
+          <Link to="/projects/unstack">
             <img className="unstack-image" src='http://res.cloudinary.com/colark/image/upload/r_10/v1534365717/Colark%20Marketing%20Site/Unstack.png'/>
-          {/* </Link> */}
+          </Link>
         </div>
     </div>
   );
