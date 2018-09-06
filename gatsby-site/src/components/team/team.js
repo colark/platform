@@ -11,7 +11,7 @@ function Team(props) {
   const teamMembers = [{
       name: "Ellie Day",
       className: "team-member__photo-div ellie-photo",
-      position: "Founder, Engineer",
+      position: "Founder, Software Engineer",
       photo: ellie,
       email: "ellie@colark.com",
       linkedin: "https://www.linkedin.com/in/ellie-day-a7761394/"
@@ -57,13 +57,11 @@ function Team(props) {
   });
 
   return(
-    <div>
-      <div className="team" id="team">
+    <div className="team-container">
       <h2 className="team-header">Meet our team</h2>
-        <div className="team-path">
+      <div className="team" id="team">
             { team }
-        <div className="team-accent-dot"></div>
-        </div>
+            <div className="team-accent-dot"></div>
       </div>
     </div>
   );

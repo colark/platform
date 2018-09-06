@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactNavbar from '../Navbar';
-// import Footer from '../footer/Footer';
-// TODO: add footer in return statement once it exists in merge
+import Footer from '../footer/Footer';
 
 class BasicPage extends React.Component {
   constructor(props){
@@ -10,8 +9,11 @@ class BasicPage extends React.Component {
   render() {
     return (
     <div>
-      <ReactNavbar children={this.props.children}/>
-      {this.props.children}
+      <div className="body-container-minus-footer">
+        <ReactNavbar children={this.props.children}/>
+        {this.props.children}
+      </div>
+        <Footer/>
     </div>
   )}
 }
