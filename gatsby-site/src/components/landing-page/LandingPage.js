@@ -5,7 +5,6 @@ import View from '../View';
 import BlueWaveBottom from '../blue-wave-bottom/BlueWaveBottom';
 import Partners from '../partners/Partners';
 import Projects from '../Projects';
-import BlogSection from '../blog-section/BlogSection'
 
 const LandingPage = () => (
   <div>
@@ -13,7 +12,6 @@ const LandingPage = () => (
       <View/>
       <Projects/>
       <Partners/>
-      <BlogSection/>
       <BlueWaveBottom/>
       <Team/>
     </BasicPage>
