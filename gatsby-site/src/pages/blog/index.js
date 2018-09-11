@@ -1,18 +1,24 @@
 import React from 'react'
-import BasicPage from '../../components/BasicPage'
+import BlogArticle from '../../components/blog-article/BlogArticle'
 import BlogMenu from '../../components/blog-menu/BlogMenu'
+import BasicPage from '../../components/basic-page/BasicPage'
+import {
+  BrowserRouter,
+  Route
+} from 'react-router-dom'
 
-const BlogMenuPage = () => (
-  <div>
-    <BasicPage>
-      <h1>Blog</h1>
-      <p>
-        Exploring the JAMstack, static sites, and the future of web.
-        Subscribe to our newsletter to make sure you don&#39;t miss anything!
-      </p>
-    <BlogMenu/>
-    </BasicPage>
-  </div>
-)
+export default class BlogMenuPage extends React.Component {
 
-export default BlogMenuPage
+  render() {
+    return (
+      <div>
+        <BrowserRouter>
+          <BasicPage>
+            <Route path="/blog/:id" component={BlogArticle}/>
+            <Route exact path="/blog" component={BlogMenu}/>
+          </BasicPage>
+        </BrowserRouter>
+      </div>
+    );
+  }
+}

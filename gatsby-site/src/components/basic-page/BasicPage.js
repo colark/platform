@@ -8,8 +8,8 @@ class BasicPage extends React.Component {
   render() {
     return (
     <div>
-      <ReactNavbar children={this.props.children}/>
-      {this.props.children}
+        <ReactNavbar children={this.props.children}/>
+        {this.props.children}
     </div>
   )}
 }
