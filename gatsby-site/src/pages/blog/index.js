@@ -1,7 +1,7 @@
 import React from 'react'
 import BlogArticle from '../../components/blog-article/BlogArticle'
 import BlogMenu from '../../components/blog-menu/BlogMenu'
-import BasicPage from '../../components/basic-page/BasicPage'
+import BasicPage from '../../components/BasicPage'
 import {
   BrowserRouter,
   Route
