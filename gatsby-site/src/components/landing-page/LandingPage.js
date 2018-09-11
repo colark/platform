@@ -7,11 +7,11 @@ import Projects from '../Projects';
 
 const LandingPage = () => (
   <div>
-      <View/>
-      <Projects/>
-      <Partners/>
-      <BlueWaveBottom/>
-      <Team/>
+    <View/>
+    <Projects/>
+    <Partners/>
+    <BlueWaveBottom/>
+    <Team/>
   </div>
 );
 

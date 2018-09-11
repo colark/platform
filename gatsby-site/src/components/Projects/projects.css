@@ -2,8 +2,8 @@
   --colarkblue: #0111FC;
 }
 
-.project-container {
-    margin-top: 200px;
+.projects-container {
+    background-color: var(--colarkblue);
     position: relative;
     margin: 0 auto;
     text-align: center;
@@ -22,20 +22,12 @@
 }
 
 .project {
-    border: none;
-    background-color: var(--colarkblue);
     display: inline-block;
     width: 50%;
     padding: 50px;
 }
 
-.phase-zero-image {
-    width: 400px;
-    box-shadow: 5px 10px 18px rgba(0, 0, 0, .5);
-    border-radius: 10px;
-}
-
-.unstack-image {
+.project_background-image {
     width: 400px;
     box-shadow: 5px 10px 18px rgba(0, 0, 0, .5);
     border-radius: 10px;
@@ -54,12 +46,7 @@
         padding: 0;
     }
 
-    img.phase-zero-image {
-        width: 250px;
-        margin-top: 100px !important;
-    }
-
-    img.unstack-image {
+    .project_background-image{
         width: 250px;
         margin-top: 100px !important;
     }

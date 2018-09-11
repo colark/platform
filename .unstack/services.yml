@@ -1,0 +1,13 @@
+context:
+  type: context
+  handler:
+    name: manifold
+backend:
+  api:
+    handler:
+      name: graphql-api
+web:
+  handler:
+    name: express-ssr
+  depends_on:
+    - backend.api

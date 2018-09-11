@@ -9,6 +9,7 @@
  .blog {
    background-color: var(--colarkblue);
    color: var(--contrastcolor);
-   height: 450px;
+   height: 550px;
    overflow-y: hidden;
+   padding: 80px 40px;
  }

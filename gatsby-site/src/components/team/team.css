@@ -2,14 +2,20 @@
   --colarkblue: #0111FC;
 }
 
+.team-container {
+  position: relative;
+  margin-bottom: 80px;
+  clear: both;
+}
+
 .team {
-  position: absolute;
-  left: -9999px;
-  right: -9999px;
-  width: 1000px;
-  margin: 80px auto;
-  height: 350px;
+  width: 100%;
+  margin: 50px auto 0 auto;
+  height: 400px;
   background-color: rgba(255, 255, 255, 0);
+  background-image: url("https://res.cloudinary.com/colark/image/upload/v1534305667/Colark%20Marketing%20Site/Meet_our_team_Scam.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .team-header {
@@ -31,19 +37,10 @@
   position: relative;
 }
 
-.team-path-div {
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-}
-
 .team-path {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  background-image: url("https://res.cloudinary.com/colark/image/upload/v1534305667/Colark%20Marketing%20Site/Meet_our_team_Scam.png");
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 @media only screen and (max-width: 900px) {
@@ -53,14 +50,18 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .team {
-    height: 350px;
+  .team-container {
+    margin-left: -300px;
+    margin-right: -300px;
   }
-  .team-path {
-    width: 100%;
+  .team {
+    margin: 180px auto 330px auto;
+    height: 350px;
+    width: 705px;
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
   }
+
   .team-member__photo-div, .team-member__info {
     -webkit-transform: rotate(270deg);
     transform: rotate(270deg);
@@ -69,28 +70,29 @@
   .team-header {
     width: 350px;
     text-align: center;
-    margin: 0 auto 330px auto;
+    margin: 0 auto 50px auto;
   }
 }
 
 @media only screen and (max-width: 400px) {
   .team {
+    margin: 260px auto 350px auto;
     height: 300px;
+    width: 817px;
   }
-  .team-header {
-    margin: 0 auto 350px auto;
+  .team__title {
+    margin: 0 auto 50px auto;
   }
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1200px) {
   .team {
     width: 1300px;
-    height: 600px;
-    margin-bottom: 100px;
-  }
-  .team-path {
-    width: 100%;
     height: 500px;
-    background-size: cover;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .team {
+    margin-bottom: 100px;
   }
 }
