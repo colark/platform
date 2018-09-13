@@ -75,7 +75,7 @@ p.lead {
     }
 }
 
-@media only screen and (max-width: 788px) {
+@media only screen and (max-width: 900px) {
     p.lead {
         width:100% !important;
         font-size: 30px !important;

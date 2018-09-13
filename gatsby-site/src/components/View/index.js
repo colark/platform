@@ -10,7 +10,7 @@ const View = (props) => {
       <Illustration/>
       <Jumbotron>
           <h1 className="display-3">Go from <strong>zero</strong> to <strong>product-market</strong> fit</h1>
-        <p className="lead">(with no throwaway code)</p>
+          <p className="lead">(with no throwaway code)</p>
       </Jumbotron>
     </div>
   );
