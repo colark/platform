@@ -1,18 +1,15 @@
-:root {
-  --background: #FFF;
-  --contrastcolor: var(--background);
-}
+@import "../../pages/global.css";
 
 .partner {
   background-color: var(--background);
   border: 1px solid var(--contrastcolor);
-  border-radius: 8px;
+  border-radius: var(--roundedcorners);
   padding: 10px;
   height: 65px;
   width: 210px;
   display: inline-block;
   margin: 15px;
-  box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--boxshadow);
   text-align: center;
 }
 

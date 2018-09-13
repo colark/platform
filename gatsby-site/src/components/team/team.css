@@ -1,6 +1,4 @@
-:root {
-  --colarkblue: #0111FC;
-}
+@import "../../pages/global.css";
 
 .team-container {
   position: relative;
@@ -12,7 +10,7 @@
   width: 100%;
   margin: 50px auto 0 auto;
   height: 400px;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: var(--background);
   background-image: url("https://res.cloudinary.com/colark/image/upload/v1534305667/Colark%20Marketing%20Site/Meet_our_team_Scam.png");
   background-repeat: no-repeat;
   background-size: cover;

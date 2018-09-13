@@ -1,8 +1,4 @@
-:root {
-  --background: #FFF;
-  --colarkblue: #0111FC;
-  --contrastcolor: var(--background);
-}
+@import "../../pages/global.css";
 
 .partners {
   background-color: var(--colarkblue);

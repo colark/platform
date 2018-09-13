@@ -1,8 +1,4 @@
-:root {
-  --background: #FFF;
-  --colarkblue: #0111FC;
-  --colarklightblue: #E3E5FC;
-}
+@import "../../pages/global.css";
 
 .team-member {
   position: relative;
@@ -46,7 +42,7 @@ img.team-member__photo, .team-accent-dot {
 }
 
 .team-accent-dot {
-  background-color: #FF6969;
+  background-color: var(--accentcolor);
   position: relative;
   left: 170px;
   top: 100px;
@@ -64,7 +60,7 @@ img.team-member__photo, .team-accent-dot {
     border: 1px solid var(--colarkblue);
     color: var(--background);
     text-align: center;
-    border-radius: 6px;
+    border-radius: var(--roundedcorners);
     padding: 10px;
     position: absolute;
     z-index: 3;

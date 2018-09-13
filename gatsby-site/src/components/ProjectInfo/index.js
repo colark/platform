@@ -22,7 +22,7 @@ import "./ProjectInfo.css";
 
     return(
         <div className="project-info-container">
-            <h1 className="project-info_title">{props.title}</h1>
+            <h1 className="project-info__title">{props.title}</h1>
             <a href={props.website} target="__blank">
                 <img src={props.photo} className="project-info-photo" />
             </a>

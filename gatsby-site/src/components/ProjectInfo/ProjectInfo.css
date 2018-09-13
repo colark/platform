@@ -1,10 +1,4 @@
-:root {
-    --navheight: 40px;
-    --colarkfontcolor: #0111FC;
-    --colarkfont: 'Mukta Malar', sans-serif;
-    --background: rgba(255,255,255,0);
-    --leftmargin: 80px;
-}
+@import "../../pages/global.css";
 
 .project-info-container {
     margin: 0 auto;
@@ -17,7 +11,7 @@
     margin-top: 60px;
 }
 
-.project-info_title {
+.project-info__title {
     font-family: var(--colarkfont);
     color: var(--colarkfontcolor);
 }
@@ -25,11 +19,11 @@
 .project-info-photo {
     height: 100%;
     width: 300px;
-    border-radius: 10px;
+    border-radius: var(--roundedcorners);
     text-align: center;
     margin: 0 auto;
     margin-top: 40px;
-    box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--boxshadow);
 }
 
 .project-info-description {

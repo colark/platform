@@ -1,22 +1,16 @@
-:root {
-    --navheight: 40px;
-    --colarkfontcolor: #0111FC;
-    --colarkfont: 'Mukta Malar', sans-serif;
-    --background: rgba(255,255,255,0);
-    --leftmargin: 80px;
-}
+@import "../../pages/global.css";
 
 #view-container {
-    height: 706px;
+    height: 706px; /*height of mountain svg*/
 }
 
 div.jumbotron {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--background);
+    background-color: transparent;
     font-family: var(--colarkfont);
-    color: var(--colarkfontcolor);
+    color: var(--colarkblue);
     margin: 0 auto;
     width: 80% !important;
     overflow: hidden !important;
@@ -39,7 +33,7 @@ p.lead {
     justify-content: left;
     font-size: 24px !important;
     font-weight: 400;
-    color: #C4C4C4;
+    color: var(--lightgray);
     width: 50% !important;
     letter-spacing: 3px;
 }
