@@ -25,7 +25,7 @@
     padding: 50px;
 }
 
-.project_background-image {
+.project__background-image {
     width: 400px;
     box-shadow: var(--boxshadow);
     border-radius: 10px;
@@ -44,7 +44,7 @@
         padding: 0;
     }
 
-    .project_background-image{
+    .project__background-image{
         width: 250px;
         margin-top: 100px !important;
     }

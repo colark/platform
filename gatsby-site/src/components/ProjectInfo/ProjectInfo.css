@@ -1,14 +1,10 @@
 @import "../../pages/global.css";
 
-.project-info-container {
+.project-info {
     margin: 0 auto;
     margin-top: 60px;
     text-align: center;
     width: 100%;
-}
-
-.project-info {
-    margin-top: 60px;
 }
 
 .project-info__title {
@@ -16,7 +12,7 @@
     color: var(--colarkfontcolor);
 }
 
-.project-info-photo {
+.project-info__photo {
     height: 100%;
     width: 300px;
     border-radius: var(--roundedcorners);
@@ -26,7 +22,7 @@
     box-shadow: var(--boxshadow);
 }
 
-.project-info-description {
+.project-info__description {
     width: 30% !important;
     text-align: center;
     margin: 0 auto;
@@ -36,23 +32,23 @@
 }
 
 @media only screen and (min-width: 300px) {
-    .project-info-description {
+    .project-info__description {
         width: 90% !important;
     }
 
-    .project-info-photo {
+    .project-info__photo {
         width: 250px;
     }
 }
 
 @media only screen and (min-width: 625px) {
-    .project-info-description {
+    .project-info__description {
         width: 50% !important;
     }
 }
 
 @media only screen and (min-width: 800px) {
-    .project-info-description {
+    .project-info__description {
         width: 40%;
     }
 }

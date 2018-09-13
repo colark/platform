@@ -61,7 +61,7 @@ function Team(props) {
       <h2 className="team-header">Meet our team</h2>
       <div className="team" id="team">
             { team }
-            <div className="team-accent-dot"></div>
+            <div className="team__accent-dot"></div>
       </div>
     </div>
   );
