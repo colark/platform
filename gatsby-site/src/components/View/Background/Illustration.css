@@ -4,6 +4,7 @@
     position: absolute;
     right: 0;
     z-index: -1;
+    overflow: hidden;
     width: 60%;
 }
 
@@ -11,9 +12,21 @@
     width: 100%;
 }
 
-@media only screen and (min-width: 1350px) {
+/* @media only screen and (min-width: 1380px) {
     .illustration-container {
-        width: 45%; 
+        width: 50%; 
+    }
+} */
+
+@media only screen and (min-width: 1300px) {
+    .illustration-container {
+        width: 770px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .illustration-container {
+        width: 600px;
     }
 }
 
@@ -22,5 +35,3 @@
         display: none;
     }
 }
-
-
