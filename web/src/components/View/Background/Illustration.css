@@ -1,0 +1,22 @@
+
+.illustration-container {
+    top: 12px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    overflow: hidden;
+    width: 80% !important;
+}
+
+@media only screen and (max-width: 789px) {
+    .illustration-container {
+        width: 30% !important;
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 765px) {
+    .illustration-container {
+        width: 55% !important;
+    }
+}

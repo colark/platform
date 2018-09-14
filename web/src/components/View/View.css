@@ -1,0 +1,115 @@
+:root {
+    --navheight: 40px;
+    --colarkfontcolor: #0111FC;
+    --colarkfont: 'Mukta Malar', sans-serif;
+    --background: rgba(255,255,255,0);
+    --leftmargin: 80px;
+}
+
+#view-container {
+    height: 706px;
+}
+
+div.jumbotron {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--background);
+    font-family: var(--colarkfont);
+    color: var(--colarkfontcolor);
+    margin: 0 auto;
+    width: 80% !important;
+    overflow: hidden !important;
+    padding: 0;
+    height: 500px;
+}
+
+
+h1.display-3 {
+    font-family: var(--colarkfont) !important;
+    text-align: left !important;
+    font-size: 48px !important;
+    font-weight: 400;
+    letter-spacing: 6px !important;
+    width: 60% !important;
+}
+
+p.lead {
+    display: flex;
+    justify-content: left;
+    font-size: 24px !important;
+    font-weight: 400;
+    color: #C4C4C4;
+    width: 50% !important;
+    letter-spacing: 3px;
+}
+
+
+@media only screen and (max-width: 1400px) {
+    p.lead {
+        width:70%;
+        font-size: 30px !important;
+    }
+
+    h1.display-3 {
+        width: 60% !important;
+        font-size: 48px !important;
+    }
+
+    div.jumbotron {
+        height: 600px;
+    }
+
+    #view-container {
+        height: 600px;
+    }
+}
+
+@media only screen and (min-width: 875px) {
+    p.lead {
+        width: 70% !important;
+    }
+
+    h1.display-3 {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 788px) {
+    p.lead {
+        width:100% !important;
+        font-size: 30px !important;
+    }
+
+    h1.display-3 {
+        font-size: 48px !important;
+        width: 100% !important;
+    }
+
+    #view-container {
+        height: 500px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    p.lead {
+        width: 100%;
+    }
+
+    h1.display-3 {
+        width: 100%;
+        font-size: 45px !important;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    p.lead {
+        font-size: 25px !important;
+    }
+
+    h1.display-3 {
+        font-size: 45px !important;
+    }
+}

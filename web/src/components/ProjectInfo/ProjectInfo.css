@@ -1,0 +1,64 @@
+:root {
+    --navheight: 40px;
+    --colarkfontcolor: #0111FC;
+    --colarkfont: 'Mukta Malar', sans-serif;
+    --background: rgba(255,255,255,0);
+    --leftmargin: 80px;
+}
+
+.project-info-container {
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+.project-info {
+    margin-top: 60px;
+}
+
+.project-info_title {
+    font-family: var(--colarkfont);
+    color: var(--colarkfontcolor);
+}
+
+.project-info-photo {
+    height: 100%;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project-info-description {
+    width: 30% !important;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-family: var(--colarkfont);
+    color: var(--colarkfontcolor);
+}
+
+@media only screen and (min-width: 300px) {
+    .project-info-description {
+        width: 90% !important;
+    }
+
+    .project-info-photo {
+        width: 250px;
+    }
+}
+
+@media only screen and (min-width: 625px) {
+    .project-info-description {
+        width: 50% !important;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .project-info-description {
+        width: 40%;
+    }
+}
