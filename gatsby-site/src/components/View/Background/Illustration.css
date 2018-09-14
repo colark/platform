@@ -12,12 +12,6 @@
     width: 100%;
 }
 
-/* @media only screen and (min-width: 1380px) {
-    .illustration-container {
-        width: 50%; 
-    }
-} */
-
 @media only screen and (min-width: 1300px) {
     .illustration-container {
         width: 770px;
