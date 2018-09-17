@@ -16,17 +16,13 @@
   background-size: cover;
 }
 
-.team-header {
+.team__header.section__header {
   display: block;
   color: var(--colarkblue);
-  font-size: 36px;
-  font-family: "Mukta-Malar SemiBold", sans-serif;
-  font-weight: 700;
-  letter-spacing: 5px;
+  width: 900px;
   height: 50px;
   line-height: 50px;
   margin: 0 auto 50px auto;
-  width: 900px;
   z-index: 2;
 }
 
@@ -65,7 +61,7 @@
     transform: rotate(270deg);
   }
 
-  .team-header {
+  .team__header.section__header {
     width: 350px;
     text-align: center;
     margin: 0 auto 50px auto;
@@ -78,7 +74,7 @@
     height: 300px;
     width: 817px;
   }
-  .team__title {
+  .team__header.section__header {
     margin: 0 auto 50px auto;
   }
 }

@@ -43,7 +43,7 @@ function Partners(props) {
       <Illustration2/>
       <div className="partners__right--container">
         <div className="partners__right--innerwrap">
-          <h2 className="partners__header">Companies we collaborate with:</h2>
+          <h2 className="partners__header section__header">Companies we collaborate with:</h2>
             { partners }
         </div>
       </div>

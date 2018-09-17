@@ -23,9 +23,3 @@ img.partner__logo {
 .partners {
   padding-top: 80px;
 }
-
-@media only screen and (max-width: 800px) {
-    .illustration2-container {
-        display: none;
-    }
-}
