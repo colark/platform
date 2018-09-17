@@ -1,5 +1,5 @@
 import React from 'react'
-// import Link from 'gatsby-link'
+import { Link } from 'react-router-dom'
 import Scrollchor from 'react-scrollchor';
 import {
   NavItem,
@@ -16,9 +16,9 @@ export default function GlobalNavItem(props) {
         </Scrollchor>
       </NavItem>
     : <NavItem>
-        // <Link to={props.linkto} className="nav-link">
+        <Link to={props.linkto} className="nav-link">
           {props.text}
-        // </Link>
+        </Link>
       </NavItem>
     );
 }

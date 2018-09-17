@@ -14,7 +14,7 @@ div.jumbotron {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--background);
+    background-color: transparent;
     font-family: var(--colarkfont);
     color: var(--colarkfontcolor);
     margin: 0 auto;

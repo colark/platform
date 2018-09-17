@@ -9,9 +9,9 @@ import Projects from '../Projects';
 const LandingPage = () => (
   <div>
     <BasicPage>
-      // <View/>
-      // <Projects/>
-      // <Partners/>
+      <View/>
+      <Projects/>
+      <Partners/>
       <BlueWaveBottom/>
       <Team/>
     </BasicPage>

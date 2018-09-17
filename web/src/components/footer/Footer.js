@@ -28,12 +28,12 @@ export default function Footer(props) {
     const footerIconList =
       footerIcons.map((icon, index) => {
         if (icon.linkUrl.includes("@")) {
-          return (<div key={index} email={icon.linkUrl}>
+          return (<span key={index} email={icon.linkUrl}>
             <img
             src={icon.imageUrl}
             alt={icon.alt}
             className="footer__icons--icon-image"/>
-          </div>);
+          </span>);
         } else {
           return (<a key={index} href={icon.linkUrl} target="_blank">
             <img

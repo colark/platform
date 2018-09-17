@@ -1,6 +1,5 @@
 import React from 'react';
-// import Link from 'gatsby-link';
-// ''./navbar.css'
+ import { Link } from 'react-router-dom'
 
 import Scrollchor from 'react-scrollchor';
 import {
@@ -71,10 +70,10 @@ export default class ReactNavbar extends React.Component {
                     </DropdownToggle>
                       <DropdownMenu right>
                         <DropdownItem>
-                          // <Link to="/projects/phase0" className="nav-link">Phase Zero</Link>
+                          <Link to="/projects/phase0" className="nav-link">Phase Zero</Link>
                         </DropdownItem>
                         <DropdownItem>
-                          // <Link to="/projects/unstack" className="nav-link">Unstack</Link>
+                          <Link to="/projects/unstack" className="nav-link">Unstack</Link>
                         </DropdownItem>
                       </DropdownMenu>
                   </UncontrolledDropdown> }

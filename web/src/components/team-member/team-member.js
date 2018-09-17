@@ -21,7 +21,6 @@ export default function TeamMember(props) {
       <div className="team-member__info">
         <h3 className="team-member__name">{props.name}</h3>
         <h4 className="team-member__title">{props.position}</h4>
-        // className="team-member__email" email={props.email} >Email
         <a className="team-member__linkedin" href={props.linkedin} target="__blank">LinkedIn</a>
       </div>
   </div>

@@ -1,14 +1,9 @@
 import React from 'react'
 import Partner from '../partner/Partner'
-// './Partners.css'
 import Illustration2 from '../partner/Illustration2'
 
 function Partners(props) {
-  const partnerList = [{
-      name: "Constellation Labs",
-      logo: "https://res.cloudinary.com/colark/image/upload/v1534977373/Colark%20Marketing%20Site/constellation-labs.svg",
-      website: "https://constellationlabs.io/"
-    },
+  const partnerList = [
     {
       name: "Career Karma",
       logo: "https://res.cloudinary.com/colark/image/upload/v1534977138/Colark%20Marketing%20Site/career-karma.png",

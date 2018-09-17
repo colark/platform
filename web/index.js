@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router';
 import { ApolloProvider, Query } from 'react-apollo';
 import gql from 'graphql-tag';
-import Index from './src/components/App';
+import LandingPage from './src/components/landing-page/LandingPage';
 
 
 // const SAY_HELLO = gql`
@@ -28,7 +28,7 @@ const App = ({ client }) => {
   return (
     <ApolloProvider client={client}>
       <Switch>
-        <Route path="/" component={Index} />
+        <Route path="/" component={LandingPage} />
       </Switch>
     </ApolloProvider>
   );
