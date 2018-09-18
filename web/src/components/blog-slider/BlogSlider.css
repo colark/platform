@@ -1,0 +1,37 @@
+.blog-slider {
+   height: 330px;
+   width: 1150px;
+   margin: 0 auto;
+}
+
+.slick-list {
+  height: 330px;
+}
+
+.slick-prev, .slick-next {
+  /*arrow styles*/
+}
+
+.slick-dots li button:before {
+    color: white !important;
+}
+.slick-dots li.slick-active button:before {
+    color: none;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .blog-slider {
+    width: 880px;
+ }
+}
+@media only screen and (max-width: 1000px) {
+  .blog-slider {
+    width: 580px;
+ }
+}
+@media only screen and (max-width: 670px) {
+  .blog-slider {
+    width: 300px;
+ }
+}
