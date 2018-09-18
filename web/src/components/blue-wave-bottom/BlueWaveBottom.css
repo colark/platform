@@ -1,0 +1,7 @@
+.blue-wave-bottom-div {
+  position: relative;
+  width: 105%;
+  right: 3px;
+  margin-top: -5px;
+  z-index: -5;
+}

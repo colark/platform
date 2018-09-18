@@ -1,0 +1,86 @@
+:root {
+  --background: #FFF;
+  --colarkblue: #0111FC;
+  --contrastcolor: var(--background);
+}
+
+.partners {
+  background-color: var(--colarkblue);
+  width: 100%;
+  height: 610px;
+  border: 1px solid var(--colarkblue);
+}
+
+.partner-right-container, .illustration2-container {
+  margin: 0;
+  height: 100%;
+  float: left;
+  position: relative;
+  display: inline-block;
+}
+
+.illustration2-container {
+  width: 45%;
+  right: 33px;
+}
+
+.partner-right-container {
+  width: 55%;
+  padding: 50px;
+}
+
+.partner-right-innerwrap {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.partners__header {
+  color: white;
+  text-align: center;
+  margin: 40px auto;
+  font-family: "Mukta-Malar", sans-serif;
+  font-size: 24px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  width: 500px;
+}
+
+@media only screen and (max-width: 1054px) {
+  .partners {
+    height: 730px;
+  }
+  .partners__header {
+    height: 60px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .partners {
+    height: 610px;
+  }
+  .illustration2-container {
+    visibility: hidden;
+    position: absolute;
+  }
+  .partner-right-container {
+    width: 100%;
+  }
+  .partner-right-innerwrap {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .partners {
+    height: 730px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .partner-right-container {
+    width: 50%;
+  }
+}

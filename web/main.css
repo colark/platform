@@ -1,0 +1,14 @@
+@import '/src/components/Navbar/navbar.css';
+@import '/src/components/View/Background/Illustration.css';
+@import '/src/components/View/View.css';
+@import '/src/components/blog-card/BlogCard.css';
+@import '/src/components/blog-section/BlogSection.css';
+@import '/src/components/blog-slider/BlogSlider.css';
+@import '/src/components/blue-wave-bottom/BlueWaveBottom.css';
+@import '/src/components/partner/Partner.css';
+@import '/src/components/partners/Partners.css';
+@import '/src/components/ProjectInfo/ProjectInfo.css';
+@import '/src/components/Projects/projects.css';
+@import '/src/components/team/team.css';
+@import '/src/components/team-member/team-member.css';
+@import '/src/components/footer/Footer.css';

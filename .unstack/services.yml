@@ -1,7 +1,7 @@
 context:
   type: context
   handler:
-    name: manifold
+    name: env-context
 backend:
   api:
     handler:
