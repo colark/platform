@@ -1,0 +1,98 @@
+:root {
+  --colarkblue: #0111FC;
+}
+
+.team-container {
+  position: relative;
+  margin-bottom: 80px;
+  clear: both;
+}
+
+.team {
+  width: 100%;
+  margin: 50px auto 0 auto;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url("https://res.cloudinary.com/colark/image/upload/v1534305667/Colark%20Marketing%20Site/Meet_our_team_Scam.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team-header {
+  display: block;
+  color: var(--colarkblue);
+  font-size: 36px;
+  font-family: "Mukta-Malar SemiBold", sans-serif;
+  font-weight: 700;
+  letter-spacing: 5px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto 50px auto;
+  width: 900px;
+  z-index: 2;
+}
+
+.team-member-div {
+  display: inline-block;
+  position: relative;
+}
+
+.team-path {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .team__title {
+    width: 720px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .team-container {
+    margin-left: -300px;
+    margin-right: -300px;
+  }
+  .team {
+    margin: 180px auto 330px auto;
+    height: 350px;
+    width: 705px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .team-member__photo-div, .team-member__info {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+
+  .team-header {
+    width: 350px;
+    text-align: center;
+    margin: 0 auto 50px auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .team {
+    margin: 260px auto 350px auto;
+    height: 300px;
+    width: 817px;
+  }
+  .team__title {
+    margin: 0 auto 50px auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .team {
+    width: 1300px;
+    height: 500px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .team {
+    margin-bottom: 100px;
+  }
+}

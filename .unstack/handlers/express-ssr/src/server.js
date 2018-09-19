@@ -14,7 +14,7 @@ export default (App, options) => {
   const app = express()
 
   //make js bundles be served from this server
-
+  app.use(express.static('web'));
   app.use('*', function(req, res) {
     const apolloClient = new ApolloClient({
       ssrMode: true,
