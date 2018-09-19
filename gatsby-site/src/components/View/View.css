@@ -25,8 +25,8 @@ h1.display-3 {
     font-size: 48px;
     font-weight: 400;
     letter-spacing: 6px;
-    width: 60%;
-    margin-top: 100px;
+    width: 100%;
+    margin-top: 30px;
 }
 
 p.lead {
@@ -40,35 +40,19 @@ p.lead {
     margin-bottom: 0px;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 900px) {
     #view-container {
         height: 500px;
     }
 
-    div.jumbotron {
+   div.jumbotron {
         height: 500px;
     }
 
     h1.display-3 {
         margin-top: 70px;
+        width: 60%;
     }
 }
 
-
-@media only screen and (max-width: 900px) {
-    div.jumbotron {
-        width: 90%;
-    }
-
-    p.lead {
-        width:100%;
-        font-size: 30px;
-    }
-
-    h1.display-3 {
-        margin-top: 0px;
-        width: 100%;
-    }
-
-}
 
