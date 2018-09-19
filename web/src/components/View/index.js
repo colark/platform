@@ -1,7 +1,7 @@
 import React from 'react'
 import { Jumbotron, Button } from 'reactstrap';
+import { Link } from 'react-router';
 import Illustration from './Background/Illustration.js';
-// './View.css'
 
 const View = (props) => {
   return (

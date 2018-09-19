@@ -1,5 +1,5 @@
 import React from 'react'
-// './Partner.css'
+import { Link } from 'react-router'
 
 export default function Partner(props) {
   return(

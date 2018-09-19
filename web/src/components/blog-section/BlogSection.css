@@ -1,10 +1,4 @@
-:root {
-    --colarkfont: 'Mukta Malar', sans-serif;
-    --leftmargin: 80px;
-    --background: #FFF;
-    --colarkblue: #0111FC;
-    --contrastcolor: var(--background);
-}
+ 
 
  .blog {
    background-color: var(--colarkblue);

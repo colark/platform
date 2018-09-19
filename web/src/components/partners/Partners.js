@@ -3,7 +3,11 @@ import Partner from '../partner/Partner'
 import Illustration2 from '../partner/Illustration2'
 
 function Partners(props) {
-  const partnerList = [
+  const partnerList = [{
+      name: "Constellation Labs",
+      logo: "https://res.cloudinary.com/colark/image/upload/v1534977373/Colark%20Marketing%20Site/constellation-labs.svg",
+      website: "https://constellationlabs.io/"
+    },
     {
       name: "Career Karma",
       logo: "https://res.cloudinary.com/colark/image/upload/v1534977138/Colark%20Marketing%20Site/career-karma.png",
@@ -36,9 +40,9 @@ function Partners(props) {
   return(
     <div className="partners" id="partners">
       <Illustration2/>
-      <div className="partner-right-container">
-        <div className="partner-right-innerwrap">
-          <h2 className="partners__header">Companies we collaborate with:</h2>
+      <div className="partners__right--container">
+        <div className="partners__right--innerwrap">
+          <h2 className="partners__header section__header">Companies we collaborate with:</h2>
             { partners }
         </div>
       </div>

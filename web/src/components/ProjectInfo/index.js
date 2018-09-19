@@ -1,5 +1,5 @@
 import React from 'react';
-// './ProjectInfo.css'
+import { Link } from 'react-router';
 
  export default function ProjectInfo(props) {
    const unstackContent = {
@@ -20,12 +20,12 @@ import React from 'react';
     }
 
     return(
-        <div className="project-info-container">
-            <h1 className="project-info_title">{props.title}</h1>
+        <div className="project-info">
+            <h1 className="project-info__title">{props.title}</h1>
             <a href={props.website} target="__blank">
-                <img src={props.photo} className="project-info-photo" />
+                <img src={props.photo} className="project-info__photo" />
             </a>
-            <div className="project-info-description">
+            <div className="project-info__description">
                 {props.description}
             </div>
         </div>
