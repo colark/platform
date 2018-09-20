@@ -37,6 +37,8 @@
     width: 98px;
     border-radius: 5px;
     height: 40px;
+    background-color: var(--lightgray);
+    color: var(--background);
 }
 
 @media only screen and (max-width: 789px) {
