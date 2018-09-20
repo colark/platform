@@ -30,7 +30,7 @@ function Projects(props) {
         <div className="projects-container" id="projects">
           { projects }
         </div>
-        <Subscription/>
+        {/* <Subscription/> */}
     </div>
   );
 }
