@@ -1,14 +1,7 @@
-:root {
-    --navheight: 40px;
-    --colarkfontcolor: #000000;
-    --colarkfont: 'Mukta Malar', sans-serif;
-    --background: #FFFFFF;
-}
-
 .sticky-nav {
     top: 0;
     width: 100% !important;
-    border-bottom: 1px solid #C4C4C4;
+    border-bottom: var(--borderline);
     background: var(--background);
 }
 
@@ -38,8 +31,8 @@ span.navbar-toggler-icon {
 }
 
 .signin-button {
-    background-color: #FF6969;
-    color: #FFFFFF;
+    background-color: var(--accentcolor);
+    color: var(--contrastcolor);
     border-radius: 5px;
     width: 80px;
     margin-top: 7px;

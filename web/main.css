@@ -1,3 +1,4 @@
+@import '/global.css';
 @import '/src/components/Navbar/navbar.css';
 @import '/src/components/View/Background/Illustration.css';
 @import '/src/components/View/View.css';
