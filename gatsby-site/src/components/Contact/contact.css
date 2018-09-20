@@ -1,0 +1,85 @@
+:root {
+    --colarkfontcolor: #0111FC;
+    --colarkfont: 'Mukta Malar', sans-serif;
+    --background: #FFFFFF;
+}
+
+.form-container {
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+}
+
+.left-image {
+    width: 50%;
+    margin: 20px;
+}
+
+.right-form {
+    width: 40%;
+    word-break: keep-all;
+}
+
+.right-form, .left-image{
+    display: inline-block;
+    padding: 50px;
+    align-self: center;
+}
+
+.submitbtn {
+    float: right;
+    width: 40%;
+    padding: 0;
+    font-family: var(--colarkfont);
+    margin-top: 25px;
+    background-color: #FF6969;
+    border: 1px solid #FF6969;
+}
+
+.form-title {
+    font-family: var(--colarkfont);
+    color: var(--colarkfontcolor);
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+#exampleText, #email, #name {
+    font-family: var(--colarkfont);
+}
+
+#exampleText {
+    height: 150px;
+}
+
+@media only screen and (max-width: 900px) {
+    .form-container {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    .right-form {
+        width: 100%;
+        display: block;
+        padding: 50px;
+        align-self: center;
+        margin: 0 auto !important;
+    }
+
+    .left-image {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 411px) {
+    .form-container {
+        padding: 0;
+    }
+
+    .right-form {
+        width: 100%;
+    }
+}
