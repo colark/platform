@@ -1,0 +1,85 @@
+:root {
+    --colarkfontcolor: #0111FC;
+    --colarkfont: 'Mukta Malar', sans-serif;
+    --background: #FFFFFF;
+}
+
+.subscription-container {
+    text-align: right;
+    width: 100%;
+    font-family: var(--colarkfont);
+}
+
+.form-control {
+    display: inline-block;
+    margin: 0 auto;
+    border: 5px solid white;
+    color: rgba(0, 0, 0, 0.25);
+    width: 400px;
+    border-radius: 0px;
+}
+
+.subscription-header {
+    text-align: left;
+    font-size: 24px;
+    color:white;
+    margin-left: 250px;
+}
+
+.subscription-input {
+    width: 500px;
+    text-align: center;
+    border: 3px solid white;
+    margin: 0 auto;
+    font-weight: 200px;
+    box-shadow: 5px 10px 18px rgba(0, 0, 0, .5);
+    background: white;
+    border-radius: 5px;
+}
+
+.subscribesubmit {
+    width: 94px;
+    border-radius: 5px;
+}
+
+.body-container-minus-footer {
+    background-color: var(--colarkfontcolor);
+}
+
+@media only screen and (max-width: 789px) {
+
+    .subscription-header {
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .subscription-header {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .subscription-input {
+        width: 400px;
+    }
+
+    .subscribesubmit {
+        width: 80px;
+    }
+
+    .form-control {
+        width: 312px;
+    }
+}
+
+@media only screen and (max-width: 433px) {
+
+    .subscription-input {
+        width: 325px;
+    }
+
+    .form-control {
+        width: 236px;
+    }
+}
+
