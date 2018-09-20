@@ -1,5 +1,4 @@
 import * as React from 'react';
-// './BlogCard.css'
 
 export default function BlogCard(props) {
 
