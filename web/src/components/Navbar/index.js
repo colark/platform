@@ -14,7 +14,6 @@ const navbarItems = [
   { 
     name: "Projects",
     scroll: "#projects"
-
   }
 ];
 
@@ -68,6 +67,9 @@ class Navbar extends React.Component {
             </svg>
           </a>
           <div className="nav__list">
+            <div className="nav__list">
+            <a href="mailto:ellie@colark.com">Contact</a>
+            </div>
             {navbarItemsList}
           </div>
           <button className="nav__menu" onClick={ this.props.operation}>
@@ -80,6 +82,9 @@ class Navbar extends React.Component {
             this.state.showMe ?
               <div>
                 {navbarItemsListMobile}
+                <div className="nav__mobile-contact">
+                  <a href="mailto:ellie@colark.com">Contact</a>
+                </div>
               </div>
               : null
           }

@@ -68,7 +68,7 @@ a:hover {
     .nav__menu {
         display: none;
     }
-    
+
     .nav__list {
         display: none;
     }
@@ -83,10 +83,14 @@ a:hover {
         width: 100%;
         border-bottom: 1px solid #C4C4C4;
     }
+
+    .nav__mobile-contact {
+        text-align: center;
+    }
 }
 
 @media only screen and (min-width: 600px) {
-    .nav__menu, .nav__container-mobile{
+    .nav__menu, .nav__container-mobile, .nav__mobile-contact {
         display: none;
     }
 }
