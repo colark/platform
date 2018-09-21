@@ -1,7 +1,6 @@
 import React from 'react';
 import Project from '../Project'
 import { Link } from 'react-router';
-import Subscription from '../Subscription';
 
 function Projects(props) {
   const projectList = [{
@@ -30,7 +29,6 @@ function Projects(props) {
         <div className="projects-container" id="projects">
           { projects }
         </div>
-        {/* <Subscription/> */}
     </div>
   );
 }
