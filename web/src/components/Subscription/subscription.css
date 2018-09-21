@@ -28,7 +28,7 @@
     border: 3px solid white;
     margin: 0 auto;
     font-weight: 200px;
-    box-shadow: 5px 10px 18px rgba(0, 0, 0, .5);
+    box-shadow: var(--boxshadow);
     background: white;
     border-radius: 5px;
 }
