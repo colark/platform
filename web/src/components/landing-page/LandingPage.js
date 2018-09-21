@@ -5,6 +5,7 @@ import View from '../View';
 import BlueWaveBottom from '../blue-wave-bottom/BlueWaveBottom';
 import Partners from '../partners/Partners';
 import Projects from '../Projects';
+// import Contact from '../Contact';
 
 const LandingPage = () => (
   <div>
@@ -13,6 +14,7 @@ const LandingPage = () => (
       <Projects/>
       <Partners/>
       <BlueWaveBottom/>
+      {/* <Contact/> */}
       <Team/>
     </BasicPage>
   </div>

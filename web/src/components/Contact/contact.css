@@ -1,0 +1,99 @@
+.contact-form__container {
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+}
+
+.contact-form__image--container {
+    width: 60%;
+}
+
+.contact-form__image {
+    width: 100%;
+}
+
+.contact-form__input--container {
+    width: 40%;
+    word-break: keep-all;
+    padding: 50px;
+}
+
+.contact-form__input--container, .contact-form__image--container{
+    display: inline-block;
+    padding: 50px;
+    align-self: center;
+}
+
+.contact-form__button {
+    float: right;
+    width: 150px;
+    padding: 0;
+    font-family: var(--colarkfont);
+    margin-top: 40px;
+    background-color: #FF6969;
+    border: 1px solid #FF6969;
+    border-radius: 5px;
+    color: var(--background);
+}
+
+.contact-form__input--header {
+    font-family: var(--colarkfont);
+    color: var(--colarkblue);
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.contact-form__input--message, .contact-form__input--email, .contact-form__input--name {
+    font-family: var(--colarkfont);
+    border-radius: 5px;
+    margin: 5px;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    outline-color: transparent;
+    outline-style: none;
+    background: var(--contactformbackground);
+    border: 1px solid var(--contactformbackground);
+    color: var(--contactformfontcolor);
+}
+
+.contact-form__input--message {
+    height: 200px;
+    padding-bottom: 150px;
+}
+
+
+@media only screen and (min-width:1500px) {
+    .contact-form__image--container {
+        width: 60%;
+    }
+    
+    .contact-form__input--container {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .contact-form__container {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+    }
+
+    .contact-form__input--container {
+        width: 100%;
+        display: block;
+        padding: 50px;
+        align-self: center;
+        margin: 0 auto !important;
+    }
+
+    .contact-form__image--container {
+        display: none;
+    }
+}
