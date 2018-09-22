@@ -1,7 +1,4 @@
-:root {
-    --footerheight: 70px;
-    --background: #FFFFFF;
-}
+@import "../../pages/global.css";
 
 .body-container-minus-footer {
     margin-bottom: var(--footerheight);
@@ -14,7 +11,7 @@ div.footer.colark-footer {
     bottom: 0;
     z-index: 5;
     width: 100%;
-    border-top: 1px solid #C4C4C4;
+    border-top: var(--borderline);
     background: var(--background);
     margin-top: 10px;
 }

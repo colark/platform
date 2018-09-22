@@ -1,6 +1,6 @@
 import React from 'react';
 import Project from '../Project'
-// './Projects.css'
+import { Link } from 'react-router';
 
 function Projects(props) {
   const projectList = [{

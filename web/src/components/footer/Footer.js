@@ -1,12 +1,10 @@
 import React from 'react'
-// './Footer.css'
-// Mailto from 'react-mailto'
 
 export default function Footer(props) {
     const footerIcons = [
     {
       imageUrl: 'https://res.cloudinary.com/colark/image/upload/v1535557446/Colark%20Marketing%20Site/email2.svg.svg',
-      linkUrl: 'ellie@colark.com',
+      linkUrl: 'mailto:ellie@colark.com',
       alt: 'Email Colark'
     },
     {
@@ -27,21 +25,12 @@ export default function Footer(props) {
 
     const footerIconList =
       footerIcons.map((icon, index) => {
-        if (icon.linkUrl.includes("@")) {
-          return (<span key={index} email={icon.linkUrl}>
-            <img
-            src={icon.imageUrl}
-            alt={icon.alt}
-            className="footer__icons--icon-image"/>
-          </span>);
-        } else {
-          return (<a key={index} href={icon.linkUrl} target="_blank">
+          return (<a key={index} href={icon.linkUrl} target={ icon.linkUrl.includes("@") ? "" : "_blank"}>
             <img
             src={icon.imageUrl}
             alt={icon.alt}
             className="footer__icons--icon-image"/>
           </a>);
-      }
     });
 
     return (

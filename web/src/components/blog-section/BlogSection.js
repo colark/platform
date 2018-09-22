@@ -1,6 +1,5 @@
 import * as React from 'react';
 import BlogSlider from '../blog-slider/BlogSlider'
-// './BlogSection.css'
 
 export default function BlogSection() {
 
