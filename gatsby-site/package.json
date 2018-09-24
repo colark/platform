@@ -13,7 +13,7 @@
     "react-mailto": "^0.4.0",
     "react-scrollchor": "^6.0.0",
     "react-slick": "^0.23.1",
-    "reactstrap": "^6.3.1",
+    "reactstrap": "^6.4.0",
     "slick-carousel": "^1.8.1"
   },
   "keywords": [

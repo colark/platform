@@ -5,18 +5,27 @@
     right: 0;
     z-index: -1;
     overflow: hidden;
-    width: 80% !important;
+    width: 60%;
 }
 
-@media only screen and (max-width: 789px) {
+.illustration-container img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 1300px) {
     .illustration-container {
-        width: 30% !important;
-        display: none;
+        width: 770px;
     }
 }
 
-@media only screen and (min-width: 765px) {
+@media only screen and (max-width: 1000px) {
     .illustration-container {
-        width: 55% !important;
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .illustration-container {
+        display: none;
     }
 }
