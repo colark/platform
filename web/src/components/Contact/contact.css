@@ -14,14 +14,12 @@
 
 .contact-form__input--container {
     width: 40%;
-    word-break: keep-all;
     padding: 50px;
 }
 
-.contact-form__input--container, .contact-form__image--container{
+.contact-form__input--container, .contact-form__image--container {
     display: inline-block;
-    padding: 50px;
-    align-self: center;
+    padding: 30px;
 }
 
 .contact-form__button {
@@ -44,7 +42,9 @@
     text-align: left;
 }
 
-.contact-form__input--message, .contact-form__input--email, .contact-form__input--name {
+.contact-form__input--message, 
+.contact-form__input--email, 
+.contact-form__input--name {
     font-family: var(--colarkfont);
     border-radius: 5px;
     margin: 5px;
@@ -53,8 +53,13 @@
     padding-left: 10px;
     outline-color: transparent;
     outline-style: none;
-    background: var(--contactformbackground);
-    border: 1px solid var(--contactformbackground);
+    background: var(--colarklightblue);
+    border: 1px solid var(--colarklightblue);
+}
+
+.contact-form__input--message::placeholder, 
+.contact-form__input--email::placeholder, 
+.contact-form__input--name::placeholder {
     color: var(--contactformfontcolor);
 }
 
@@ -62,7 +67,6 @@
     height: 200px;
     padding-bottom: 150px;
 }
-
 
 @media only screen and (min-width:1500px) {
     .contact-form__image--container {
@@ -91,6 +95,7 @@
         padding: 50px;
         align-self: center;
         margin: 0 auto !important;
+
     }
 
     .contact-form__image--container {
