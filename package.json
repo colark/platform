@@ -35,17 +35,11 @@
     "graphql-tools": "^3.1.1",
     "graphql-yoga": "^1.16.2",
     "http-proxy": "^1.17.0",
-    "jquery": "^3.3.1",
-    "prisma-binding": "^2.1.6",
-    "react": "^16.5.2",
+    "prisma-binding": "^2.1.5",
+    "react": "^16.5.1",
     "react-apollo": "^2.1.11",
-    "react-dom": "^16.5.2",
-    "react-helmet": "^5.2.0",
-    "react-mailto": "^0.4.0",
+    "react-dom": "^16.5.1",
     "react-router": "^4.3.1",
-    "react-scrollchor": "^6.0.0",
-    "react-slick": "^0.23.1",
-    "slick-carousel": "^1.8.1",
     "write-yaml": "^1.0.0"
   }
 }
