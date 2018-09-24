@@ -28,8 +28,8 @@
     padding: 0;
     font-family: var(--colarkfont);
     margin-top: 40px;
-    background-color: #FF6969;
-    border: 1px solid #FF6969;
+    background-color: var(--accentcolor);
+    border: 1px solid var(--accentcolor);
     border-radius: 5px;
     color: var(--background);
 }
@@ -84,9 +84,6 @@
         margin: 0 auto;
         display: block;
         text-align: center;
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 0;
     }
 
     .contact-form__input--container {
