@@ -1,0 +1,10 @@
+ 
+
+.blog-card {
+  display: inline-block;
+  height: 300px;
+  width: 250px;
+  color: var(--contrastcolor);
+  margin: 20px;
+  border-radius: var(--roundedcorners);
+}

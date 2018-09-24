@@ -11,7 +11,6 @@ const wrapComponent = ({ makeConfig }, context) => {
 
   return {
     start: (config) => {
-      console.log(context);
       const server = new GraphQLServer(makeConfig(context));
       server.start(() => console.log('Server is running on localhost:4000'));
     },
@@ -41,11 +40,11 @@ const wrapComponent = ({ makeConfig }, context) => {
         const componentLocation = `./${config.service.location}`;
         const appFolder = `./.unstack/tmp/docker-apps/${serviceName}`;
 
-        const ecsLoginCommand = `aws ecr get-login --no-include-email --region ${awsRegion}`;
-        const ecsLogin = await exec(ecsLoginCommand, { cwd: process.cwd() });
-
-        const dockerloginCommand = ecsLogin.stdout;
-        const dockerLogin = await exec(dockerloginCommand, { cwd: process.cwd() });
+        // const ecsLoginCommand = `aws ecr get-login --no-include-email --region ${awsRegion}`;
+        // const ecsLogin = await exec(ecsLoginCommand, { cwd: process.cwd() });
+        //
+        // const dockerloginCommand = ecsLogin.stdout;
+        // const dockerLogin = await exec(dockerloginCommand, { cwd: process.cwd() });
 
         //build tmp docker app folder
         const buildAppFolderCommand = `mkdir -p ${appFolder}`;
@@ -90,15 +89,15 @@ const wrapComponent = ({ makeConfig }, context) => {
 
         // transpile app before dockerizing it
         const babelFile = await exec(
-          'npx babel entry.unstack.js -o entry.js --presets=env,react --plugins=transform-object-rest-spread,transform-runtime',
+          'npx babel-cli entry.unstack.js -o entry.js --presets=env,react --plugins=transform-object-rest-spread,transform-runtime',
           { cwd: appFolder, maxBuffer: 1024 * 500 }
         );
         const babelFolder = await exec(
-          'npx babel component -d compiled-component --presets=env,react --plugins=transform-object-rest-spread,transform-runtime',
+          'npx babel-cli component -d compiled-component --presets=env,react --plugins=transform-object-rest-spread,transform-runtime',
           { cwd: appFolder, maxBuffer: 1024 * 500 }
         );
         const copyNonJSFiles = await exec(
-          'npx babel component -d compiled-component --copy-files --presets=env,react --plugins=transform-object-rest-spread,transform-runtime',
+          'npx babel-cli component -d compiled-component --copy-files --presets=env,react --plugins=transform-object-rest-spread,transform-runtime',
           { cwd: appFolder, maxBuffer: 1024 * 500 }
         );
 

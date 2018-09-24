@@ -1,6 +1,4 @@
-:root {
-  --colarkblue: #0111FC;
-}
+@import "../../pages/global.css";
 
 .projects-container {
     background-color: var(--colarkblue);
@@ -27,9 +25,9 @@
     padding: 50px;
 }
 
-.project_background-image {
+.project__background-image {
     width: 400px;
-    box-shadow: 5px 10px 18px rgba(0, 0, 0, .5);
+    box-shadow: var(--boxshadow);
     border-radius: 10px;
 }
 
@@ -52,7 +50,7 @@
         padding: 0;
     }
 
-    .project_background-image{
+    .project__background-image{
         width: 250px;
         margin-top: 100px !important;
     }

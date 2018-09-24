@@ -1,17 +1,10 @@
-:root {
-    --navheight: 40px;
-    --colarkfontcolor: #0111FC;
-    --colarkfont: 'Mukta Malar', sans-serif;
-    --background: rgba(255,255,255,0);
-    --leftmargin: 80px;
-}
-
+@import "../../pages/global.css";
 
 div.jumbotron {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--background);
+    background-color: transparent;
     font-family: var(--colarkfont);
     color: var(--colarkfontcolor);
     width: 80%;
