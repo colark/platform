@@ -24,7 +24,7 @@
   "devDependencies": {
     "apollo-cache-inmemory": "^1.2.10",
     "apollo-client": "^2.4.2",
-    "apollo-link-http": "^1.5.4",
+    "apollo-link-http": "^1.5.5",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
@@ -36,10 +36,13 @@
     "graphql-yoga": "^1.16.2",
     "http-proxy": "^1.17.0",
     "prisma-binding": "^2.1.5",
-    "react": "^16.5.1",
+    "react": "^16.5.2",
     "react-apollo": "^2.1.11",
-    "react-dom": "^16.5.1",
+    "react-dom": "^16.5.2",
     "react-router": "^4.3.1",
+    "react-scrollchor": "^6.0.0",
+    "react-slick": "^0.23.1",
+    "slick-carousel": "^1.8.1",
     "write-yaml": "^1.0.0"
   }
 }

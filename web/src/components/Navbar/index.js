@@ -21,7 +21,7 @@ const navbarItemsList =
 navbarItems.map((data, index) => {
   return (
     <div className="nav__container">
-      <div className="nav__container-inner">
+      <div className="nav__container--inner">
         <a href={data.scroll} className="nav__list">{data.name}
         </a>
       </div>
@@ -32,7 +32,7 @@ navbarItems.map((data, index) => {
 const navbarItemsListMobile =
 navbarItems.map((data, index) => {
   return (
-    <div className="nav__container-mobile">
+    <div className="nav__container--mobile">
         <a href={data.scroll} >{data.name}</a>
     </div>
   )
@@ -57,7 +57,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className="nav">
-        <div className="nav__container-inner">
+        <div className="nav__container--inner">
           <a className="nav__logo" href="/">
             <svg width="145" height="50" viewBox="0 0 145 50" fill="none">
               <rect width="144" height="46" fillOpacity="0" transform="translate(1 2)" />
@@ -82,7 +82,7 @@ class Navbar extends React.Component {
             this.state.showMe ?
               <div>
                 {navbarItemsListMobile}
-                <div className="nav__mobile-contact">
+                <div className="nav__mobile--contact">
                   <a href="mailto:ellie@colark.com">Contact</a>
                 </div>
               </div>

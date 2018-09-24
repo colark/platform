@@ -17,7 +17,7 @@
     float: right;
 }
 
-.nav__container-inner {
+.nav__container--inner {
     width: 80%;
     margin: 0 auto;
     position: relative;
@@ -66,7 +66,7 @@ a:hover {
         display: none;
     }
 
-    .nav__container-mobile {
+    .nav__container--mobile {
         text-align: center;
     }
 
@@ -77,13 +77,13 @@ a:hover {
         border-bottom: 1px solid #C4C4C4;
     }
 
-    .nav__mobile-contact {
+    .nav__mobile--contact {
         text-align: center;
     }
 }
 
 @media only screen and (min-width: 600px) {
-    .nav__menu, .nav__container-mobile, .nav__mobile-contact {
+    .nav__menu, .nav__container--mobile, .nav__mobile--contact {
         display: none;
     }
 }
