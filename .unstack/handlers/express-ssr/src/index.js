@@ -19,7 +19,7 @@ const wrapComponent = (component, context) => {
       const buildBundleFolderCommand = `mkdir -p ${appFolder}`;
       const buildBundleFolder = await exec(buildBundleFolderCommand, { cwd: process.cwd() });
 
-      await exec(`cp -R ${handlerLocation}/entry.unstack.js ${appFolder}/entry.unstack.js`, {
+      await exec(`cp -R ${handlerLocation}/* ${appFolder}`, {
         cwd: process.cwd()
       });
 

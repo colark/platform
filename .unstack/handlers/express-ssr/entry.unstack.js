@@ -5,6 +5,7 @@ import { ApolloClient } from 'apollo-client';
 import component from './component';
 import { createHttpLink } from 'apollo-link-http';
 import { InMemoryCache } from "apollo-cache-inmemory";
+import makeShell from "./src/makeShell";
 
 const apolloClient = new ApolloClient({
   link: createHttpLink({
@@ -16,7 +17,11 @@ const apolloClient = new ApolloClient({
 const App = component.app;
 
 const AppRouter = () => {
-  return <BrowserRouter><App client={apolloClient} /></BrowserRouter>;
+  return (
+    <BrowserRouter>
+      {makeShell(App, { apolloClient })}
+    </BrowserRouter>
+  );
 };
 
 ReactDOM.render(<AppRouter />, document.getElementById("app"));

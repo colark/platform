@@ -5,10 +5,11 @@ import httpProxy from 'http-proxy';
 import toHtmlString from './template';
 import ReactDOM from 'react-dom/server';
 import { ApolloClient } from 'apollo-client';
-import { StaticRouter, Route } from 'react-router';
+import { StaticRouter } from 'react-router';
 import { createHttpLink } from 'apollo-link-http';
 import { InMemoryCache } from "apollo-cache-inmemory";
 import { renderToStringWithData } from 'react-apollo';
+import makeShell from './makeShell';
 
 export default (App, options) => {
   const app = express()
@@ -28,10 +29,7 @@ export default (App, options) => {
     const context = {};
     const RoutedApp = (
       <StaticRouter location={req.originalUrl} context={context}>
-        <Route
-          path="/"
-          render={(props) => <App {...props} client={apolloClient} />}
-        />
+        {makeShell(App, { apolloClient })}
       </StaticRouter>
     );
 
