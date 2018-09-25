@@ -3,7 +3,6 @@
     justify-content: center;
     flex-direction: column;
     font-family: var(--colarkfont);
-    color: var(--colarkblue);
     width: 80%;
     margin: 0 auto;
     height: 400px;
@@ -11,7 +10,7 @@
 
 
 .view-container__title {
-    font-family: var(--colarkfont);
+    color: var(--colarkblue);
     text-align: left;
     font-size: 48px;
     font-weight: 400;
