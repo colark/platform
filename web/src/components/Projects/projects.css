@@ -15,8 +15,9 @@
   margin-bottom: -5px;
 }
 
-.blue-wave-top-container img {
+.blue-wave-top-container__image {
   margin: 0;
+  width: 100%;
 }
 
 .project {
