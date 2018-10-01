@@ -8,8 +8,6 @@ const wrapComponent = (component, context) => {
   return {
     start: async (config) => {
       const serviceName = config.service.name;
-      const awsAccountId = context.secrets.AWS_ACCOUNT_ID;
-      const awsRegion = context.secrets.AWS_REGION;
 
       const handlerLocation = config.handler.location;
       const componentLocation = `./${config.service.location}`;
@@ -57,7 +55,6 @@ const wrapComponent = (component, context) => {
         JSON.stringify(componentPackageJson),
         'utf-8'
       );
-      // transpile app before dockerizing it
 
       try {
         const babelFile = await exec(
@@ -69,12 +66,6 @@ const wrapComponent = (component, context) => {
       } catch (e) {
         console.log(e)
       }
-
-
-      // const babelFolder = await exec(
-      //   'npx babel-cli component -d compiled-component --presets=babel-preset-env,env,react --plugins=transform-object-rest-spread,transform-runtime',
-      //   { cwd: appFolder, maxBuffer: 1024 * 500 }
-      // );
 
       server(component.app, { API_URL: 'http://localhost:4000', BUNDLE_DIRECTORY: appFolder });
 
