@@ -1,0 +1,66 @@
+.subscription {
+    text-align: center;
+    width: 100%;
+    font-family: var(--colarkfont);
+    background-color: var(--colarkblue);
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.subscription__email {
+    border: 3px solid white;
+    width: 76%;
+    margin-left: 20px;
+    outline-color: transparent;
+    outline-style: none;
+}
+
+.subscription__header {
+    text-align: left;
+    font-size: 24px;
+    color:white;
+    margin-left: 250px;
+}
+
+.subscription__input {
+    width: 500px;
+    text-align: center;
+    border: 3px solid white;
+    margin: 0 auto;
+    font-weight: 200px;
+    box-shadow: var(--boxshadow);
+    background: white;
+    border-radius: 5px;
+}
+
+.subscription__button {
+    width: 98px;
+    border-radius: 5px;
+    height: 40px;
+    background-color: var(--lightgray);
+    color: var(--background);
+}
+
+@media only screen and (max-width: 789px) {
+
+    .subscription__header {
+        margin-left: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    .subscription__header {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .subscription__input {
+        width: 380px;
+    }
+
+    .subscription__email {
+        width: 256px;
+    }
+}
