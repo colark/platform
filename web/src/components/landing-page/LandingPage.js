@@ -6,12 +6,14 @@ import BlueWaveBottom from '../blue-wave-bottom/BlueWaveBottom';
 import Partners from '../partners/Partners';
 import Projects from '../Projects';
 // import Contact from '../Contact';
+// import Subscription from '../Subscription';
 
 const LandingPage = () => (
   <div>
     <BasicPage>
       <View/>
       <Projects/>
+      {/* <Subscription/> */}
       <Partners/>
       <BlueWaveBottom/>
       {/* <Contact/> */}
