@@ -1,107 +1,43 @@
-#view-container {
-    height: 706px; /*height of mountain svg*/
-}
-
-div.jumbotron {
+.view-container--inner {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: transparent;
     font-family: var(--colarkfont);
-    color: var(--colarkblue);
+    width: 80%;
     margin: 0 auto;
-    width: 80% !important;
-    overflow: hidden !important;
-    padding: 0;
-    height: 500px;
+    height: 400px;
 }
 
 
-h1.display-3 {
-    font-family: var(--colarkfont) !important;
-    text-align: left !important;
-    font-size: 48px !important;
+.view-container__title {
+    color: var(--colarkblue);
+    text-align: left;
+    font-size: 48px;
     font-weight: 400;
-    letter-spacing: 6px !important;
-    width: 60% !important;
+    letter-spacing: 6px;
+    width: 100%;
+    margin-top: 30px;
 }
 
-p.lead {
+.view-container__subtitle {
     display: flex;
     justify-content: left;
-    font-size: 24px !important;
+    font-size: 24px;
     font-weight: 400;
     color: var(--lightgray);
-    width: 50% !important;
+    width: 100%;
     letter-spacing: 3px;
+    margin-bottom: 30px;
 }
 
+@media only screen and (min-width: 900px) {
 
-@media only screen and (max-width: 1400px) {
-    p.lead {
-        width:70%;
-        font-size: 30px !important;
-    }
-
-    h1.display-3 {
-        width: 60% !important;
-        font-size: 48px !important;
-    }
-
-    div.jumbotron {
+    .view-container--inner {
         height: 600px;
     }
 
-    #view-container {
-        height: 600px;
-    }
-}
-
-@media only screen and (min-width: 875px) {
-    p.lead {
-        width: 70% !important;
-    }
-
-    h1.display-3 {
-        width: 80%;
-    }
-}
-
-@media only screen and (max-width: 788px) {
-    p.lead {
-        width:100% !important;
-        font-size: 30px !important;
-    }
-
-    h1.display-3 {
-        font-size: 48px !important;
-        width: 100% !important;
-    }
-
-    #view-container {
-        height: 500px;
-    }
-}
-
-
-@media only screen and (max-width: 600px) {
-    p.lead {
-        width: 100%;
-    }
-
-    h1.display-3 {
-        width: 100%;
-        font-size: 45px !important;
-        margin-top: 50px;
-    }
-}
-
-@media only screen and (max-width: 414px) {
-    p.lead {
-        font-size: 25px !important;
-    }
-
-    h1.display-3 {
-        font-size: 45px !important;
+    .view-container__title {
+        margin-top: 70px;
+        width: 60%;
     }
 }
