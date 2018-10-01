@@ -37,7 +37,6 @@
     "graphql-tools": "^3.1.1",
     "graphql-yoga": "^1.16.2",
     "http-proxy": "^1.17.0",
-    "prisma-binding": "^2.1.6",
     "react": "^16.5.2",
     "react-apollo": "^2.1.11",
     "react-dom": "^16.5.2",
@@ -47,7 +46,6 @@
     "react-router-dom": "^4.3.1",
     "react-scrollchor": "^6.0.0",
     "react-slick": "^0.23.1",
-    "reactstrap": "^6.4.0",
     "slick-carousel": "^1.8.1",
     "write-yaml": "^1.0.0"
   }

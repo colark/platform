@@ -1,58 +1,89 @@
-.sticky-nav {
-    top: 0;
-    width: 100% !important;
-    border-bottom: var(--borderline);
-    background: var(--background);
+.nav__glyphicon {
+    max-width: 80%;
+    margin-bottom: 0;
 }
 
-#logo {
-    width: 200px;
-}
-
-li.nav-item {
-    margin: 0 auto;
-    font-family: var(--colarkfont);
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: var(--colarkfontcolor) !important;
-    margin: 0 auto !important;
-}
-
-.navbar-light .navbar-brand {
-    color: var(--colarkfontcolor);
-    font-family: var(--colarkfont);
-    font-weight: 700;
-    font-size: 24px;
-}
-
-span.navbar-toggler-icon {
-    font-size: 24px;
-}
-
-.signin-button {
-    background-color: var(--accentcolor);
-    color: var(--contrastcolor);
+.nav__menu {
+    width: 55px;
+    height: 40px;
     border-radius: 5px;
-    width: 80px;
-    margin-top: 7px;
+    float: right;
+    border: 1px solid #C4C4C4;
+    z-index: 5;
 }
 
-.navbar.navbar-expand-md.navbar-light.bg-light {
-    background: var(--background) !important;
+
+.nav__container {
+    float: right;
+}
+
+.nav__container--inner {
+    width: 80%;
     margin: 0 auto;
-    width: 80% !important;
-    padding: 0;
+    position: relative;
 }
 
-@media only screen and (max-width: 815px) {
-    .navbar.navbar-expand-md.navbar-light.bg-light {
-        width: 80% !important;
+.nav__list {
+    float: right;
+    margin: 8px;
+}
+
+.nav {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #C4C4C4;
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--colarkfont);
+    font-size: 18px;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav__logo {
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 600px) {
+    .nav__menu {
+        display: none;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .nav__container--mobile {
+        text-align: center;
+    }
+
+    .nav__mobile {
+        position: absolute;
+        top: 69px;
+        width: 100%;
+        border-bottom: 1px solid #C4C4C4;
+    }
+
+    .nav__mobile--contact {
+        text-align: center;
     }
 }
 
-@media only screen and (max-width: 589px) {
-    .navbar.navbar-expand-md.navbar-light.bg-light {
-        width: 85% !important;
+@media only screen and (min-width: 600px) {
+    .nav__menu, .nav__container--mobile, .nav__mobile--contact {
+        display: none;
     }
 }

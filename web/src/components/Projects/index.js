@@ -24,7 +24,7 @@ function Projects(props) {
   return(
     <div>
       <div className="blue-wave-top-container">
-        <img src='https://res.cloudinary.com/colark/image/upload/v1535481008/Colark%20Marketing%20Site/blue-wave-top.svg' />
+        <img className="blue-wave-top-container__image" src='https://res.cloudinary.com/colark/image/upload/v1535481008/Colark%20Marketing%20Site/blue-wave-top.svg' />
       </div>
         <div className="projects-container" id="projects">
           { projects }

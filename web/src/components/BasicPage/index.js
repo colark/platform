@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactNavbar from '../Navbar';
+import Navbar from '../Navbar';
 import Footer from '../footer/Footer';
 
 class BasicPage extends React.Component {
@@ -10,7 +10,7 @@ class BasicPage extends React.Component {
     return (
     <div>
       <div className="body-container-minus-footer">
-        <ReactNavbar children={this.props.children}/>
+        <Navbar children={this.props.children}/>
         {this.props.children}
       </div>
         <Footer/>
