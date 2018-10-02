@@ -19,7 +19,8 @@
   "dependencies": {
     "js-yaml": "^3.12.0",
     "nodemon": "^1.18.4",
-    "unstack": "^0.0.5"
+    "unstack": "^0.0.5",
+    "unstack-env-context": "^0.0.1"
   },
   "devDependencies": {
     "apollo-cache-inmemory": "^1.2.10",
@@ -35,11 +36,13 @@
     "graphql-tools": "^3.1.1",
     "graphql-yoga": "^1.16.2",
     "http-proxy": "^1.17.0",
-    "prisma-binding": "^2.1.5",
     "react": "^16.5.2",
     "react-apollo": "^2.1.11",
     "react-dom": "^16.5.2",
+    "react-helmet": "^5.2.0",
+    "react-mailto": "^0.4.0",
     "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
     "react-scrollchor": "^6.0.0",
     "react-slick": "^0.23.1",
     "slick-carousel": "^1.8.1",

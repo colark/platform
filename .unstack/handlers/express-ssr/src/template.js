@@ -43,7 +43,7 @@ export default (app, state) => `
     </head>
     <body>
         <div id="app">${app}</div>
-        <script src="http://localhost:8081/app/bundle.js"></script>
+        <script src="http://localhost:3000/bundle/dist/entry.unstack.js"></script>
     </body>
     </html>
 `
