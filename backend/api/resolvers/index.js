@@ -1,6 +1,10 @@
+import teamMembersList from '../data/teamMembersList';
+
 const resolvers = {
   Query: {
-    hello: (_, { name }) => `Hello ${name || 'World'}`,
+    team: () => {
+      return teamMembersList
+    }
   },
 };
 
