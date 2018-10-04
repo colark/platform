@@ -9,6 +9,7 @@ const SAY_HELLO = gql`
   }
 `;
 
+
 const HelloWorld = ({ history, Apollo }) => {
   return <Apollo.Query query={SAY_HELLO}>
     {({ loading, error, data }) => {

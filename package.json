@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/colark/platform#readme",
   "dependencies": {
+    "express-graphql": "^0.6.12",
     "js-yaml": "^3.12.0",
     "nodemon": "^1.18.4",
+    "prisma-binding": "^2.1.6",
     "unstack": "^0.0.5",
     "unstack-env-context": "^0.0.1"
   },
