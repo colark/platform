@@ -24,7 +24,6 @@ function Team(props) {
           if (error) return `Error! ${error.message}`;
 
           const teamMembers = data.team;
-          console.log(teamMembers);
           return teamMembers.map((member, index) => {
             return(
               <div className="team-member-div" key={ index }>
