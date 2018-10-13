@@ -1,3 +1,10 @@
+type Partner {
+    name: String
+    logo: String
+    website: String
+}
+
 type Query {
+  partnerList: [Partner]
   hello(name: String): String!
 }
