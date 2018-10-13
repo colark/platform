@@ -1,8 +1,7 @@
 import React from 'react'
 import TeamMember from '../team-member/team-member'
 import gql from 'graphql-tag'
-import { Apollo } from "react-apollo";
-
+import { Query } from 'react-apollo'
 
 function Team(props) {
 
@@ -18,11 +17,11 @@ function Team(props) {
     }
   }`;
 
-  let team = ({ Apollo }) => {
-    return <Apollo.Query query={TEAM}>
+  const TeamMembers = () => {
+    return <Query query={TEAM}>
       {({ loading, error, data }) => {
-          if (loading) return (<div>Fetching</div>);
-          if (error) return (<div>Error</div>);
+          if (loading) return 'Loading...';
+          if (error) return `Error! ${error.message}`;
 
           const teamMembers = data.team;
           console.log(teamMembers);
@@ -32,16 +31,15 @@ function Team(props) {
                 <TeamMember { ...member } />
               </div>);
           });
-        }
-      }
-    </Apollo.Query>
+      }}
+    </Query>
   }
 
   return(
     <div className="team-container">
       <h2 className="team__header section__header">Meet our team</h2>
       <div className="team" id="team">
-            { team }
+            <TeamMembers/>
             <div className="team__accent-dot"></div>
       </div>
     </div>
