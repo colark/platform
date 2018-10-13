@@ -1,8 +1,9 @@
 type Project {
   name: String
-  url: String
+  logo: String
 }
 
 type Query {
   projectList: [Project]
+  hello(name: String): String!
 }
