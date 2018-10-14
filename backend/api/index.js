@@ -1,7 +1,4 @@
 import resolvers from './resolvers';
-const { Prisma } = require('prisma-binding');
-
-
 
 export default {
   makeConfig: (context) => ({
