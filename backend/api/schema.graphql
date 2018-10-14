@@ -1,3 +1,13 @@
 type Query {
+  team: [User]
   hello(name: String): String!
+}
+
+type User {
+  name: String
+  className: String
+  position: String
+  photo: String
+  email: String
+  linkedin: String
 }
