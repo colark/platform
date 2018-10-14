@@ -1,3 +1,9 @@
+type Navbar {
+  name: String
+  scroll: String
+}
+
 type Query {
   hello(name: String): String!
+  navbarList: [Navbar]
 }

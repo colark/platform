@@ -1,42 +1,51 @@
 import React from 'react';
+import { Query } from 'react-apollo';
+import gql from 'graphql-tag';
 import Scrollchor from 'react-scrollchor';
 
-const navbarItems = [
-  {
-    name: "Team",
-    scroll: "#team"
-  },
-  { 
-    name: "Partners",
-    scroll: "#partners"
-
-  },
-  { 
-    name: "Projects",
-    scroll: "#projects"
+const NAVBAR = gql`
+{
+  navbarList {
+    name
+    scroll
   }
-];
+}`;
 
-const navbarItemsList =
-navbarItems.map((data, index) => {
-  return (
-    <div className="nav__container">
-      <div className="nav__container--inner">
-        <a href={data.scroll} className="nav__list">{data.name}
-        </a>
-      </div>
-    </div>
-  )
-});
+const NavbarItemsList = () => {
+  return <Query query={NAVBAR}>
+    {({ loading, error, data }) => {
+      if (loading) return `Loading...`;
+      if (error) return `Error ${error.message}`;
 
-const navbarItemsListMobile =
-navbarItems.map((data, index) => {
-  return (
-    <div className="nav__container--mobile">
-        <a href={data.scroll} >{data.name}</a>
-    </div>
-  )
-});
+      console.log(data);
+      return data.navbarList.map((data, index) => {
+        return (
+          <div className="nav__container">
+            <div className="nav__container--inner">
+              <a href={data.scroll} className="nav__list">{data.name}
+              </a>
+            </div>
+          </div>
+        )
+      })
+    }}
+  </Query>
+}
+
+const NavbarItemsListMobile = () => {
+  return <Query query={NAVBAR}>
+    {({ loading, error, data }) => {
+      if (loading) return `Loading...`;
+      if (error) return `Error ${error.message}`;
+      console.log(data);
+      return (
+        <div className="nav__container--mobile">
+          <a href={data.scroll} >{data.name}</a>
+        </div>
+      )
+    }}
+  </Query>
+}
 
 
 class Navbar extends React.Component {
@@ -70,7 +79,7 @@ class Navbar extends React.Component {
             <div className="nav__list">
             <a href="mailto:ellie@colark.com">Contact</a>
             </div>
-            {navbarItemsList}
+            <NavbarItemsList/>
           </div>
           <button className="nav__menu" onClick={ this.props.operation}>
             <img className="nav__glyphicon" src="https://res.cloudinary.com/colark/image/upload/v1537301204/Colark%20Marketing%20Site/menu-rounded-solid.png" />
@@ -81,7 +90,8 @@ class Navbar extends React.Component {
           {
             this.state.showMe ?
               <div>
-                {navbarItemsListMobile}
+                <NavbarItemsListMobile/>
+
                 <div className="nav__mobile--contact">
                   <a href="mailto:ellie@colark.com">Contact</a>
                 </div>
