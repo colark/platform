@@ -1,9 +1,32 @@
-type Navbar {
+type User {
   name: String
-  scroll: String
+  className: String
+  position: String
+  photo: String
+  email: String
+  linkedin: String
 }
 
 type Query {
+  projectList: [Project]
+  team: [User]
   hello(name: String): String!
   navbarList: [Navbar]
+  partnerList: [Partner]
+}
+
+type Partner {
+    name: String
+    logo: String
+    website: String
+}
+
+type Project {
+  name: String
+  logo: String
+}
+
+type Navbar {
+  name: String
+  scroll: String
 }
