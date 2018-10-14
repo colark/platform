@@ -91,7 +91,6 @@ class Navbar extends React.Component {
             this.state.showMe ?
               <div>
                 <NavbarItemsListMobile/>
-
                 <div className="nav__mobile--contact">
                   <a href="mailto:ellie@colark.com">Contact</a>
                 </div>
