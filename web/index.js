@@ -1,7 +1,7 @@
 import React from 'react';
 import gql from 'graphql-tag';
-import TeamMember from './src/components/team-member/team-member'
 import LandingPage from './src/components/landing-page/LandingPage';
+
 
 const SAY_HELLO = gql`
   {
