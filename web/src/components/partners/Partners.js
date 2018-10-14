@@ -1,41 +1,36 @@
-import React from 'react'
-import Partner from '../partner/Partner'
-import Illustration2 from '../partner/Illustration2'
+import React from 'react';
+import Partner from '../partner/Partner';
+import Illustration2 from '../partner/Illustration2';
+import { Query } from 'react-apollo';
+import gql from 'graphql-tag';
 
 function Partners(props) {
-  const partnerList = [{
-      name: "Constellation Labs",
-      logo: "https://res.cloudinary.com/colark/image/upload/v1534977373/Colark%20Marketing%20Site/constellation-labs.svg",
-      website: "https://constellationlabs.io/"
-    },
-    {
-      name: "Career Karma",
-      logo: "https://res.cloudinary.com/colark/image/upload/v1534977138/Colark%20Marketing%20Site/career-karma.png",
-      website: "https://careerkarma.io/"
-    },
-    {
-      name: "Atlassian",
-      logo: "https://res.cloudinary.com/colark/image/upload/v1534977138/Colark%20Marketing%20Site/Atlassian.svg",
-      website: "https://www.atlassian.com/"
-    },
-    {
-      name: "8heroes",
-      logo: "https://res.cloudinary.com/colark/image/upload/v1534977138/Colark%20Marketing%20Site/8heroes.png",
-      website: "https://www.facebook.com/The8Heroes/"
-    },
-    {
-      name: "mRelief",
-      logo: "https://res.cloudinary.com/colark/image/upload/v1534977138/Colark%20Marketing%20Site/mRelief.png",
-      website: "https://www.mrelief.com/"
+  const PARTNERS = gql`
+  {
+    partnerList {
+      name
+      logo
+      website
     }
-  ];
+  }`;
 
-  let partners = partnerList.map((org, index) => {
-    return(
-    <div className="partner" key={ index }>
-      <Partner { ...org } />
-    </div>);
-  });
+  const Partners = () => {
+    return <Query query={PARTNERS}>
+      {({ loading, error, data }) => {
+        if (loading) return `Loading...`;
+        if (error) return `Error ${error.message}`;
+        
+        console.log(data);
+        return data.partnerList.map((data, index) => {
+          return (
+            <div className="partner" key={index}>
+              <Partner {...data}/>
+            </div>)
+        });
+      }}
+    </Query>
+  }
+
 
   return(
     <div className="partners" id="partners">
@@ -43,11 +38,11 @@ function Partners(props) {
       <div className="partners__right--container">
         <div className="partners__right--innerwrap">
           <h2 className="partners__header section__header">Companies we collaborate with:</h2>
-            { partners }
+            <Partners />        
         </div>
       </div>
     </div>
   );
 }
 
-export default Partners
+export default Partners;
