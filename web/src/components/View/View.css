@@ -30,6 +30,12 @@
     margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 600px) {
+    .view-container--inner {
+        margin-top: 105px;
+    }
+}
+
 @media only screen and (min-width: 900px) {
 
     .view-container--inner {
