@@ -36,7 +36,6 @@
     "graphql-tools": "^3.1.1",
     "graphql-yoga": "^1.16.2",
     "http-proxy": "^1.17.0",
-    "prisma-binding": "^2.1.6",
     "react": "^16.5.2",
     "react-apollo": "^2.2.4",
     "react-dom": "^16.5.2",
