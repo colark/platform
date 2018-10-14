@@ -19,7 +19,7 @@
   "dependencies": {
     "js-yaml": "^3.12.0",
     "nodemon": "^1.18.4",
-    "unstack": "^0.0.5",
+    "unstack": "^0.0.8",
     "unstack-env-context": "^0.0.1"
   },
   "devDependencies": {
