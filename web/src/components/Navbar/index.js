@@ -38,12 +38,14 @@ const NavbarItemsListMobile = () => {
       if (loading) return `Loading...`;
       if (error) return `Error ${error.message}`;
       console.log(data);
+      return data.navbarList.map((data, index) => {
       return (
         <div className="nav__container--mobile">
           <a href={data.scroll} >{data.name}</a>
         </div>
       )
-    }}
+    })
+  }}
   </Query>
 }
 
@@ -90,7 +92,8 @@ class Navbar extends React.Component {
           {
             this.state.showMe ?
               <div>
-                <NavbarItemsListMobile/>
+                <NavbarItemsListMobile />
+
                 <div className="nav__mobile--contact">
                   <a href="mailto:ellie@colark.com">Contact</a>
                 </div>
