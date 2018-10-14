@@ -1,10 +1,5 @@
 const partnerList = [
   {
-    name: "Constellation Labs",
-    logo: "https://res.cloudinary.com/colark/image/upload/v1534977373/Colark%20Marketing%20Site/constellation-labs.svg",
-    website: "https://constellationlabs.io/"
-  },
-  {
     name: "Career Karma",
     logo: "https://res.cloudinary.com/colark/image/upload/v1534977138/Colark%20Marketing%20Site/career-karma.png",
     website: "https://careerkarma.io/"
