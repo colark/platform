@@ -1,10 +1,26 @@
+type Query {
+  projectList: [Project]
+  team: [User]
+  hello(name: String): String!
+  partnerList: [Partner]
+}
+
 type Partner {
     name: String
     logo: String
     website: String
 }
 
-type Query {
-  partnerList: [Partner]
-  hello(name: String): String!
+type Project {
+  name: String
+  logo: String
+}
+
+type User {
+  name: String
+  className: String
+  position: String
+  photo: String
+  email: String
+  linkedin: String
 }
