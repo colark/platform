@@ -1,24 +1,14 @@
  
 
 .projects-container {
-    background-color: var(--colarkblue);
     position: relative;
     margin: 0 auto;
     text-align: center;
 }
 
-.blue-wave-top-container {
-  position: relative;
-  width: 105%;
-  right: 5px;
-  z-index: -5;
-  margin-bottom: -5px;
-}
 
-.blue-wave-top-container__image {
-  margin: 0;
-  width: 100%;
-}
+
+
 
 .project {
     display: inline-block;
