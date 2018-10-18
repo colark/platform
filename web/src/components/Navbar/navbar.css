@@ -36,7 +36,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: var(--colarkfont);
     font-size: 18px;
 }
 

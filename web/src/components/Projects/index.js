@@ -11,7 +11,7 @@ function Projects(props) {
         name
         icon
         title
-        color
+        blurb
     }
   }`;
 
@@ -21,7 +21,6 @@ function Projects(props) {
 
        if (loading) return `Loading...`;
        if (error) return `Error" ${error.message}`;
-        console.log(data.projectList);
 
        return data.projectList.map((data, index) => {
         return (

@@ -6,21 +6,25 @@
 }
 
 .project__icon {
-    width: 200px;
+    width: 250px;
     display: block;
     margin: 0 auto;
 }
 
-.project__title, .project__blurb {
-  text-align: center;
-}
-
 .project__title {
-  font-size: 2em;
+  color: var(--contrastcolor);
+  font-family: var(--colarkfontmedium);
+  text-align: center;
+  font-size: 36px;
+  letter-spacing: 0.1em;
+  margin: 15px;
 }
 
 .project__blurb {
-  font-size: 1.4em;
+  color: var(--mutedtextcolor);
+  margin: 0 auto;
+  font-size: 16px;
+  max-width: 240px;
 }
 
 @media only screen and (max-width: 900px) {

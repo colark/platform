@@ -25,7 +25,7 @@ type Project {
   name: String
   icon: String
   title: String
-  color: String
+  blurb: String
 }
 
 type Navbar {

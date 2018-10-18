@@ -3,10 +3,12 @@
     --background: #FFF;
     --borderline: 1px solid var(--lightgray);
     --colarkfontcolor: #000000;
-    --colarkfont: 'Mukta Malar', sans-serif;
+    --colarkfont: 'Poppins Semi-Bold', sans-serif;
+    --colarkfontmedium: 'Poppins Medium', sans-serif;
     --colarkblue: #0111FC;
     --colarklightblue: #E3E5FC;
-    --contrastcolor: var(--background);
+    --contrastcolor: #333;
+    --mutedtextcolor: #BDBDBD;
     --footerheight: 70px;
     --leftmargin: 80px;
     --lightgray: #C4C4C4;
@@ -18,8 +20,11 @@
 
 .section__header {
   margin: 40px auto;
-  font-family: "Mukta-Malar", sans-serif;
   font-weight: 400;
   letter-spacing: 5px;
   font-size: 36px;
+}
+
+body * {
+  font-family: var(--colarkfont);
 }

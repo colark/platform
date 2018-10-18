@@ -26,7 +26,6 @@
     float: right;
     width: 150px;
     padding: 0;
-    font-family: var(--colarkfont);
     margin-top: 40px;
     background-color: var(--accentcolor);
     border: 1px solid var(--accentcolor);
@@ -35,17 +34,15 @@
 }
 
 .contact-form__input--header {
-    font-family: var(--colarkfont);
     color: var(--colarkblue);
     font-weight: 700;
     margin-bottom: 50px;
     text-align: left;
 }
 
-.contact-form__input--message, 
-.contact-form__input--email, 
+.contact-form__input--message,
+.contact-form__input--email,
 .contact-form__input--name {
-    font-family: var(--colarkfont);
     border-radius: 5px;
     margin: 5px;
     width: 100%;
@@ -57,8 +54,8 @@
     border: 1px solid var(--colarklightblue);
 }
 
-.contact-form__input--message::placeholder, 
-.contact-form__input--email::placeholder, 
+.contact-form__input--message::placeholder,
+.contact-form__input--email::placeholder,
 .contact-form__input--name::placeholder {
     color: var(--contactformfontcolor);
 }
@@ -72,7 +69,7 @@
     .contact-form__image--container {
         width: 60%;
     }
-    
+
     .contact-form__input--container {
         width: 40%;
     }
