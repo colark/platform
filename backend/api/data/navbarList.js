@@ -1,16 +1,15 @@
 const navbarList = [
     {
-      name: "Team",
+      name: "About Us",
       scroll: "#team"
     },
     { 
-      name: "Partners",
-      scroll: "#partners"
-  
+      name: "Labs",
+      scroll: "#projects"
     },
     { 
-      name: "Projects",
-      scroll: "#projects"
+      name: "Contact",
+      scroll: "mailto:ellie@colark.com"
     }
   ];
 

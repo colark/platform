@@ -1,3 +1,8 @@
+.view-container {
+    background: linear-gradient(180deg, #5C6DFF 0%, #FFFFFF 93.73%);
+
+}
+
 .view-container--inner {
     display: flex;
     justify-content: center;
@@ -9,7 +14,7 @@
 
 
 .view-container__title {
-    color: var(--colarkblue);
+    color: var(--colarkfontcolor);
     text-align: left;
     font-size: 48px;
     font-weight: 400;
@@ -23,7 +28,7 @@
     justify-content: left;
     font-size: 24px;
     font-weight: 400;
-    color: var(--lightgray);
+    color: var(--colarkfontcolor);
     width: 100%;
     letter-spacing: 3px;
     margin-bottom: 30px;
