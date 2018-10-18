@@ -1,9 +1,7 @@
  
 
 .partners {
-  background-color: var(--colarkblue);
   width: 100%;
-  border: 1px solid var(--colarkblue);
 }
 
 .partners__right--container, .illustration2-container {
