@@ -9,7 +9,9 @@ function Projects(props) {
     {
       projectList {
         name
-        logo
+        icon
+        title
+        color
     }
   }`;
 
@@ -18,9 +20,9 @@ function Projects(props) {
      {({ loading, error, data }) => {
 
        if (loading) return `Loading...`;
-       if (error) return `Error" ${error.message}`; 
+       if (error) return `Error" ${error.message}`;
         console.log(data.projectList);
-        
+
        return data.projectList.map((data, index) => {
         return (
           <div className="project" key={index}>
@@ -33,9 +35,6 @@ function Projects(props) {
 
   return(
     <div>
-      <div className="blue-wave-top-container">
-        <img className="blue-wave-top-container__image" src='https://res.cloudinary.com/colark/image/upload/v1535481008/Colark%20Marketing%20Site/blue-wave-top.svg' />
-      </div>
         <div className="projects-container" id="projects">
           < Projects />
         </div>

@@ -23,7 +23,9 @@ type Partner {
 
 type Project {
   name: String
-  logo: String
+  icon: String
+  title: String
+  color: String
 }
 
 type Navbar {
