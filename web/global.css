@@ -2,7 +2,7 @@
     --accentcolor: #FF6969;
     --background: #FFF;
     --borderline: 1px solid var(--lightgray);
-    --colarkfontcolor: #000000;
+    --colarkfontcolor: #FFFF;
     --colarkfont: 'Mukta Malar', sans-serif;
     --colarkblue: #0111FC;
     --colarklightblue: #E3E5FC;
@@ -14,7 +14,6 @@
     --roundedcorners: 8px;
     --boxshadow: 5px 7px 5px rgba(0, 0, 0, 0.3);
     --contactformfontcolor: #A9ADE0;
-    --navbarfontcolor: rgba(29, 52, 255, 0.38);
 }
 
 .section__header {

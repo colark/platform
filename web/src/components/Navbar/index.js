@@ -100,12 +100,7 @@ class Navbar extends React.Component {
               </defs>
             </svg>
           </a>
-          <div className="nav__list">
-            <div className="nav__list">
-              <a href="mailto:ellie@colark.com">Contact</a>
-            </div>
             <NavbarItemsList />
-          </div>
           <button className="nav__menu" onClick={this.props.operation}>
             <img className="nav__glyphicon" src="https://res.cloudinary.com/colark/image/upload/v1537301204/Colark%20Marketing%20Site/menu-rounded-solid.png" />
           </button>
@@ -116,10 +111,6 @@ class Navbar extends React.Component {
             this.state.showMe ?
               <div>
                 <NavbarItemsListMobile />
-
-                <div className="nav__mobile--contact">
-                  <a href="mailto:ellie@colark.com">Contact</a>
-                </div>
               </div>
               : null
           }
