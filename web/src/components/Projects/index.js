@@ -9,7 +9,9 @@ function Projects(props) {
     {
       projectList {
         name
-        logo
+        icon
+        title
+        blurb
     }
   }`;
 
@@ -18,9 +20,8 @@ function Projects(props) {
      {({ loading, error, data }) => {
 
        if (loading) return `Loading...`;
-       if (error) return `Error" ${error.message}`; 
-        console.log(data.projectList);
-        
+       if (error) return `Error" ${error.message}`;
+
        return data.projectList.map((data, index) => {
         return (
           <div className="project" key={index}>

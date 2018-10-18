@@ -19,8 +19,7 @@ function Partners(props) {
       {({ loading, error, data }) => {
         if (loading) return `Loading...`;
         if (error) return `Error ${error.message}`;
-        
-        console.log(data);
+
         return data.partnerList.map((data, index) => {
           return (
             <div className="partner" key={index}>
@@ -38,7 +37,7 @@ function Partners(props) {
       <div className="partners__right--container">
         <div className="partners__right--innerwrap">
           <h2 className="partners__header section__header">Companies we collaborate with:</h2>
-            <Partners />        
+            <Partners />
         </div>
       </div>
     </div>
