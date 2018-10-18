@@ -68,6 +68,8 @@ a:hover {
 
     .nav__container--mobile {
         text-align: center;
+        background: var(--darkpurple);
+        padding: 5px;
     }
 
     .nav__mobile {
