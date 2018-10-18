@@ -37,6 +37,7 @@
     align-items: center;
     font-family: var(--colarkfont);
     font-size: 18px;
+    background: var(--darkpurple);
 }
 
 a {
