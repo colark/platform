@@ -1,6 +1,7 @@
 import React from 'react';
 import gql from 'graphql-tag';
 import LandingPage from './src/components/landing-page/LandingPage';
+import AboutPage from './src/components/AboutPage';
 
 
 const SAY_HELLO = gql`
@@ -31,6 +32,7 @@ const App = ({ Shell, Router }) => {
     <Shell>
       <Router.Switch>
         <Router.Route path="/hello" component={HelloWorld} />
+        <Router.Route path="/about" component={AboutPage} />
         <Router.Route path="/" component={LandingPage} />
       </Router.Switch>
     </Shell>

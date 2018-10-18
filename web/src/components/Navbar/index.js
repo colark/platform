@@ -70,7 +70,7 @@ class Navbar extends React.Component {
           <a className="nav__logo" href="/">
             <svg width="155" height="66" viewBox="0 0 155 66" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M24 27.7883V18.6L41.76 33V42.1199L24 27.7883Z" fill="url(#paint0_linear)" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M48 28.4044L24 9L2.90236e-05 28.4044L24 47.8088L29.7096 43.1925L12.4802 29.2623L24.4802 19.5601L41.7096 33.4903L48 28.4044Z" fill="url(#paint1_linear)" />
+              <path fillRule="evenodd" clipRule="evenodd" d="M48 28.4044L24 9L2.90236e-05 28.4044L24 47.8088L29.7096 43.1925L12.4802 29.2623L24.4802 19.5601L41.7096 33.4903L48 28.4044Z" fill="url(#paint1_linear)" />
               <path d="M23.9996 56.5199L23.9492 47.7874L29.934 43.0645L29.7596 51.7199L23.9996 56.5199Z" fill="url(#paint2_linear)" />
               <path d="M41.7598 42.1199V33.48L47.9998 28.3906V36.84L41.7598 42.1199Z" fill="url(#paint3_linear)" />
               <path d="M0 37.6452V28.3549L23.9476 47.7097V57L0 37.6452Z" fill="url(#paint4_linear)" />

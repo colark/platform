@@ -1,8 +1,8 @@
 import React from 'react'
 import BasicPage from '../BasicPage'
-import Team from '../team/team'
+// import Team from '../team/team'
 import View from '../View';
-import Partners from '../partners/Partners';
+// import Partners from '../partners/Partners';
 import Projects from '../Projects';
 // import Contact from '../Contact';
 // import Subscription from '../Subscription';
@@ -13,9 +13,9 @@ const LandingPage = () => (
       <View/>
       <Projects/>
       {/* <Subscription/> */}
-      <Partners/>
+      { /* <Partners/> */ }
       {/* <Contact/> */}
-      <Team/>
+      {/* <Team/> */}
     </BasicPage>
   </div>
 );
