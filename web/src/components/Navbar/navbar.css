@@ -26,7 +26,7 @@
 .nav__list {
     float: right;
     margin: 8px;
-    color: rgba(29, 52, 255, 0.38);
+    color: var(--navbarfontcolor);
 }
 
 .nav {
