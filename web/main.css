@@ -1,3 +1,4 @@
+@import '/normalize.css';
 @import '/global.css';
 @import '/src/components/Navbar/navbar.css';
 @import '/src/components/RocketPyramid/RocketPyramid.css';
@@ -7,7 +8,7 @@
 @import '/src/components/blog-slider/BlogSlider.css';
 @import '/src/components/partner/Partner.css';
 @import '/src/components/partners/Partners.css';
-@import '/src/components/ProjectInfo/ProjectInfo.css';
+@import '/src/components/Project/project.css';
 @import '/src/components/Projects/projects.css';
 @import '/src/components/team/team.css';
 @import '/src/components/team-member/team-member.css';
