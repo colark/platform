@@ -17,7 +17,6 @@ const NavbarItemsList = () => {
       if (loading) return `Loading...`;
       if (error) return `Error ${error.message}`;
 
-      console.log(data);
       return data.navbarList.map((data, index) => {
         return (
           <div className="nav__container">
@@ -37,7 +36,7 @@ const NavbarItemsListMobile = () => {
     {({ loading, error, data }) => {
       if (loading) return `Loading...`;
       if (error) return `Error ${error.message}`;
-      console.log(data);
+
       return data.navbarList.map((data, index) => {
         return (
           <div className="nav__container--mobile">

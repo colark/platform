@@ -7,7 +7,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    font-family: var(--colarkfont);
     width: 80%;
     margin: 0 auto;
     height: 400px;

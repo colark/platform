@@ -30,7 +30,8 @@ export default (app, state) => `
         <meta itemprop="description" content="scalable, distraction-free tech" />
         <meta itemprop="image" content=${colarkLogo} />
 
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Mukta+Malar:400,600,700" />
+        <link href="https://fonts.googleapis.com/css?family=Poppins+Semi-Bold" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins+Medium" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="http://localhost:3000/main.css" />
         <link rel="icon" type="image/png" href=${colarkIcon} />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
