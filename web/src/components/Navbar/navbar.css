@@ -55,6 +55,7 @@ a:hover {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    margin-top: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -68,6 +69,8 @@ a:hover {
 
     .nav__container--mobile {
         text-align: center;
+        background: transparent;
+        padding: 5px;
     }
 
     .nav__mobile {
