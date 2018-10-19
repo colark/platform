@@ -1,4 +1,4 @@
- 
+
 
 .team-member {
   position: relative;
@@ -41,12 +41,12 @@ img.team-member__photo, .team__accent-dot {
   left: 300px;
 }
 
-.team__accent-dot {
+/* .team__accent-dot {
   background-color: var(--accentcolor);
   position: relative;
   left: 170px;
   top: 100px;
-}
+} */
 
 .team-member__name, .team-member__title, .team-member__email, .team-member__linkedin {
   display: none;
