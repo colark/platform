@@ -1,15 +1,13 @@
 .view-container {
     background: linear-gradient(180deg, #5C6DFF 0%, #FFFFFF 93.73%);
-
 }
 
 .view-container--inner {
-    display: flex;
     justify-content: center;
     flex-direction: column;
     width: 80%;
     margin: 0 auto;
-    height: 400px;
+    color: var(--colarkfontcolor);
 }
 
 
@@ -20,23 +18,14 @@
     font-weight: 400;
     letter-spacing: 6px;
     width: 100%;
-    margin-top: 30px;
-}
-
-.view-container__subtitle {
-    display: flex;
-    justify-content: left;
-    font-size: 24px;
-    font-weight: 400;
-    color: var(--colarkfontcolor);
-    width: 100%;
-    letter-spacing: 3px;
-    margin-bottom: 30px;
+    padding-top: 70px;
+    margin: 0;
+    height: 300px;
 }
 
 @media only screen and (max-width: 600px) {
     .view-container--inner {
-        margin-top: 105px;
+        padding-top: 105px;
     }
 }
 
@@ -47,7 +36,6 @@
     }
 
     .view-container__title {
-        margin-top: 70px;
         width: 60%;
     }
 }
