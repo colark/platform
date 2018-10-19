@@ -9,7 +9,7 @@ import Projects from '../Projects';
 
 const LandingPage = () => (
   <div>
-    <BasicPage>
+    <BasicPage navBackgroundColor="transparent">
       <View/>
       <Projects/>
       {/* <Subscription/> */}
