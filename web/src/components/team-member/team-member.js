@@ -9,11 +9,11 @@ export default function TeamMember(props) {
           <br/>
           <span className="tooltiptext__title">{props.position}</span>
         </div>
-        <img
-          src={props.photo ? props.photo : "https://res.cloudinary.com/colark/image/upload/v1534352217/Ellipse.svg"}
-          alt={props.name}
-          className="team-member__photo"
-        />
+        // <img
+        //   src={props.photo ? props.photo : "https://res.cloudinary.com/colark/image/upload/v1534352217/Ellipse.svg"}
+        //   alt={props.name}
+        //   className="team-member__photo"
+        // />
       </div>
       <div className="team-member__info">
         <h3 className="team-member__name">{props.name}</h3>
