@@ -74,6 +74,7 @@ a:hover {
         text-align: center;
         background: transparent;
         padding: 5px;
+
     }
 
     .nav__mobile {
@@ -81,15 +82,13 @@ a:hover {
         top: 69px;
         width: 100%;
         border-bottom: 1px solid #C4C4C4;
+        opacity: .5;
     }
 
-    .nav__mobile--contact {
-        text-align: center;
-    }
 }
 
 @media only screen and (min-width: 600px) {
-    .nav__menu, .nav__container--mobile, .nav__mobile--contact {
+    .nav__menu, .nav__container--mobile, .nav__mobile {
         display: none;
     }
 }
