@@ -8,7 +8,6 @@ import Projects from '../Projects';
 // import Subscription from '../Subscription';
 
 const LandingPage = () => (
-  <div>
     <BasicPage navBackgroundColor="transparent">
       <View/>
       <Projects/>
@@ -17,7 +16,6 @@ const LandingPage = () => (
       {/* <Contact/> */}
       {/* <Team/> */}
     </BasicPage>
-  </div>
 );
 
 export default LandingPage

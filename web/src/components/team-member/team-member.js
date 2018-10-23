@@ -9,6 +9,7 @@ export default function TeamMember(props) {
           <br/>
           <span className="tooltiptext__title">{props.position}</span>
         </div>
+        <img src={props.photo} alt={props.name} className="team-member__photo"/>
       </div>
       <div className="team-member__info">
         <h3 className="team-member__name">{props.name}</h3>

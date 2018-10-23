@@ -5,6 +5,7 @@
   margin-bottom: 80px;
   padding-top: 70px;
   clear: both;
+  overflow: hidden;
 }
 
 .team {
@@ -21,19 +22,14 @@
   width: 900px;
   height: 50px;
   line-height: 50px;
-  margin: 0 auto 50px auto;
+  margin: 50px auto;
   z-index: 2;
 }
 
 .team-member-div {
   display: inline-block;
   position: relative;
-}
-
-.team-path {
   margin: 0 auto;
-  width: 100%;
-  height: 100%;
 }
 
 @media only screen and (max-width: 900px) {
