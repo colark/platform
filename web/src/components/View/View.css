@@ -7,7 +7,7 @@
     position: absolute;
     top: 150px;
     width: 125%;
-    background-size: contain; 
+    background-size: contain;
     right: 0px;
 }
 
@@ -19,8 +19,17 @@
 
 .view-container__title {
     color: var(--colarkfontcolor);
+<<<<<<< HEAD
+    text-align: left;
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    width: 100%;
+    padding-top: 140px;
+=======
     font-size: 40px;
     padding-top: 70px;
+>>>>>>> e1907dff170335777b5c13bd65a07742eba9e3b6
     margin: 0;
     font-weight: 600;
     letter-spacing: 2px;
