@@ -27,6 +27,7 @@
     float: right;
     width: 80px;
     color: var(--colarkfontcolor);
+    opacity: .5;
 }
 
 .nav {
@@ -36,7 +37,9 @@
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    background: var(--darkpurple);
+    background: transparent;
+    z-index: 2;
+    position: absolute;
 }
 
 a {
