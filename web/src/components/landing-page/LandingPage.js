@@ -17,7 +17,6 @@ const LandingPage = () => (
       {/* <Contact/> */}
       {/* <Team/> */}
     </BasicPage>
-  </div>
 );
 
 export default LandingPage
