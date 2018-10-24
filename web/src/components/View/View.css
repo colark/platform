@@ -40,14 +40,13 @@
 
     .view-container__background--maze {
         top: 80px;
-        width: 125%;
+        width: 100%;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .view-container__background--maze {
         top: -40px;
-        width: 100%;
     }
 
     .view-container__title {
