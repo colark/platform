@@ -27,6 +27,7 @@
     float: right;
     width: 80px;
     color: var(--colarkfontcolor);
+    opacity: .5;
 }
 
 .nav {
@@ -37,7 +38,9 @@
     justify-content: center;
     align-items: center;
     font-size: 18px;
+    background: transparent;
     z-index: 2;
+    position: absolute;
 }
 
 a {
@@ -72,6 +75,7 @@ a:hover {
         text-align: center;
         background: transparent;
         padding: 5px;
+
     }
 
     .nav__mobile {
@@ -79,15 +83,13 @@ a:hover {
         top: 69px;
         width: 100%;
         border-bottom: 1px solid #C4C4C4;
+        opacity: .5;
     }
 
-    .nav__mobile--contact {
-        text-align: center;
-    }
 }
 
 @media only screen and (min-width: 600px) {
-    .nav__menu, .nav__container--mobile, .nav__mobile--contact {
+    .nav__menu, .nav__container--mobile, .nav__mobile {
         display: none;
     }
 }

@@ -16,20 +16,10 @@
     margin: 0 auto;
 }
 
-
 .view-container__title {
     color: var(--colarkfontcolor);
-<<<<<<< HEAD
-    text-align: left;
-    font-size: 48px;
-    font-weight: 400;
-    letter-spacing: 6px;
-    width: 100%;
-    padding-top: 140px;
-=======
     font-size: 40px;
-    padding-top: 70px;
->>>>>>> e1907dff170335777b5c13bd65a07742eba9e3b6
+    padding-top: 140px;
     margin: 0;
     font-weight: 600;
     letter-spacing: 2px;
@@ -48,13 +38,9 @@
 
 @media only screen and (min-width: 910px) {
 
-    /* .view-container {
-        background-size: cover;
-    } */
-
     .view-container__background--maze {
         top: 80px;
-        width: 125%;
+        width: 100%;
     }
 }
 
@@ -66,6 +52,6 @@
     .view-container__title {
         margin-top: 0px;
         width: 40%;
-        padding-top: 120px;
+        padding-top: 170px;
     }
 }
