@@ -10,7 +10,7 @@ class BasicPage extends React.Component {
     return (
     <div>
       <div className="body-container-minus-footer">
-        <Navbar children={this.props.children}/>
+        <Navbar children={this.props.children} backgroundColor={this.props.navBackgroundColor}/>
         {this.props.children}
       </div>
         <Footer/>

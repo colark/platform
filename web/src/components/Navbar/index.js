@@ -50,8 +50,8 @@ const NavbarItemsListMobile = () => {
 
 
 class Navbar extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       showMe: true
     };
@@ -65,12 +65,12 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <div className="nav">
+      <div className="nav" style={this.props.backgroundColor != undefined ? {backgroundColor:this.props.backgroundColor} : {backgroundColor:"#333333"} } >
         <div className="nav__container--inner">
           <a className="nav__logo" href="/">
-            <img src="https://res.cloudinary.com/colark/image/upload/v1539894804/Colark%20Marketing%20Site/flatlogoComponent.svg"/>
+            <img src="https://res.cloudinary.com/colark/image/upload/v1539894804/Colark%20Marketing%20Site/flatlogoComponent.svg" alt="Colark Logo"/>
           </a>
-            <NavbarItemsList />
+          <NavbarItemsList />
           <button className="nav__menu" onClick={this.props.operation}>
             <img className="nav__glyphicon" src="https://res.cloudinary.com/colark/image/upload/v1537301204/Colark%20Marketing%20Site/menu-rounded-solid.png" />
           </button>

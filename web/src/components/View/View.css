@@ -1,7 +1,7 @@
 .view-container {
     background: linear-gradient(180deg, #5C6DFF 0%, #FFFFFF 93.73%);
     height: 800px;
-} 
+}
 
 .view-container__background--maze {
     position: absolute;
