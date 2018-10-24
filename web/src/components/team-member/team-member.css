@@ -1,13 +1,12 @@
- 
 
 .team-member {
   position: relative;
   display: inline-block;
 }
 
-img.team-member__photo, .team__accent-dot {
-  width: 100px;
-  height: 100px;
+img.team-member__photo, .team-accent-dot {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
 }
 
@@ -17,35 +16,23 @@ img.team-member__photo, .team__accent-dot {
 }
 
 .alina-photo {
-  top: 200px;
+  top: 300px;
   left: 200px;
 }
 
 .ellie-photo {
-  top: 40px;
-  left: 240px;
+  top: 140px;
+  left: 140px;
 }
 
 .lian-photo {
-  bottom: 20px;
+  /* bottom: 20px; */
   left: 150px;
 }
 
 .olga-photo {
-  top: 250px;
-  left: 630px;
-}
-
-.claire-photo {
-  top: 60px;
-  left: 300px;
-}
-
-.team__accent-dot {
-  background-color: var(--accentcolor);
-  position: relative;
-  left: 170px;
-  top: 100px;
+  top: 350px;
+  left: 530px;
 }
 
 .team-member__name, .team-member__title, .team-member__email, .team-member__linkedin {
@@ -60,7 +47,7 @@ img.team-member__photo, .team__accent-dot {
     border: 1px solid var(--colarkblue);
     color: var(--background);
     text-align: center;
-    border-radius: var(--roundedcorners);
+    border-radius: 6px;
     padding: 10px;
     position: absolute;
     z-index: 3;
@@ -72,11 +59,11 @@ img.team-member__photo, .team__accent-dot {
     font-weight: 100;
 }
 
-.tooltiptext__name {
+.tooltiptext--name {
   font-weight: 400;
 }
 
-.tooltiptext__title {
+.tooltiptext--title {
   font-size: 18px;
   color: var(--colarklightblue);
 }
@@ -104,10 +91,6 @@ div.team-member__photo-div:active .tooltiptext {
 }
 
 @media only screen and (min-width: 1080px) {
-  img.team-member__photo, .team__accent-dot {
-    width: 120px;
-    height: 120px;
-  }
 
   .alina-photo {
     top: 250px;
@@ -132,7 +115,7 @@ div.team-member__photo-div:active .tooltiptext {
 }
 
 @media only screen and (min-width: 1300px) {
-  img.team-member__photo, .team__accent-dot {
+  img.team-member__photo {
     width: 150px;
     height: 150px;
   }

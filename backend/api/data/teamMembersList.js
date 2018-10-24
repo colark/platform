@@ -31,14 +31,14 @@ const teamMembersList = [
     email: "lian@colark.com",
     linkedin: "https://www.linkedin.com/in/lianthompson/"
   },
-  {
-    name: "Claire Gallant",
-    className: "team-member__photo-div claire-photo",
-    position: "Product Manager",
-    photo: "https://res.cloudinary.com/colark/image/upload/v1534456735/Colark%20Marketing%20Site/claire-photo.jpg",
-    email: "claire@colark.com",
-    linkedin: "https://www.linkedin.com/in/claire-gallant-4494b683/"
-  }
+  // {
+  //   name: "Claire Gallant",
+  //   className: "team-member__photo-div claire-photo",
+  //   position: "Product Manager",
+  //   photo: "https://res.cloudinary.com/colark/image/upload/v1534456735/Colark%20Marketing%20Site/claire-photo.jpg",
+  //   email: "claire@colark.com",
+  //   linkedin: "https://www.linkedin.com/in/claire-gallant-4494b683/"
+  // }
 ];
 
 export default teamMembersList;
