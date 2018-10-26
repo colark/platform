@@ -3,17 +3,22 @@ import React from 'react'
 export default function Footer(props) {
     const footerIcons = [
     {
-      imageUrl: 'https://res.cloudinary.com/colark/image/upload/v1539947869/Colark%20Marketing%20Site/LINKEDIN.png',
+      imageUrl: 'https://res.cloudinary.com/colark/image/upload/v1540595865/Colark%20Marketing%20Site/email2.svg.svg',
+      linkUrl: 'mailto:ellie@colark.com',
+      alt: 'Email Colark'
+    },
+    {
+      imageUrl: 'https://res.cloudinary.com/colark/image/upload/v1540595601/Colark%20Marketing%20Site/LINKEDIN.svg',
       linkUrl: 'https://www.linkedin.com/company/colark/',
       alt: 'Find Colark on LinkedIn'
     },
     {
-      imageUrl: 'https://res.cloudinary.com/colark/image/upload/v1539947855/Colark%20Marketing%20Site/Facebook.png',
+      imageUrl: 'https://res.cloudinary.com/colark/image/upload/v1540595002/Colark%20Marketing%20Site/Facebook.svg',
       linkUrl: 'https://www.facebook.com/colarkHQ/',
       alt: 'Find Colark on Facebook'
     },
     {
-      imageUrl: 'https://res.cloudinary.com/colark/image/upload/v1539947832/Colark%20Marketing%20Site/Twitter.png',
+      imageUrl: 'https://res.cloudinary.com/colark/image/upload/v1540594991/Colark%20Marketing%20Site/Twitter.svg',
       linkUrl: 'https://www.twitter.com/colarkHQ/',
       alt: 'Follow us on Twitter'
     }];
