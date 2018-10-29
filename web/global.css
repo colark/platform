@@ -3,8 +3,8 @@
     --background: #FFF;
     --borderline: 1px solid var(--lightgray);
     --colarkfontcolor: #FFFFFF;
-    --colarkfont: 'Poppins Semi-Bold', sans-serif;
-    --colarkfontmedium: 'Poppins Medium', sans-serif;
+    --colarkfont: 'Poppins', sans-serif;
+    --colarkfontmedium: 'Poppins', sans-serif;
     --colarkblue: #0111FC;
     --colarklightblue: #E3E5FC;
     --contrastcolor: #333;
