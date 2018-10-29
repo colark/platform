@@ -11,6 +11,13 @@
     right: 0px;
 }
 
+.view-container__background--white {
+    position: relative;
+    background-size: contain;
+    width: 100%;
+    margin-top: 250px;
+}
+
 .view-container--inner {
     width: 80%;
     margin: 0 auto;
@@ -34,6 +41,10 @@
         top: 400px;
         width: 150%;
     }
+
+    .view-container__background--white {
+        margin-top: 250px;
+    }
 }
 
 @media only screen and (min-width: 910px) {
@@ -42,11 +53,19 @@
         top: 80px;
         width: 100%;
     }
+
+    .view-container__background--white {
+        margin-top: 300px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
     .view-container__background--maze {
         top: -40px;
+    }
+
+    .view-container__background--white {
+        margin-top: 175px;
     }
 
     .view-container__title {

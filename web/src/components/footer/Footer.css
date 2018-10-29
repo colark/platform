@@ -1,10 +1,4 @@
- 
-
-.body-container-minus-footer {
-    margin-bottom: var(--footerheight);
-}
-
-div.footer.colark-footer {
+ div.footer.colark-footer {
     clear: both;
     height: var(--footerheight);
     position: relative;
