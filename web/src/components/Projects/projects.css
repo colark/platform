@@ -1,13 +1,12 @@
 .projects-container {
     position: relative;
     text-align: center;
-    top: -450px;
+    z-index: 5;
 }
 
 @media only screen and (max-width: 1000px) {
-  .projects-container {
-      padding: 50px;
-  }
+
+
 }
 
 @media only screen and (min-width: 1700px) {

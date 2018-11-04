@@ -1,0 +1,82 @@
+.hero-container {
+    background: linear-gradient(180deg, #5C6DFF 0%, #FFFFFF 43.73%);
+    background-repeat: no-repeat;
+}
+
+.hero-container__background--maze {
+    background: url(https://res.cloudinary.com/colark/image/upload/v1539949738/Colark%20Marketing%20Site/Group_6.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    background-size: contain;
+    overflow: hidden;
+    top: -120px;
+}
+
+.hero-container__background--white {
+    top: 200px;
+    display: block;
+    position: relative;
+    background-size: contain;
+    width: 80%;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+/* .hero-container--inner {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid red;
+} */
+
+.hero-container__title {
+    color: var(--colarkfontcolor);
+    font-size: 40px;
+    padding-top: 140px;
+    margin-left: 11%;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgb(128,128,128);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .hero-container__title {
+        padding-top: 200px;
+    }
+
+    .hero-container__background--maze {
+        background-size: contain;
+        overflow: hidden;
+    }
+/* 
+    .hero-container__background--white {
+        top: -100px;
+    } */
+}
+
+@media only screen and (min-width: 910px) {
+
+
+
+    /* .hero-container__background--white {
+        margin-top: 200px;
+    } */
+
+}
+
+@media only screen and (min-width: 1200px) {
+    /* .hero-container__background--maze {
+        top: -200px;
+    } */
+
+    .hero-container__title {
+        margin-top: 0px;
+        width: 40%;
+        padding-top: 170px;
+    }
+
+    /* .hero-container__background--white {
+        top: -100px;
+    } */
+}
