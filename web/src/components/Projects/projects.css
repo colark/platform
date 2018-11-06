@@ -2,13 +2,14 @@
     position: relative;
     text-align: center;
     z-index: 5;
-}
-
-@media only screen and (max-width: 1000px) {
-
+    background:rgba(255,255,255, 0.3);
 
 }
 
-@media only screen and (min-width: 1700px) {
+@media only screen and (min-width: 1000px) {
 
+    .projects-container {
+        background: rgba(255,255,255, 0.05);
   }
+
+}
