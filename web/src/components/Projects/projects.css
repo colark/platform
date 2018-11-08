@@ -1,15 +1,8 @@
 .projects-container {
+    margin: -400px 50px 0px 50px;
+    padding-top: 150px;
     position: relative;
     text-align: center;
     z-index: 5;
-    background:rgba(255,255,255, 0.3);
-
-}
-
-@media only screen and (min-width: 1000px) {
-
-    .projects-container {
-        background: rgba(255,255,255, 0.05);
-  }
-
+    background: url("https://res.cloudinary.com/colark/image/upload/v1541636861/Colark%20Marketing%20Site/Body_BG_top_half.svg");
 }

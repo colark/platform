@@ -1,21 +1,19 @@
 .hero-container {
-    background: linear-gradient(180deg, #5C6DFF 0%, #FFFFFF 43.73%);
+    background: linear-gradient(180deg, #5C6DFF 0%, #FFFFFF 93.73%);
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .hero-container__background--maze {
     width: 100%;
-    position: absolute;
+    position: relative;
     background-size: contain;
-    top: 200px;
-    right: 0px;
 }
 
 .hero-container__background--white {
     margin-top: 150px;
     position: relative;
     width: 100%;
-    top: 100px;
 }
 
 .hero-container--inner {
@@ -30,6 +28,7 @@
     margin: 0;
     font-weight: 600;
     text-shadow: 1px 1px 2px rgb(128,128,128);
+    padding-left: 11%;
 }
 
 @media only screen and (max-width: 440px) {
@@ -55,9 +54,9 @@
 
     .hero-container__background--maze {
         width: 140%;
-        top: 350px;
+        right: 160px;
     }
-    
+
 }
 
 @media only screen and (min-width: 910px) {

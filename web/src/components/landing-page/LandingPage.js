@@ -6,6 +6,7 @@ import HeroPage from '../HeroPage';
 import Projects from '../Projects';
 // import Contact from '../Contact';
 // import Subscription from '../Subscription';
+import MazeBottom from '../MazeBottom';
 
 const LandingPage = () => (
     <BasicPage navBackgroundColor="transparent">
@@ -13,9 +14,9 @@ const LandingPage = () => (
       { /* <Partners/> */ }
       {/* <Contact/> */}
       {/* <Team/> */}
-      <HeroPage>
+      <HeroPage/>
       <Projects/>
-      </HeroPage>
+      <MazeBottom/>
     </BasicPage>
 );
 
