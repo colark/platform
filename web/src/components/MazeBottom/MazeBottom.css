@@ -1,6 +1,13 @@
 .body-lower-half {
-    background-size: contain;
-    width: 100%;
+    /* background-size: contain;
+    width: inherit;
     position: relative;
     display: block;
+    overflow: hidden; */
+    /* width: 100%; */
+}
+
+.body-lower-half--image {
+    position: relative;
+    width: 100%;
 }
