@@ -1,5 +1,5 @@
 .hero-container {
-    background: linear-gradient(180deg, #5C6DFF 0%, #FFFFFF 93.73%);
+    background: linear-gradient(180deg, #5C6DFF 0%, #FFFFFF 73.73%);
     background-repeat: no-repeat;
     overflow: hidden;
 }
@@ -8,6 +8,7 @@
     width: 100%;
     position: relative;
     background-size: contain;
+    top: -70px;
 }
 
 .hero-container__background--white {
@@ -53,7 +54,12 @@
 
     .hero-container__background--maze {
         width: 140%;
-        right: 160px;
+        right: 140px;
+        top: -50px;
+    }
+
+    .hero-container {
+        background: linear-gradient(180deg, #5C6DFF 0%, #FFFFFF 93.73%);
     }
 
 }
@@ -65,12 +71,22 @@
         height: 350px;
     }
 
+    .hero-container__title {
+        margin-top: 0px;
+        width: 50%;
+        padding-top: 170px;
+    }
+
+    .hero-container__background--maze {
+        top: -250px;
+    }
+
+    .hero-container {
+        background: linear-gradient(180deg, #5C6DFF 0%, #FFFFFF 53.73%);
+    }
 }
 
 @media only screen and (min-width: 1200px) {
-    .hero-container__background--maze {
-        top: -350px;
-    }
 
     .hero-container__title {
         margin-top: 0px;
@@ -81,4 +97,5 @@
     .hero-container__background--white {
         top: -100px;
     }
+
 }

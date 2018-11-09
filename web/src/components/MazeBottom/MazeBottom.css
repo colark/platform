@@ -1,13 +1,11 @@
-.body-lower-half {
-    /* background-size: contain;
-    width: inherit;
+/* .body-lower-half {
+    background-size: contain;
+    width: 100%;
     position: relative;
     display: block;
-    overflow: hidden; */
-    /* width: 100%; */
-}
+    overflow: hidden
+} */
 
 .body-lower-half--image {
-    position: relative;
     width: 100%;
 }

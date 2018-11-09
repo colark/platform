@@ -1,16 +1,31 @@
 .projects-container {
-    margin: -400px 50px 0px 50px;
+    width: 80%;
+    top: -400px;
+    margin: 0 auto;
+    background-size: cover;
     padding-top: 150px;
     position: relative;
-    text-align: center;
     z-index: 5;
     background: url("https://res.cloudinary.com/colark/image/upload/v1541636861/Colark%20Marketing%20Site/Body_BG_top_half.svg");
     background-repeat: no-repeat;
 }
 
+
+@media only screen and (min-width: 560px) {
+    .projects-container {
+        padding-top: 250px;
+    }
+}
+
+@media only screen and (min-width: 910px) {
+    .projects-container {
+        top: -700px;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
     .projects-container {
-        margin: -800px 50px 100px 75px;
+        top: -900px;
         padding-top: 350px;
     }
 }
