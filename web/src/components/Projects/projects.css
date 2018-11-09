@@ -1,7 +1,7 @@
 .projects-container {
     width: 80%;
-    top: -400px;
     margin: 0 auto;
+    margin-top: -400px;
     background-size: cover;
     padding-top: 150px;
     position: relative;
@@ -19,13 +19,13 @@
 
 @media only screen and (min-width: 910px) {
     .projects-container {
-        top: -700px;
+        margin-top: -700px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .projects-container {
-        top: -900px;
+        margin-top: -900px;
         padding-top: 350px;
     }
 }

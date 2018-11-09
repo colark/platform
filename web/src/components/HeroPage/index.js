@@ -1,7 +1,4 @@
 import React from 'react'
-// import WhiteBackground from '../white-overlay';
-import MazeBottom from '../MazeBottom';
-import MazeBackground from '../MazeBackground';
 
 class HeroPage extends React.Component {
   constructor(props) {
