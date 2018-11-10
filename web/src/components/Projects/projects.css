@@ -27,5 +27,12 @@
     .projects-container {
         margin-top: -900px;
         padding-top: 350px;
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .projects-container {
+        margin-top: -1100px;
     }
 }

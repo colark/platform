@@ -11,12 +11,6 @@
     top: -70px;
 }
 
-.hero-container__background--white {
-    margin-top: 150px;
-    position: relative;
-    width: 100%;
-}
-
 .hero-container--inner {
     width: 78%;
     margin: 0 auto;
@@ -41,9 +35,6 @@
         width: 160%;
     }
 
-    .hero-container__background--white {
-        top: 100px;
-    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -65,11 +56,6 @@
 }
 
 @media only screen and (min-width: 910px) {
-
-    .hero-container__background--white {
-        margin-top: 400px;
-        height: 350px;
-    }
 
     .hero-container__title {
         margin-top: 0px;
@@ -94,8 +80,18 @@
         padding-top: 170px;
     }
 
-    .hero-container__background--white {
-        top: -100px;
+}
+
+@media only screen and (min-width: 1600px) {
+
+    .hero-container__title {
+        margin-top: 0px;
+        width: 40%;
+        padding-top: 170px;
+    }
+
+    .hero-container__background--maze {
+        top: -400px;
     }
 
 }
