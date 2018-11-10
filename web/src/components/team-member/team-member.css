@@ -16,12 +16,12 @@ img.team-member__photo, .team-accent-dot {
 }
 
 .alina-photo {
-  top: 350px;
-  left: 50px;
+  top: 300px;
+  left: 0px;
 }
 
 .ellie-photo {
-  top: 140px;
+  top: 100px;
   left: 200px;
 }
 
@@ -120,42 +120,48 @@ div.team-member__photo-div:active .tooltiptext {
   }
 
   .alina-photo {
-    left: 0px;
+    left: -10px;
+    top: 300px;
   }
 }
 
 @media only screen and (min-width: 800px) {
 .alina-photo {
-  top: 350px;
-  left: 50px;
+  top: 400px;
+  left: 100px;
 }
 
 .ellie-photo {
   top: 140px;
-  left: 200px;
+  left: 300px;
 }
 
 .lian-photo {
-  left: 110px;
-  top: 50px;
+  left: 280px;
+  top: 80px;
 }
 
 .olga-photo {
-  top: 280px;
-  left: 400px;
+  top: 330px;
+  left: 550px;
 }
 }
 
 @media only screen and (min-width: 1080px) {
 
+  .ellie-photo {
+    top: 200px;
+    left: 200px;
+  }
+
   .alina-photo {
-    top: 250px;
-    left: 360px;
+    top: 550px;
+    left: 200px;
   }
 
   .olga-photo {
-    top: 270px;
-    left: 750px;
+    top: 470px;
+    left: 800px;
   }
 
   .claire-photo {
@@ -176,21 +182,39 @@ div.team-member__photo-div:active .tooltiptext {
     height: 150px;
   }
 
-  .olga-photo {
-    top: 320px;
-    left: 900px;
-  }
-
-  .claire-photo {
-    left: 460px;
-  }
-
   .tooltiptext {
     top: 155px;
     left: 16px;
   }
 
+  .ellie-photo {
+    top: 280px;
+    left: 300px;
+  }
+
+  .alina-photo {
+    top: 650px;
+    left: 300px;
+  }
+
+  .olga-photo {
+    top: 470px;
+    left: 1000px;
+  }
+
+  .claire-photo {
+    top: 80px;
+    left: 450px;
+  }
+
+  .tooltiptext {
+    top: 125px;
+    left: 0px;
+  }
+
 }
+
+
 
 
 
