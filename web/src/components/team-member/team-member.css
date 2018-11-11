@@ -18,6 +18,7 @@ img.team-member__photo, .team-accent-dot {
 .alina-photo {
   top: 300px;
   left: 0px;
+  z-index: 0;
 }
 
 .ellie-photo {
