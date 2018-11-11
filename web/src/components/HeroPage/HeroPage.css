@@ -46,7 +46,7 @@
     .hero-container__background--maze {
         width: 140%;
         right: 140px;
-        top: -50px;
+        top: -40px;
     }
 
     .hero-container {
@@ -55,11 +55,17 @@
 
 }
 
-@media only screen and (min-width: 910px) {
+@media only screen and (min-width: 700px) {
+    .hero-container__background--maze {
+        top: -100px;
+    }
+} 
+
+@media only screen and (min-width: 950px) {
 
     .hero-container__title {
         margin-top: 0px;
-        width: 50%;
+        width: 45%;
         padding-top: 170px;
     }
 
@@ -78,6 +84,10 @@
         margin-top: 0px;
         width: 40%;
         padding-top: 170px;
+    }
+
+    .hero-container__background--maze {
+        top: -300px;
     }
 
 }

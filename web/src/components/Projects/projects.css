@@ -10,23 +10,27 @@
     background-repeat: no-repeat;
 }
 
-
-@media only screen and (min-width: 560px) {
+@media only screen and (min-width: 700px) {
     .projects-container {
-        padding-top: 250px;
+        margin-top: -500px;
     }
 }
 
-@media only screen and (min-width: 910px) {
+@media only screen and (min-width: 800px) {
     .projects-container {
-        margin-top: -700px;
+        margin-top: -600px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .projects-container {
+        margin-top: -800px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .projects-container {
         margin-top: -900px;
-        padding-top: 350px;
         background-size: cover;
     }
 }
