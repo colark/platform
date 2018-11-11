@@ -17,21 +17,23 @@ img.team-member__photo, .team-accent-dot {
 
 .alina-photo {
   top: 300px;
-  left: 200px;
+  left: 0px;
+  z-index: 0;
 }
 
 .ellie-photo {
-  top: 140px;
-  left: 140px;
+  top: 100px;
+  left: 200px;
 }
 
 .lian-photo {
-  left: 150px;
+  left: 110px;
+  top: 50px;
 }
 
 .olga-photo {
-  top: 350px;
-  left: 530px;
+  top: 280px;
+  left: 350px;
 }
 
 .team-member__name, .team-member__title, .team-member__email, .team-member__linkedin {
@@ -83,22 +85,84 @@ div.team-member__photo-div:active .tooltiptext {
     display: inline-block;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 400px) {
   .olga-photo {
-    left: 500px;
+    top: 250px;
+    left: 290px;
   }
+
+  .ellie-photo {
+    left: 170px;
+    top: 100px;
+  }
+
+  .lian-photo {
+    left: 5px;
+  }
+
+  .alina-photo {
+    left: 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .olga-photo {
+    top: 250px;
+    left: 310px;
+  }
+
+  .ellie-photo {
+    left: 200px;
+    top: 100px;
+  }
+
+  .lian-photo {
+    left: 50px;
+  }
+
+  .alina-photo {
+    left: -10px;
+    top: 300px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+.alina-photo {
+  top: 400px;
+  left: 100px;
+}
+
+.ellie-photo {
+  top: 140px;
+  left: 300px;
+}
+
+.lian-photo {
+  left: 280px;
+  top: 80px;
+}
+
+.olga-photo {
+  top: 330px;
+  left: 550px;
+}
 }
 
 @media only screen and (min-width: 1080px) {
 
+  .ellie-photo {
+    top: 200px;
+    left: 200px;
+  }
+
   .alina-photo {
-    top: 250px;
-    left: 360px;
+    top: 550px;
+    left: 200px;
   }
 
   .olga-photo {
-    top: 270px;
-    left: 750px;
+    top: 470px;
+    left: 800px;
   }
 
   .claire-photo {
@@ -119,25 +183,39 @@ div.team-member__photo-div:active .tooltiptext {
     height: 150px;
   }
 
-  .olga-photo {
-    top: 320px;
-    left: 900px;
-  }
-
-  .claire-photo {
-    left: 460px;
-  }
-
   .tooltiptext {
     top: 155px;
     left: 16px;
   }
 
+  .ellie-photo {
+    top: 280px;
+    left: 300px;
+  }
+
+  .alina-photo {
+    top: 650px;
+    left: 300px;
+  }
+
+  .olga-photo {
+    top: 470px;
+    left: 1000px;
+  }
+
+  .claire-photo {
+    top: 80px;
+    left: 450px;
+  }
+
+  .tooltiptext {
+    top: 125px;
+    left: 0px;
+  }
+
 }
 
-@media only screen and (max-width: 400px) {
-  .olga-photo {
-    top: 200px;
-    left: 530px;
-  }
-}
+
+
+
+

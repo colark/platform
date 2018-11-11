@@ -7,17 +7,17 @@
 }
 
 .team {
+  position: relative;
   width: 120%;
-  margin: 50px auto 0 auto;
   height: 800px;
   background-image: url("https://res.cloudinary.com/colark/image/upload/v1539936349/Colark%20Marketing%20Site/rainbow_background.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .team__header.section__header {
   display: block;
-  width: 900px;
+  width: 78%;
   height: 50px;
   line-height: 50px;
   margin: 50px auto;
@@ -30,15 +30,32 @@
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
   .team__title {
     width: 720px;
+  }
+
+  .team {
+    height: 300px;
+    width: 160%;
+    right: 160px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .team {
+    height: 600px;
   }
 }
 
 @media only screen and (min-width: 1100px) {
   .team {
-    background-size: cover;
     height: 1000px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .team {
+    height: 1300px;
   }
 }
