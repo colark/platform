@@ -94,7 +94,12 @@ class Navbar extends React.Component {
           </button>
         </div>
 
-        <div className="nav__mobile">
+        <div className="nav__mobile"
+                style={
+                  this.props.backgroundColor != undefined
+                    ? { backgroundColor: this.props.backgroundColor }
+                    : { backgroundColor: "#333333" }
+                }>
           {
             this.state.showMe ? 
             <div>

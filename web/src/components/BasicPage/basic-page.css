@@ -16,6 +16,7 @@
 }
 
 .page-maze--top {
+  top: -5px;
   background-size: contain;
   overflow: hidden;
   position: absolute;
