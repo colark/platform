@@ -1,0 +1,9 @@
+.unstack-maze--bottom {
+    background-size: contain;
+    overflow: hidden;
+}
+
+.unstack-maze--top {
+    background-size: contain;
+    overflow: hidden;
+}

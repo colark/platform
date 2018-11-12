@@ -2,6 +2,8 @@ import React from 'react';
 import gql from 'graphql-tag';
 import LandingPage from './src/components/landing-page/LandingPage';
 import AboutPage from './src/components/AboutPage';
+import Unstack from './src/components/Unstack';
+import PhaseZero from './src/components/PhaseZero';
 
 
 const SAY_HELLO = gql`
@@ -33,6 +35,8 @@ const App = ({ Shell, Router }) => {
       <Router.Switch>
         <Router.Route path="/hello" component={HelloWorld} />
         <Router.Route path="/about" component={AboutPage} />
+        <Router.Route path="/unstack" component={Unstack} />
+        <Router.Route path="/phasezero" component={PhaseZero} />
         <Router.Route path="/" component={LandingPage} />
       </Router.Switch>
     </Shell>
