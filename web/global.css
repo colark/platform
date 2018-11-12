@@ -1,22 +1,23 @@
 :root {
-    --accentcolor: #FF6969;
-    --background: #FFF;
-    --borderline: 1px solid var(--lightgray);
-    --colarkfontcolor: #FFFFFF;
-    --colarkfont: 'Poppins', sans-serif;
-    --colarkfontmedium: 'Poppins', sans-serif;
-    --colarkblue: #0111FC;
-    --colarklightblue: #E3E5FC;
-    --contrastcolor: #333;
-    --mutedtextcolor: #BDBDBD;
-    --footerheight: 70px;
-    --leftmargin: 80px;
-    --lightgray: #C4C4C4;
-    --navheight: 40px;
-    --roundedcorners: 8px;
-    --boxshadow: 5px 7px 5px rgba(0, 0, 0, 0.3);
-    --contactformfontcolor: #A9ADE0;
-    --darkpurple: #5C6DFF;
+  --accentcolor: #ff6969;
+  --background: #fff;
+  --borderline: 1px solid var(--lightgray);
+  --colarkfontcolor: #ffffff;
+  --colarkfont: "Poppins", sans-serif;
+  --colarkfontmedium: "Poppins", sans-serif;
+  --colarkblue: #0111fc;
+  --colarklightblue: #e3e5fc;
+  --contrastcolor: #333;
+  --mutedtextcolor: #575757;
+  --footerheight: 70px;
+  --leftmargin: 80px;
+  --lightgray: #c4c4c4;
+  --navheight: 40px;
+  --roundedcorners: 8px;
+  --boxshadow: 5px 7px 5px rgba(0, 0, 0, 0.3);
+  --contactformfontcolor: #a9ade0;
+  --darkpurple: #5c6dff;
+  --primary: #333333;
 }
 
 .section__header {
@@ -24,6 +25,26 @@
   font-weight: 400;
   letter-spacing: 5px;
   font-size: 36px;
+}
+
+.button {
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 25px;
+  line-height: 50px;
+  padding-right: 25px;
+  font-weight: bold;
+}
+
+.button.primary {
+  background: #333333;
+}
+
+.button.primary.disabled {
+  color: #ffffff;
+  background: #969696;
+  pointer-events: none;
+  cursor: default;
 }
 
 body * {

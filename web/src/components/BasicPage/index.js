@@ -19,7 +19,7 @@ class BasicPage extends React.Component {
           style={{ background: this.props.backgroundGradient }}
         >
           <div
-            className="page-maze--content"
+            className="page-maze--content top"
             style={{ backgroundImage: `url(${this.props.topMazeSrc})` }}
           />
         </div>
@@ -38,6 +38,9 @@ class BasicPage extends React.Component {
                 />
                 <div className="content-container--normal" />
               </div>
+              {this.props.title && (
+                <h1 className="basic-page-header">{this.props.title}</h1>
+              )}
               {this.props.children}
             </div>
           </div>

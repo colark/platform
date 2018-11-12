@@ -11,6 +11,9 @@ function Projects(props) {
         icon
         title
         blurb
+        href
+        callToAction
+        launched
       }
     }
   `;

@@ -16,9 +16,9 @@ type Query {
 }
 
 type Partner {
-    name: String
-    logo: String
-    website: String
+  name: String
+  logo: String
+  website: String
 }
 
 type Project {
@@ -26,6 +26,9 @@ type Project {
   icon: String
   title: String
   blurb: String
+  href: String
+  callToAction: String
+  launched: Boolean
 }
 
 type Navbar {

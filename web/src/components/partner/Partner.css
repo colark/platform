@@ -1,21 +1,16 @@
- 
-
 .partner {
   background-color: var(--background);
-  border: 1px solid var(--contrastcolor);
   border-radius: var(--roundedcorners);
   padding: 10px;
   height: 65px;
-  width: 210px;
   display: inline-block;
   margin: 15px;
-  box-shadow: var(--boxshadow);
   text-align: center;
 }
 
 img.partner__logo {
   height: 100%;
-  width: 80%;
+  width: auto;
   text-align: center;
   margin: 0 auto;
 }

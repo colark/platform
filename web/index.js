@@ -1,10 +1,9 @@
-import React from 'react';
-import gql from 'graphql-tag';
-import LandingPage from './src/components/landing-page/LandingPage';
-import AboutPage from './src/components/AboutPage';
-import Unstack from './src/components/Unstack';
-import PhaseZero from './src/components/PhaseZero';
-
+import React from "react";
+import gql from "graphql-tag";
+import LandingPage from "./src/components/landing-page/LandingPage";
+import AboutPage from "./src/components/AboutPage";
+import Unstack from "./src/components/Unstack";
+import PhaseZero from "./src/components/PhaseZero";
 
 const SAY_HELLO = gql`
   {
@@ -12,22 +11,23 @@ const SAY_HELLO = gql`
   }
 `;
 
-
 const HelloWorld = ({ history, Apollo }) => {
-  return <Apollo.Query query={SAY_HELLO}>
-    {({ loading, error, data }) => {
-      if (loading) return 'Loading...';
-      if (error) return `Error! ${error.message}`;
+  return (
+    <Apollo.Query query={SAY_HELLO}>
+      {({ loading, error, data }) => {
+        if (loading) return "Loading...";
+        if (error) return `Error! ${error.message}`;
 
-      return (
-        <div>
-          <h1>{data.hello}</h1>
-          <button onClick={() => history.push('/')}>click me!</button>
-        </div>
-      );
-    }}
-  </Apollo.Query>
-}
+        return (
+          <div>
+            <h1>{data.hello}</h1>
+            <button onClick={() => history.push("/")}>click me!</button>
+          </div>
+        );
+      }}
+    </Apollo.Query>
+  );
+};
 
 const App = ({ Shell, Router }) => {
   return (
@@ -41,6 +41,6 @@ const App = ({ Shell, Router }) => {
       </Router.Switch>
     </Shell>
   );
-}
+};
 
-export default { app: App };
+export default { app: App, options: {} };

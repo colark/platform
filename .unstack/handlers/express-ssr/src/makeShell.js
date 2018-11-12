@@ -1,16 +1,29 @@
 import React from 'react';
 import { ApolloProvider, Query } from 'react-apollo';
 import { Route, Switch } from 'react-router';
+import Shell from './shell';
+import gql from 'graphql-tag';
 
-const Shell = ({ children }) => (<div>{children}</div>);
+const ROUTE_TO_PAGE = gql`
+  {
+    router(path: "/hello")
+  }
+`;
+
+const PageFetcher = (props) => {
+  const LoadedPage = props.component;
+  return <LoadedPage {...props} />;
+}
 
 export default (App, { apolloClient }) => {
   const Apollo = { Query };
   const ConnectedRoute = routeProps => {
-    const RouteComponent = routeProps.component
-    const ConnectedComponent = (componentProps) => <RouteComponent {...componentProps} Apollo={Apollo} />
+    const ConnectedComponent = (componentProps) => {
+      return (<PageFetcher {...componentProps} {...routeProps} Apollo={Apollo} />);
+    }
     return <Route
       {...routeProps}
+      exact
       component={ConnectedComponent}
     />
   }

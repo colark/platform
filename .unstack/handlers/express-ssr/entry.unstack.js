@@ -1,3 +1,4 @@
+import 'babel-polyfill';
 import React from "react";
 import ReactDOM from "react-dom";
 import BrowserRouter from "react-router-dom/BrowserRouter";
@@ -6,13 +7,10 @@ import component from './component';
 import { createHttpLink } from 'apollo-link-http';
 import { InMemoryCache } from "apollo-cache-inmemory";
 import makeShell from "./src/makeShell";
+import makeApolloClient from './src/makeApolloClient';
 
-const apolloClient = new ApolloClient({
-  link: createHttpLink({
-    uri: 'http://localhost:4000',
-  }),
-  cache: new InMemoryCache().restore(window.__APOLLO_STATE__),
-});
+const restoreToCache = (cache) => cache.restore(window.__APOLLO_STATE__);
+const apolloClient = makeApolloClient({ uri: window.__API_ENDPOINT__, links: component.options.apolloLinks, restoreToCache })
 
 const App = component.app;
 

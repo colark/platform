@@ -35,6 +35,10 @@
   background-position-y: center;
 }
 
+.page-maze--content.top {
+  top: 75px;
+}
+
 .page-maze--content.bottom {
   position: absolute;
   height: 100vh;
@@ -61,6 +65,7 @@
   bottom: 0px;
   position: absolute;
   overflow: hidden;
+  z-index: -1;
 }
 
 .content-container--angled {
@@ -76,38 +81,23 @@
   margin-top: -10px;
 }
 
+.basic-page-header {
+  transform: rotate3d(0.2, 0, 1, -6deg);
+  margin-left: 25px;
+  font-size: 44px;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  color: black;
+  font-style: italic;
+  z-index: 1;
+}
+
 .content-container--inner {
   width: 100%;
 }
 
-@media only screen and (max-width: 1000px) {
-  .page-maze--content.bottom {
-    background-size: contain;
-  }
-}
-
-@media only screen and (min-width: 700px) {
+@media only screen and (max-width: 600px) {
   .content-container {
-  }
-}
-
-@media only screen and (min-width: 800px) {
-  .content-container {
-  }
-}
-
-@media only screen and (min-width: 960px) {
-  .content-container {
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .content-container {
-    background-size: cover;
-  }
-}
-
-@media only screen and (min-width: 1500px) {
-  .content-container {
+    padding-top: 5em;
   }
 }

@@ -1,16 +1,17 @@
 .project {
-    display: inline-block;
-    position: relative;
-    width: 50%;
-    margin: 0 auto;
-    z-index: 5;
-    padding-bottom: 50px;
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  z-index: 5;
+  padding-bottom: 50px;
+  text-align: center;
 }
 
 .project__icon {
-    width: 250px;
-    display: block;
-    margin: 0 auto;
+  width: 250px;
+  display: block;
+  margin: 0 auto;
 }
 
 .project__title {
@@ -19,26 +20,21 @@
   text-align: center;
   font-size: 36px;
   margin: 15px;
+  margin-top: 5px;
 }
 
 .project__blurb {
   color: var(--mutedtextcolor);
   margin: 0 auto;
   font-size: 16px;
-  max-width: 240px;
+  max-width: 350px;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 @media only screen and (max-width: 900px) {
-    .project {
-        width: 100%;
-        display: block;
-    }
+  .project {
+    width: 100%;
+    display: block;
+  }
 }
-
-@media only screen and (max-width: 550px) {
-    .project__icon {
-        margin-top: 75px;
-    }
-}
-
-
