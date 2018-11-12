@@ -86,7 +86,7 @@ class Navbar extends React.Component {
             />
           </a>
           <NavbarItemsList />
-          <button className="nav__menu" onClick={this.props.operation}>
+          <button className="nav__menu" onClick={()=>this.operation()}>
             <img
               className="nav__glyphicon"
               src="https://res.cloudinary.com/colark/image/upload/v1537301204/Colark%20Marketing%20Site/menu-rounded-solid.png"
@@ -95,11 +95,13 @@ class Navbar extends React.Component {
         </div>
 
         <div className="nav__mobile">
-          {this.state.showMe ? (
+          {
+            this.state.showMe ? 
             <div>
               <NavbarItemsListMobile />
             </div>
-          ) : null}
+           : null
+           }
         </div>
       </div>
     );
