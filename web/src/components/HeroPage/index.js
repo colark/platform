@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 class HeroPage extends React.Component {
   constructor(props) {
@@ -6,16 +6,15 @@ class HeroPage extends React.Component {
   }
   render() {
     return (
-      <div>
-        <div className="hero-container">
-          <div className="hero-container--inner">
-          <h1 className="hero-container__title">Build sustainable software at any scale</h1>
-          </div>
-          <img className="hero-container__background--maze" src="https://res.cloudinary.com/colark/image/upload/v1539949738/Colark%20Marketing%20Site/Group_6.svg" />
+      <div className="hero-container">
+        <div className="hero-container--inner">
+          <h1 className="hero-container__title">
+            Build sustainable software at any scale
+          </h1>
         </div>
       </div>
     );
-  };
+  }
 }
 
 export default HeroPage;
