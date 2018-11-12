@@ -89,7 +89,7 @@ class Navbar extends React.Component {
           <button className="nav__menu" onClick={()=>this.operation()}>
             <img
               className="nav__glyphicon"
-              src="https://res.cloudinary.com/colark/image/upload/v1537301204/Colark%20Marketing%20Site/menu-rounded-solid.png"
+              src="https://res.cloudinary.com/colark/image/upload/v1542056919/Colark%20Marketing%20Site/icon-for-menu-6.png"
             />
           </button>
         </div>

@@ -4,6 +4,7 @@
 }
 
 .nav__menu {
+  background: transparent;
   width: 55px;
   height: 40px;
   border-radius: 5px;
