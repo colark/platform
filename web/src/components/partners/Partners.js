@@ -36,11 +36,13 @@ function Partners(props) {
 
   return (
     <div className="partners" id="partners">
+      <h2 className="partners__header section__header">
+        Organizations we've worked with:
+      </h2>
       <div className="partner--container">
-        <h2 className="partners__header section__header">
-          Companies we've collaborated with:
-        </h2>
-        <Partners />
+        <div className="partner-list">
+          <Partners />
+        </div>
       </div>
     </div>
   );

@@ -6,13 +6,15 @@
   display: inline-block;
   margin: 15px;
   text-align: center;
+  max-width: 200px;
 }
 
 img.partner__logo {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
+  vertical-align: middle;
 }
 
 .partners {
