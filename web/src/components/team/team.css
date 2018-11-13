@@ -1,6 +1,5 @@
 .team-container {
   position: relative;
-  margin-bottom: 80px;
   padding-top: 70px;
   clear: both;
   overflow: hidden;
@@ -31,23 +30,23 @@
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 900px) {
+  .team {
+    right: 150px;
+    width: 150%;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .team__title {
     width: 720px;
   }
 
   .team {
-    height: 300px;
     width: 160%;
     right: 160px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .team {
-    height: 600px;
-    right: 150px;
-    width: 150%;
+    margin-top: 100px;
+    height: 600px
   }
 }
 
