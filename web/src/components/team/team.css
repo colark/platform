@@ -4,6 +4,7 @@
   padding-top: 70px;
   clear: both;
   overflow: hidden;
+  top: -200px;
 }
 
 .team {
@@ -45,6 +46,8 @@
 @media only screen and (max-width: 900px) {
   .team {
     height: 600px;
+    right: 150px;
+    width: 150%;
   }
 }
 

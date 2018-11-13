@@ -108,7 +108,7 @@ div.team-member__photo-div:active .tooltiptext {
 @media only screen and (max-width: 500px) {
   .olga-photo {
     top: 250px;
-    left: 310px;
+    left: 300px;
   }
 
   .ellie-photo {
@@ -121,7 +121,7 @@ div.team-member__photo-div:active .tooltiptext {
   }
 
   .alina-photo {
-    left: -10px;
+    left: -20px;
     top: 300px;
   }
 }

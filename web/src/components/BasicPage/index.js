@@ -29,7 +29,7 @@ class BasicPage extends React.Component {
             backgroundColor={this.props.navBackgroundColor}
           />
           {Hero && <Hero />}
-          <div className="content-container">
+          <div className="content-container" style={{ width: this.props.teamWidth }}>
             <div className="content-container--inner">
               <div className="content-container--background">
                 <img
@@ -44,7 +44,7 @@ class BasicPage extends React.Component {
               {this.props.children}
             </div>
           </div>
-          <div className="page-maze--bottom">
+          <div className="page-maze--bottom" style={{ display: this.props.teamMazeBottom}}>
             <div
               className="page-maze--content bottom"
               style={{ backgroundImage: `url(${this.props.bottomMazeSrc})` }}
