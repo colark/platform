@@ -4,7 +4,10 @@ import Team from '../team/team'
 
 const AboutPage = () => (
   <div>
-    <BasicPage>
+    <BasicPage 
+      teamWidth = "auto"
+      teamMazeBottom = "none"
+    >
       <Team/>
     </BasicPage>
   </div>
