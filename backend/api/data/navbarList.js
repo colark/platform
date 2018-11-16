@@ -9,7 +9,7 @@ const navbarList = [
     },
     {
       name: "Contact",
-      scroll: "mailto:ellie@colark.com"
+      scroll: "/contact"
     }
   ];
 

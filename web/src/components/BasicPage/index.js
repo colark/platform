@@ -44,7 +44,7 @@ class BasicPage extends React.Component {
               {this.props.children}
             </div>
           </div>
-          <div className="page-maze--bottom">
+          <div className="page-maze--bottom" style={{ display: this.props.teamMazeBottom}}>
             <div
               className="page-maze--content bottom"
               style={{ backgroundImage: `url(${this.props.bottomMazeSrc})` }}
