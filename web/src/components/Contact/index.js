@@ -11,10 +11,10 @@ export default class Contact extends React.Component {
             navBackgroundColor="transparent"
             >
             <div className="contact-form__container">
-                <div className="contact-form__image--container">
+                {/* <div className="contact-form__image--container">
                     <img className="contact-form__image" src="https://res.cloudinary.com/colark/image/upload/c_crop,h_490,w_1034/v1542324928/Colark%20Marketing%20Site/user.png" />
                     <h4 className="contact-form__input--title">Sign up with one of the following</h4>
-                </div>
+                </div> */}
                 <div className="contact-form__input--container">
                     <div>
                         <div>

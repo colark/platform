@@ -3,22 +3,14 @@
     text-align: center;
 }
 
-.contact-form__image--container {
-    width: 60%;
-}
-
 .contact-form__image {
     width: 100%;
-}
-
-.contact-form__input--container {
-    width: 40%;
-    padding: 50px;
 }
 
 .contact-form__input--container, .contact-form__image--container {
     display: inline-block;
     padding: 30px;
+    width: 80%;
 }
 
 .contact-form__input--title {
