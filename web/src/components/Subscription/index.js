@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Subscribe(props) {
+export default function Subscription(props) {
     return (
         <div className="subscription">
             <div className="subscription__header">Subscribe to our News</div>
