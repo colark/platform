@@ -16,6 +16,7 @@ const LandingPage = () => (
     Hero={HeroPage}
   >
     <Projects />
+    <Subscription />
     <Partners />
   </BasicPage>
 );

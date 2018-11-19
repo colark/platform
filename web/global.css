@@ -14,10 +14,11 @@
   --lightgray: #c4c4c4;
   --navheight: 40px;
   --roundedcorners: 8px;
-  --boxshadow: 5px 7px 5px rgba(0, 0, 0, 0.3);
+  --boxshadow: 1px 5px 20px 2px #E5E5E5;
   --contactformfontcolor: #a9ade0;
   --darkpurple: #5c6dff;
   --primary: #333333;
+  --shadowgray: #E5E5E5;
 }
 
 .section__header {
