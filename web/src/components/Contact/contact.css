@@ -1,63 +1,63 @@
 .contact-form__container {
     width: 100%;
     text-align: center;
-    padding: 40px;
-}
-
-.contact-form__image--container {
-    width: 60%;
 }
 
 .contact-form__image {
     width: 100%;
 }
 
-.contact-form__input--container {
-    width: 40%;
-    padding: 50px;
-}
-
 .contact-form__input--container, .contact-form__image--container {
     display: inline-block;
     padding: 30px;
+    width: 80%;
+}
+
+.contact-form__input--title {
+    text-align: left;
+    margin: 0;
+    color: var(--lightgray);
+    letter-spacing: 1px;
+}
+
+.contact-form__line {
+    color: var(--lightgray);
+    margin-top: -20px;
+    height: 2px;
+    background: var(--lightgray);
+    border: var(--lightgray);
+    margin-bottom: 100px;
 }
 
 .contact-form__button {
     float: right;
     width: 150px;
-    padding: 0;
-    margin-top: 40px;
-    background-color: var(--accentcolor);
-    border: 1px solid var(--accentcolor);
+    background-color: var(--lightgray);
+    border: 1px solid var(--lightgray);
     border-radius: 5px;
     color: var(--background);
-}
-
-.contact-form__input--header {
-    color: var(--colarkblue);
-    font-weight: 700;
-    margin-bottom: 50px;
-    text-align: left;
+    margin-bottom: 100px;
+    margin-top: -20px;
 }
 
 .contact-form__input--message,
 .contact-form__input--email,
 .contact-form__input--name {
-    border-radius: 5px;
     margin: 5px;
     width: 100%;
     height: 50px;
-    padding-left: 10px;
+    padding-left: 5px;
+    margin-left: -5px;
     outline-color: transparent;
     outline-style: none;
-    background: var(--colarklightblue);
-    border: 1px solid var(--colarklightblue);
+    background: transparent;
+    border: transparent;
 }
 
 .contact-form__input--message::placeholder,
 .contact-form__input--email::placeholder,
 .contact-form__input--name::placeholder {
-    color: var(--contactformfontcolor);
+    color: var(--primary);
 }
 
 .contact-form__input--message {
@@ -84,9 +84,8 @@
     }
 
     .contact-form__input--container {
-        width: 100%;
+        width: auto;
         display: block;
-        padding: 50px;
         align-self: center;
         margin: 0 auto !important;
 
