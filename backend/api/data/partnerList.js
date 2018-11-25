@@ -13,7 +13,7 @@ const partnerList = [
   },
   {
     name: "Mavenlink",
-    logo: "https://www.betterbuys.com/wp-content/uploads/2016/04/Mavenlink.png",
+    logo: "https://res.cloudinary.com/colark/image/upload/c_crop,h_109,w_333/v1542070756/Colark%20Marketing%20Site/455923-mavenlink-logo.jpg",
     website: "https://mavenlink.com"
   },
   {

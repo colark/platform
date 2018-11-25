@@ -1,3 +1,10 @@
+.partner--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .partner {
   background-color: var(--background);
   border-radius: var(--roundedcorners);
@@ -10,13 +17,9 @@
 }
 
 img.partner__logo {
-  height: auto;
+  height: 60px;
   width: 100%;
   text-align: center;
   margin: 0 auto;
   vertical-align: middle;
-}
-
-.partners {
-  padding-top: 80px;
 }

@@ -1,14 +1,7 @@
 .partners {
   width: 100%;
-}
-
-.partner--container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.partner-list {
+  text-align: center;
+  padding-top: 80px;
 }
 
 .partners__header.section__header {
