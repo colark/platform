@@ -1,6 +1,6 @@
 import React from "react";
 import BasicPage from "../BasicPage";
-import HeroPage from "../HeroPage";
+import HeroSection from "../HeroSection";
 import Projects from "../Projects";
 import Partners from "../partners/Partners";
 import Contact from "../Contact";
@@ -13,7 +13,7 @@ const LandingPage = () => (
     topMazeSrc="/assets/home-maze.svg"
     bottomMazeSrc="https://res.cloudinary.com/colark/image/upload/v1540495663/Colark%20Marketing%20Site/downillustration.svg"
     navBackgroundColor="transparent"
-    Hero={HeroPage}
+    Hero={HeroSection}
   >
     <Projects />
     <Partners />

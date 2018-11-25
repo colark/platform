@@ -1,6 +1,6 @@
 import React from "react";
 
-class HeroPage extends React.Component {
+class HeroSection extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -24,4 +24,4 @@ class HeroPage extends React.Component {
   }
 }
 
-export default HeroPage;
+export default HeroSection;

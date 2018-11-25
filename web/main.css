@@ -2,7 +2,7 @@
 @import "/global.css";
 @import "/src/components/Navbar/navbar.css";
 @import "/src/components/RocketPyramid/RocketPyramid.css";
-@import "/src/components/HeroPage/HeroPage.css";
+@import "/src/components/HeroSection/HeroSection.css";
 @import "/src/components/blog-card/BlogCard.css";
 @import "/src/components/blog-section/BlogSection.css";
 @import "/src/components/blog-slider/BlogSlider.css";
