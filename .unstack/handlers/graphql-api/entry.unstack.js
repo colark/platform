@@ -1,13 +1,11 @@
-import { GraphQLServer } from 'graphql-yoga';
-import component from './compiled-component';
+import component from "./compiled-component";
+import launchServer from "./serverLauncher.compiled";
 
-const wrapped = ({ makeConfig }, context) => {
-  const server = new GraphQLServer(makeConfig(context));
-  server.start(() => console.log('Server is running on localhost:4000'));
+const wrapped = async ({ makeConfig }, context) => {
+  const config = await makeConfig(context);
+  launchServer(config);
 };
 
 const context = {};
 
-//const context JSON.parse("{{contextString}}")
-
-wrapped(component, context);
+(async () => await wrapped(component, context))();

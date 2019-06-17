@@ -4,10 +4,13 @@ context:
     name: env-context
 backend:
   api:
+    type: web
     handler:
       name: graphql-api
-web:
-  handler:
-    name: express-ssr
-  depends_on:
-    - backend.api
+clients:
+  web:
+    type: web
+    handler:
+      name: express-ssr
+    depends_on:
+      - backend.api

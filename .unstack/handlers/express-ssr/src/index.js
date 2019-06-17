@@ -1,23 +1,23 @@
-import server from './server';
-const util = require('util');
-const exec = util.promisify(require('child_process').exec);
-const path = require('path');
-const fs = require('fs');
-const yaml = require('write-yaml');
-const { hashElement } = require('folder-hash');
+import server from "./server";
+const util = require("util");
+const nonPromiseExec = require("child_process").exec;
+const exec = util.promisify(require("child_process").exec);
+const path = require("path");
+const fs = require("fs");
+const yaml = require("write-yaml");
+const { hashElement } = require("folder-hash");
 
-const wrapComponent = (component, context) => {
+const wrapComponent = helper => {
+  const context = helper.getContext();
+  const serviceDescriptor = helper.getServiceDescriptor();
+  const serviceName = helper.getServiceName();
+
   return {
-    start: async (config) => {
-      const serviceName = config.service.name;
-
-      const handlerLocation = config.handler.location;
-      const componentLocation = `./${config.service.location}`;
-      const appFolder = `./.unstack/tmp/artifacts/start/${serviceName}`;
-
-      //build tmp docker app folder
-      const buildBundleFolderCommand = `mkdir -p ${appFolder}`;
-      const buildBundleFolder = await exec(buildBundleFolderCommand, { cwd: process.cwd() });
+    start: async () => {
+      const component = await helper.getComponent();
+      const appFolder = helper.getWorkingDirectoryPath();
+      const handlerLocation = helper.getHandlerLocation();
+      const componentLocation = helper.getComponentLocation();
 
       await exec(`cp -R ${handlerLocation}/* ${appFolder}`, {
         cwd: process.cwd()
@@ -27,34 +27,8 @@ const wrapComponent = (component, context) => {
         cwd: process.cwd()
       });
 
-      await exec(`rm -rf ${appFolder}/component`, { cwd: process.cwd() });
-      await exec(`cp -rf ${componentLocation}/. ${appFolder}/component`, { cwd: process.cwd() });
-
-      const handlerPackageJson = JSON.parse(
-        fs.readFileSync(handlerLocation + '/package.json', { encoding: 'utf-8' })
-      );
-
-      // to get es6 goodness via babel
-      const serviceDependencies = JSON.parse(
-        fs.readFileSync(handlerLocation + '/service-dependencies.json', { encoding: 'utf-8' })
-      );
-
-      const componentPackageJson = JSON.parse(
-        fs.readFileSync(componentLocation + '/package.json', { encoding: 'utf-8' })
-      );
-
-      // merge package.json dependencies in place with handler dependencies
-      componentPackageJson.dependencies = Object.assign(
-        {},
-        handlerPackageJson.dependencies,
-        componentPackageJson.dependencies,
-        serviceDependencies
-      );
-
-      fs.writeFileSync(appFolder + '/package.json', JSON.stringify(componentPackageJson), 'utf-8');
-
       try {
-        const babelFile = await exec('parcel build entry.unstack.js', {
+        const babelFile = await exec("mkdir -p dist", {
           cwd: appFolder,
           maxBuffer: 1024 * 500
         });
@@ -64,245 +38,192 @@ const wrapComponent = (component, context) => {
         console.log(e);
       }
 
-      const HEADER_FRAGMENT = fs.readFileSync(appFolder + '/component/layout/_header.html', {
-        encoding: 'utf-8'
+      try {
+        console.log(
+          await exec("npm install", {
+            cwd: `${appFolder}/component`,
+            maxBuffer: 1024 * 700
+          })
+        );
+      } catch (e) {
+        console.log(e);
+      }
+
+      try {
+        await new Promise((resolve, reject) => {
+          const child = nonPromiseExec("CI=false npm run build", {
+            cwd: `${appFolder}/component`,
+            maxBuffer: 1024 * 700
+          });
+
+          child.stdout.pipe(process.stdout);
+          child.stderr.pipe(process.stdout);
+          child.on("exit", code => {
+            resolve();
+          });
+        });
+      } catch (e) {
+        console.log(e);
+      }
+
+      await exec(`rm -rf ./component/node_modules`, {
+        cwd: appFolder,
+        maxBuffer: 1024 * 500
       });
+      await exec(
+        `mv ./component/build/index.html ./component/build/template.html`,
+        {
+          cwd: appFolder,
+          maxBuffer: 1024 * 500
+        }
+      );
+
+      const HEADER_FRAGMENT = fs.readFileSync(
+        appFolder + "/component/layout/_header.html",
+        {
+          encoding: "utf-8"
+        }
+      );
 
       try {
         server(component.app, {
-          API_ENDPOINT: 'http://localhost:4000',
-          BUNDLE_PATH: 'dist/entry.unstack.js',
+          API_ENDPOINT: "http://localhost:4000",
           BUNDLE_DIRECTORY: appFolder,
-          PUBLIC_DIRECTORY: `${appFolder}/component/public`,
+          PUBLIC_DIRECTORY: `${appFolder}/component/build`,
           apolloLinks: component.options.apolloLinks,
-          HEADER_FRAGMENT
+          serverRoutes: component.options.serverRoutes,
+          HEADER_FRAGMENT,
+          ENTRY: require(`${path.resolve(
+            process.cwd(),
+            `${appFolder}/component/src/isomorphic-entry`
+          )}`).default
         });
       } catch (e) {
-        console.trace(e);
+        console.log(e);
       }
     },
-    deploy: (config) => {
+    deploy: () => {
       return new Promise(async (resolve, reject) => {
-        console.log(
-          `starting deploy for service:${config.service.name} for env:${
-            context.environment.name
-          } on branch:${context.branch.name}`
-        );
+        const awsRegion = process.env.AWS_REGION;
 
-        const serviceName = config.service.name;
-        const awsAccountId = context.secrets.AWS_ACCOUNT_ID;
-        const awsRegion = context.secrets.AWS_REGION;
-
-        const handlerLocation = config.handler.location;
-        const componentLocation = `./${config.service.location}`;
-        const appFolder = `./.unstack/tmp/artifacts/deploy/${serviceName}`;
-
-        const buildAppFolderCommand = `mkdir -p ${appFolder}`;
-        const buildAppFolder = await exec(buildAppFolderCommand, { cwd: process.cwd() });
-
-        await exec(`cp -R ${handlerLocation}/* ${appFolder}`, {
-          cwd: process.cwd()
-        });
-
-        await exec(`cp ${handlerLocation}/.babelrc ${appFolder}`, {
-          cwd: process.cwd()
-        });
-
-        await exec(`rm -rf ${appFolder}/component`, { cwd: process.cwd() });
-        await exec(`cp -rf ${componentLocation}/. ${appFolder}/component`, { cwd: process.cwd() });
-
-        const handlerPackageJson = JSON.parse(
-          fs.readFileSync(handlerLocation + '/package.json', { encoding: 'utf-8' })
-        );
-
-        // to get es6 goodness via babel
-        const serviceDependencies = JSON.parse(
-          fs.readFileSync(handlerLocation + '/service-dependencies.json', { encoding: 'utf-8' })
-        );
-
-        const componentPackageJson = JSON.parse(
-          fs.readFileSync(componentLocation + '/package.json', { encoding: 'utf-8' })
-        );
-
-        // merge package.json dependencies in place with handler dependencies
-        componentPackageJson.dependencies = Object.assign(
-          {},
-          handlerPackageJson.dependencies,
-          componentPackageJson.dependencies,
-          serviceDependencies
-        );
-
-        fs.writeFileSync(
-          appFolder + '/package.json',
-          JSON.stringify(componentPackageJson),
-          'utf-8'
-        );
+        const component = await helper.getComponent();
+        const appFolder = helper.getWorkingDirectoryPath();
+        const handlerLocation = helper.getHandlerLocation();
+        const componentLocation = helper.getComponentLocation();
+        const [babelBuilder] = await helper.getBuilders();
+        const runtime = await helper.getRuntime();
 
         // BEGIN fill in Dockfile
-        const dockerfileString = fs.readFileSync(handlerLocation + '/Dockerfile', {
-          encoding: 'utf-8'
-        });
+        const dockerFileString = fs.readFileSync(
+          handlerLocation + "/Dockerfile",
+          {
+            encoding: "utf-8"
+          }
+        );
+
+        //this is CK specific!
+
+        let endpointValue = process.env.API_ENDPOINT;
+
+        //END this is CK specific!
 
         const apiEndpoint = {
-          key: 'API_ENDPOINT',
-          value:
-            context.environment.name == 'production'
-              ? 'https://api.careerkarma.chat'
-              : `http://${context.services['backend.chat-api'].outputs.endpoint}`
+          key: "API_ENDPOINT",
+          value: endpointValue
         };
 
         const hash = await hashElement(`${appFolder}/entry.unstack.js`, {});
 
         const bundleFilename = `entry-${hash.hash}.js`;
 
-        const bundlePath = {
-          key: 'BUNDLE_PATH',
-          value: `dist/${bundleFilename}`
-        };
-
         const bundleDirectory = {
-          key: 'BUNDLE_DIRECTORY',
+          key: "BUNDLE_DIRECTORY",
           value: `./`
         };
 
         const publicDirectory = {
-          key: 'PUBLIC_DIRECTORY',
-          value: './component/public'
+          key: "PUBLIC_DIRECTORY",
+          value: "./component/build"
         };
 
         const headerFragmentPath = {
-          key: 'HEADER_FRAGMENT_PATH',
+          key: "HEADER_FRAGMENT_PATH",
           value: `./component/layout/_header.html`
         };
 
         const evaluatedDockerfileString = [
           apiEndpoint,
-          bundlePath,
           publicDirectory,
           bundleDirectory,
           headerFragmentPath
         ].reduce((result, variable) => {
           return result.replace(`{{${variable.key}}}`, `"${variable.value}"`);
-        }, dockerfileString);
+        }, dockerFileString);
 
-        fs.writeFileSync(appFolder + '/Dockerfile', evaluatedDockerfileString, 'utf-8');
+        fs.writeFileSync(
+          appFolder + "/Dockerfile",
+          evaluatedDockerfileString,
+          "utf-8"
+        );
         // END fill in Dockerfile
 
         // BEGIN ORCHESTRATION
 
-        const parcelInstallCommand = `sudo npm install -g parcel-bundler`;
-        const parcelInstall = await exec(parcelInstallCommand, {
-          cwd: appFolder,
-          maxBuffer: 1024 * 500
-        });
-
-        const babelInstallCommand = `sudo npm install @babel/core @babel/cli @babel/plugin-proposal-object-rest-spread@^7.0.0 @babel/plugin-proposal-class-properties@^7.1.0 @babel/preset-env@^7.1.0 @babel/preset-react@^7.0.0 @babel/plugin-transform-runtime@^7.1.0`;
-        const babelInstall = await exec(babelInstallCommand, {
-          cwd: appFolder,
-          maxBuffer: 1024 * 500
-        });
-
         try {
-          const babelFile = await exec(
-            `parcel build entry.unstack.js --out-file ${bundleFilename}`,
-            {
-              cwd: appFolder,
-              maxBuffer: 1024 * 500
-            }
+          console.log(
+            await exec("npm install", {
+              cwd: `${appFolder}/component`,
+              maxBuffer: 1024 * 700
+            })
           );
-          console.log(babelFile.stdout);
-          console.log(babelFile.stderr);
         } catch (e) {
           console.log(e);
         }
 
-        const sharedBabel = `--presets=@babel/preset-env,@babel/preset-react --plugins=@babel/plugin-proposal-object-rest-spread,@babel/plugin-transform-runtime,@babel/plugin-proposal-class-properties`;
+        try {
+          await new Promise((resolve, reject) => {
+            const child = nonPromiseExec("CI=false npm run build", {
+              cwd: `${appFolder}/component`,
+              maxBuffer: 1024 * 700
+            });
 
-        // handler should copy these files to produce artifact. ORCHESTRATION can handle transpiling
-        await exec(`rm -rf ./component/node_modules`, { cwd: appFolder, maxBuffer: 1024 * 500 });
-
-        const babelServerFile = await exec(
-          `./node_modules/.bin/babel server.unstack.js -o server.js ${sharedBabel}`,
-          { cwd: appFolder, maxBuffer: 1024 * 500 }
-        );
-        const babelFolder = await exec(
-          `./node_modules/.bin/babel component -d compiled-component --ignore "component/node_modules/**/*" ${sharedBabel}`,
-          { cwd: appFolder, maxBuffer: 1024 * 500 }
-        );
-
-        const babelSrc = await exec(
-          `./node_modules/.bin/babel src -d compiled-src ${sharedBabel}`,
-          { cwd: appFolder, maxBuffer: 1024 * 500 }
-        );
-
-        const copyNonJSFiles = await exec(
-          `./node_modules/.bin/babel component -d compiled-component --copy-files --ignore "component/node_modules/**/*" ${sharedBabel}`,
-          { cwd: appFolder, maxBuffer: 1024 * 500 }
-        );
-
-        const ebEnvironment = `${serviceName.split('.').join('')}-${
-          context.environment.name == 'review'
-            ? context.branch.name.split('-').join('')
-            : context.environment.name
-        }`
-          .replace(/_/, '')
-          .replace(/\//g, '')
-          .replace(/\$/, '')
-          .replace(/@/, '')
-          .substring(0, 38);
-
-        const ebConfig = {
-          'branch-defaults': {
-            default: {
-              environment: ebEnvironment,
-              group_suffix: serviceName
-            }
-          },
-          global: {
-            application_name: serviceName,
-            branch: null,
-            default_ec2_keyname: null,
-            default_platform: 'Docker 18.03.1-ce',
-            default_region: awsRegion,
-            include_git_submodules: true,
-            instance_profile: null,
-            platform_name: null,
-            platform_version: null,
-            profile: null,
-            repository: null,
-            sc: null,
-            workspace_type: 'Application'
-          }
-        };
-
-        yaml.sync(`${appFolder}/.elasticbeanstalk/config.yml`, ebConfig);
-
-        const listEnvCommand = `eb list`;
-        const listEnv = await exec(listEnvCommand, { cwd: appFolder, maxBuffer: 1024 * 500 });
-        if (listEnv.stdout.indexOf(ebEnvironment) == -1) {
-          const createCommand = `eb create ${ebEnvironment} --elb-type application`;
-          await exec(createCommand, { cwd: appFolder, maxBuffer: 1024 * 500 });
+            child.stdout.pipe(process.stdout);
+            child.stderr.pipe(process.stdout);
+            child.on("exit", code => {
+              resolve();
+            });
+          });
+        } catch (e) {
+          console.log(e);
         }
 
-        // run eb deploy
-        const deployCommand = `eb deploy`;
-        const deploy = await exec(deployCommand, { cwd: appFolder, maxBuffer: 1024 * 500 });
-        console.log(deploy.stdout);
-        console.log(deploy.stderr);
+        await exec(`rm -rf ./component/node_modules`, {
+          cwd: appFolder,
+          maxBuffer: 1024 * 500
+        });
+        await exec(
+          `mv ./component/build/index.html ./component/build/template.html`,
+          {
+            cwd: appFolder,
+            maxBuffer: 1024 * 500
+          }
+        );
 
-        // get endpoint
-        const statusCommand = `eb status`;
-        const status = await exec(statusCommand, { cwd: appFolder, maxBuffer: 1024 * 500 });
-        console.log(status.stdout);
+        await babelBuilder.process({
+          cwd: appFolder,
+          additionalTransforms: [
+            { from: "server.unstack.js", to: "server.js" }
+          ],
+          hasSrc: true
+        });
 
-        // END ORCHESTRATION
-
-        const secretsString = status.stdout;
-
-        const cnameString = secretsString
-          .split('\n')
-          .find((string) => string.indexOf('CNAME: ') != -1);
-        const cname = cnameString.slice('CNAME: '.length + 2);
+        const { cname } = await runtime.createOrUpdate({
+          serviceName,
+          awsRegion,
+          appFolder,
+          environmentName: context.environment.name,
+          branchName: context.branch.name
+        });
 
         // resolve with outputs
         const outputs = {

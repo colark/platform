@@ -1,0 +1,7 @@
+targets:
+  web:
+    - aws-elastic-beanstalk
+  worker:
+    - aws-elastic-beanstalk
+providers:
+  - name: aws-elastic-beanstalk

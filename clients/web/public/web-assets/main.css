@@ -1,5 +1,5 @@
-@import "/normalize.css";
-@import "/global.css";
+@import "/web-assets/normalize.css";
+@import "/web-assets/global.css";
 @import "/src/components/Navbar/navbar.css";
 @import "/src/components/RocketPyramid/RocketPyramid.css";
 @import "/src/components/HeroSection/HeroSection.css";

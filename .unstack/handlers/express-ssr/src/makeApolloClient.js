@@ -1,7 +1,7 @@
 import { onError } from "apollo-link-error";
 import { ApolloClient } from "apollo-client";
 import { ApolloLink } from "apollo-link";
-import { createHttpLink } from "apollo-link-http";
+import { BatchHttpLink } from "apollo-link-batch-http";
 import { InMemoryCache } from "apollo-cache-inmemory";
 
 const makeApolloClient = ({
@@ -20,15 +20,17 @@ const makeApolloClient = ({
     if (networkError) console.log(`[Network error]: ${networkError}`);
   });
 
-  const combinedLinks = [
+  let linkArray = links ? [links] : [];
+  linkArray = linkArray.concat([
     errorLink,
-    createHttpLink({
-      uri
+    new BatchHttpLink({
+      uri,
+      batchMax: 50,
+      batchInterval: 50
     })
-  ];
+  ]);
 
-  links ? combinedLinks.push(links) : null;
-  const link = ApolloLink.from(combinedLinks);
+  const link = ApolloLink.from(linkArray);
 
   const apolloClient = new ApolloClient({
     ssrMode,
