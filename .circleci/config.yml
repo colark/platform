@@ -1,0 +1,137 @@
+version: 2
+jobs:
+  test:
+    docker:
+      - image: circleci/node:8
+    steps:
+      - checkout
+      #      - restore_cache: # special step to restore the dependency cache
+      #          key: -v1-dependency-cache-{{ checksum "package.json" }}-{{ checksum "package-lock.json" }}
+      - run:
+          name: Setup Dependencies
+          command: |
+            npm install && ./node_modules/.bin/unstack install
+      - save_cache: # special step to save the dependency cache
+          key: -v1-dependency-cache-{{ checksum "package.json" }}-{{ checksum "package-lock.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Run Test and Coverage
+          command: |
+            ./node_modules/.bin/unstack test
+  deploy_review:
+    docker:
+      - image: circleci/python:2.7-node
+    steps:
+      - checkout
+      #      - restore_cache: # special step to restore the dependency cache
+      #          key: v1-unstack-dependency-cache-{{ checksum "package.json" }}-{{ checksum "package-lock.json" }}
+      - run:
+          name: Setup Dependencies
+          command: |
+            npm install && ./node_modules/.bin/unstack install
+      - save_cache: # special step to save the dependency cache
+          key: v1-unstack-dependency-cache-{{ checksum "package.json" }}-{{ checksum "package-lock.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Installing deployment dependencies
+          working_directory: /
+          command: |
+            sudo apt-get -y -qq update
+            sudo apt-get install python-pip python-dev build-essential
+            sudo pip install awscli --upgrade
+            sudo pip install awsebcli --upgrade
+      - run:
+          name: Deploy Review
+          command: |
+            sudo npm config set unsafe-perm true
+            sudo chown -R $USER:$USER /root
+            ./node_modules/.bin/unstack deploy --environment=review -b=$CIRCLE_BRANCH
+  deploy_staging:
+    docker:
+      - image: circleci/python:2.7-node
+    steps:
+      - checkout
+      # - restore_cache: # special step to restore the dependency cache
+      #     key: v1-unstack-dependency-cache-{{ checksum "package.json" }}-{{ checksum "package-lock.json" }}
+      - run:
+          name: Setup Dependencies
+          command: |
+            npm install && ./node_modules/.bin/unstack install
+      - save_cache: # special step to save the dependency cache
+          key: v1-unstack-dependency-cache-{{ checksum "package.json" }}-{{ checksum "package-lock.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Installing deployment dependencies
+          working_directory: /
+          command: |
+            sudo apt-get -y -qq update
+            sudo apt-get install python-pip python-dev build-essential
+            sudo pip install awscli --upgrade
+            sudo pip install awsebcli --upgrade
+      - run:
+          name: Deploy Staging
+          command: |
+            sudo npm config set unsafe-perm true
+            sudo chown -R $USER:$USER /root
+            ./node_modules/.bin/unstack deploy --environment=staging
+  deploy_production:
+    docker:
+      - image: circleci/python:2.7-node
+    steps:
+      - checkout
+      #      - restore_cache: # special step to restore the dependency cache
+      #          key: v1-unstack-dependency-cache-{{ checksum "package.json" }}-{{ checksum "package-lock.json" }}
+      - run:
+          name: Setup Dependencies
+          command: |
+            npm install && ./node_modules/.bin/unstack install
+      - save_cache: # special step to save the dependency cache
+          key: v1-unstack-dependency-cache-{{ checksum "package.json" }}-{{ checksum "package-lock.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Installing deployment dependencies
+          working_directory: /
+          command: |
+            sudo apt-get -y -qq update
+            sudo apt-get install python-pip python-dev build-essential
+            sudo pip install awscli --upgrade
+            sudo pip install awsebcli --upgrade
+      - run:
+          name: Deploy Production
+          command: |
+            sudo npm config set unsafe-perm true
+            sudo chown -R $USER:$USER /root
+            ./node_modules/.bin/unstack deploy --environment=production
+workflows:
+  version: 2
+  build_deploy:
+    jobs:
+      - test
+      - deploy_review:
+          filters:
+            branches:
+              ignore: master
+      - deploy_staging:
+          requires:
+            - test
+          filters:
+            branches:
+              only: master
+      - approve_production_deploy:
+          type: approval
+          requires:
+            - test
+            - deploy_staging
+          filters:
+            branches:
+              only: master
+      - deploy_production:
+          requires:
+            - approve_production_deploy
+          filters:
+            branches:
+              only: master
