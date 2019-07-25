@@ -12,7 +12,12 @@
     "react-scrollchor": "^6.0.0",
     "react-slick": "^0.23.1",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^4.0.0"
+    "styled-components": "^4.0.0",
+    "emotion-theming": "^10.0.10",
+    "styled-system": "^4.1.0",
+    "@emotion/core": "^10.0.10",
+    "@rebass/emotion": "^3.1.0",
+    "@styled-system/css": "^1.0.3"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -7,7 +7,6 @@ import ReactDOM from "react-dom/server";
 import { StaticRouter } from "react-router";
 import { getDataFromTree, ApolloProvider } from "react-apollo";
 import { ServerStyleSheet } from "styled-components";
-import { renderStylesToString } from "emotion-server";
 import makeShell from "./makeShell";
 import makeApolloClient from "./makeApolloClient";
 import { HelmetProvider, createHelmetStore } from "react-safety-helmet";
@@ -47,8 +46,8 @@ export default (App, options) => {
   );
 
   app.use(
-    "/src/components",
-    express.static("./clients/web/src/components", {
+    "/",
+    express.static(options.PUBLIC_DIRECTORY, {
       maxage: oneDay,
       etag: false
     })
@@ -107,7 +106,7 @@ export default (App, options) => {
           ${helmet.meta.toString()}
           ${helmet.link.toString()}
       `;
-      const content = renderStylesToString(renderedToString);
+      const content = renderedToString;
       const initialState = apolloClient.extract();
       const styleTags = sheet.getStyleTags();
 

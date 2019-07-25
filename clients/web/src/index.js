@@ -7,7 +7,6 @@ import { hydrate } from "react-dom";
 import { ApolloProvider } from "react-apollo";
 import { BrowserRouter } from "react-router-dom";
 import { HelmetProvider, createHelmetStore } from "react-safety-helmet";
-import "./index.css";
 
 const httpLink = new BatchHttpLink({
   uri: window.__API_ENDPOINT__,

@@ -28,13 +28,18 @@
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "graphql-tag": "^2.9.2",
-    "styled-components": "^3.3.3",
-    "emotion-server": "^9.2.11",
-    "emotion": "^9.2.11",
+    "emotion": "^10.0.14",
+    "emotion-server": "^10.0.14",
     "radium": "^0.22.0",
     "query-string": "6.4.2",
     "react-safety-helmet": "^6.3.0",
     "match-media-mock": "^0.1.1",
-    "core-js": "2.6.5"
+    "core-js": "2.6.5",
+    "styled-components": "^4.0.0",
+    "emotion-theming": "^10.0.10",
+    "styled-system": "^4.1.0",
+    "@emotion/core": "^10.0.10",
+    "@rebass/emotion": "^3.1.0",
+    "@styled-system/css": "^1.0.3"
   }
 }
