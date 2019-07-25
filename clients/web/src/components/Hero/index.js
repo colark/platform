@@ -6,7 +6,7 @@ import Link from "../link";
 import { FlexItem, FlexItems } from "../flex-items";
 import Button from "../button";
 
-const BackgroundImage = "/assets/About.png";
+const BackgroundImage = "/assets/ABOUT.png";
 
 const SectionHeader = ({ children, ...rest }) => {
   return (
@@ -38,16 +38,11 @@ const Hero = ({ theme }) => {
         margin="0 auto"
       >
         <SectionHeader marginBottom={4}>
-          <Heading as="h1">ship sustainably at scale</Heading>
+          <Heading as="h1">we help teams ship sustainably at any scale</Heading>
           <Paragraph>
-            Focus on your business, let your dev team focus on code. We make best practices 
-            the path of least resistance.
+            email ellie@colark.com to learn more
           </Paragraph>
         </SectionHeader>
-        <FlexItems minWidth={3} marginTop={3} justifyContent="space-between">
-          <Button variant="primary">Contact Us</Button>
-          <Button variant="outline">Learn More</Button>
-        </FlexItems>
       </Box>
     </Box>
   );

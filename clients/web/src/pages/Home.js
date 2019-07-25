@@ -7,8 +7,6 @@ export default () => {
   return (
     <Box>
       <Hero />
-      <UnstackSection />
-      <AboutSection />
     </Box>
   );
 };

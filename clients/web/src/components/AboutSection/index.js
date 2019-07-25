@@ -4,7 +4,7 @@ import Heading from "../heading";
 import Paragraph from "../paragraph";
 import Link from "../link";
 import { FlexItem, FlexItems } from "../flex-items";
-const BackgroundImage = "/assets/About.png";
+const BackgroundImage = "/assets/ABOUT.png";
 
 const SectionHeader = ({ children }) => {
   return (
@@ -25,16 +25,16 @@ const AboutSection = ({ theme }) => {
       <SectionHeader>
         <Heading as="h2">Colark has Opinions</Heading>
         <Paragraph>
-          We believe that your platform should be able to scale with flexibility. 
-          The tech stack you need evoles rapidly and we think you shouldn't have to pay a high price 
-          to change with it. We guide you in building a sustainable 
+          We believe that your platform should be able to scale with flexibility.
+          The tech stack you need evoles rapidly and we think you shouldn't have to pay a high price
+          to change with it. We guide you in building a sustainable
           platform with the technical foundation to grow to millions of users, by baking in agile infrastrucutre .
         </Paragraph>
       </SectionHeader>
       <FlexItems margin="0 auto">
         <FlexItem headingText="Testimonial?">
           <Paragraph type="two">
-            "Our development team spends 0% of their time on DevOps thanks to 
+            "Our development team spends 0% of their time on DevOps thanks to
             Colark" - Artur Meister CTO Career Karma
           </Paragraph>
           <Link href="https://google.com">Learn more →</Link>
