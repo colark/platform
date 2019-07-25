@@ -121,11 +121,7 @@ const wrapComponent = helper => {
           }
         );
 
-        //this is CK specific!
-
-        let endpointValue = process.env.API_ENDPOINT;
-
-        //END this is CK specific!
+        let endpointValue = `http://${context.services['backend.api'].outputs.endpoint}`;
 
         const apiEndpoint = {
           key: "API_ENDPOINT",
