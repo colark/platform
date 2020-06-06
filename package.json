@@ -29,7 +29,7 @@
     "apollo-link-batch-http": "^1.2.12",
     "apollo-link-error": "^1.1.11",
     "apollo-link-http": "^1.5.15",
-    "apollo-server-express": "^2.4.8",
+    "apollo-server-express": "^2.14.2",
     "core-js": "^2.6.5",
     "emotion": "^10.0.14",
     "emotion-server": "^10.0.14",
