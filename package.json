@@ -44,7 +44,7 @@
     "graphql-playground-middleware-express": "^1.7.12",
     "graphql-shield": "^5.7.3",
     "graphql-tag": "^2.10.1",
-    "http-proxy": "^1.17.0",
+    "http-proxy": "^1.18.1",
     "match-media-mock": "^0.1.1",
     "pg": "^7.11.0",
     "postgraphile": "^4.4.1",
