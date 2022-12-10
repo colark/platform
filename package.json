@@ -34,7 +34,7 @@
     "emotion": "^10.0.14",
     "emotion-server": "^10.0.14",
     "emotion-theming": "^10.0.14",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "folder-hash": "^2.1.2",
     "graphql": "^0.13.2",
     "graphql-depth-limit": "^1.1.0",
